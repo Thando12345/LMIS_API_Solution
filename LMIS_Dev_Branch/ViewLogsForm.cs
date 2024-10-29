@@ -1,8 +1,8 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    public partial class ViewLogsForm : Form
+    public partial class FrmViewLogsForm : Form
     {
-        public ViewLogsForm()
+        public FrmViewLogsForm()
         {
             InitializeComponent();
         }

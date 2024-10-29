@@ -1,8 +1,8 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    public partial class ApproveRequestsForm : Form
+    public partial class FrmApproveRequestsForm : Form
     {
-        public ApproveRequestsForm()
+        public FrmApproveRequestsForm()
         {
             InitializeComponent();
         }

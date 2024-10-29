@@ -1,6 +1,6 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    partial class ManageUsersForm
+    partial class FrmManageUsersForm
     {
         /// <summary>
         /// Required designer variable.
@@ -43,11 +43,10 @@
             // 
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvUsers.Columns.AddRange(new DataGridViewColumn[] { TextBoxColumn, TextBoxColumn2, ComboBoxColumn, TextBoxColumn3 });
-            dgvUsers.Location = new Point(35, 30);
-            dgvUsers.Margin = new Padding(2, 2, 2, 2);
+            dgvUsers.Location = new Point(50, 50);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 62;
-            dgvUsers.Size = new Size(472, 240);
+            dgvUsers.Size = new Size(674, 400);
             dgvUsers.TabIndex = 0;
             // 
             // TextBoxColumn
@@ -81,10 +80,9 @@
             // btnCreateUser
             // 
             btnCreateUser.BackColor = Color.LightGreen;
-            btnCreateUser.Location = new Point(511, 30);
-            btnCreateUser.Margin = new Padding(2, 2, 2, 2);
+            btnCreateUser.Location = new Point(730, 50);
             btnCreateUser.Name = "btnCreateUser";
-            btnCreateUser.Size = new Size(78, 20);
+            btnCreateUser.Size = new Size(111, 42);
             btnCreateUser.TabIndex = 1;
             btnCreateUser.Text = "Create User";
             btnCreateUser.UseVisualStyleBackColor = false;
@@ -93,10 +91,9 @@
             // btnEditUser
             // 
             btnEditUser.BackColor = Color.LightYellow;
-            btnEditUser.Location = new Point(511, 54);
-            btnEditUser.Margin = new Padding(2, 2, 2, 2);
+            btnEditUser.Location = new Point(730, 98);
             btnEditUser.Name = "btnEditUser";
-            btnEditUser.Size = new Size(78, 20);
+            btnEditUser.Size = new Size(111, 42);
             btnEditUser.TabIndex = 2;
             btnEditUser.Text = "Edit User";
             btnEditUser.UseVisualStyleBackColor = false;
@@ -104,25 +101,23 @@
             // btnDeleteUser
             // 
             btnDeleteUser.BackColor = Color.LightCoral;
-            btnDeleteUser.Location = new Point(511, 78);
-            btnDeleteUser.Margin = new Padding(2, 2, 2, 2);
+            btnDeleteUser.Location = new Point(730, 146);
             btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Size = new Size(78, 20);
+            btnDeleteUser.Size = new Size(111, 42);
             btnDeleteUser.TabIndex = 3;
             btnDeleteUser.Text = "Delete User";
             btnDeleteUser.UseVisualStyleBackColor = false;
             // 
-            // ManageUsersForm
+            // FrmManageUsersForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(760, 331);
+            ClientSize = new Size(1086, 552);
             Controls.Add(btnDeleteUser);
             Controls.Add(btnEditUser);
             Controls.Add(btnCreateUser);
             Controls.Add(dgvUsers);
-            Margin = new Padding(2, 2, 2, 2);
-            Name = "ManageUsersForm";
+            Name = "FrmManageUsersForm";
             Text = "ManageUsersForm";
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
             ResumeLayout(false);

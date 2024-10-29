@@ -1,6 +1,6 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    partial class ViewLogsForm
+    partial class FrmViewLogsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -137,12 +137,12 @@
             btnSearchLogs.BackColor = Color.LightBlue;
             btnSearchLogs.Location = new Point(394, 55);
             btnSearchLogs.Name = "btnSearchLogs";
-            btnSearchLogs.Size = new Size(112, 34);
+            btnSearchLogs.Size = new Size(112, 40);
             btnSearchLogs.TabIndex = 7;
             btnSearchLogs.Text = "Search Logs";
             btnSearchLogs.UseVisualStyleBackColor = false;
             // 
-            // ViewLogsForm
+            // FrmViewLogsForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -155,7 +155,7 @@
             Controls.Add(lblStrtDate);
             Controls.Add(dtpStartDate);
             Controls.Add(dgvLogs);
-            Name = "ViewLogsForm";
+            Name = "FrmViewLogsForm";
             Text = "ViewLogsForm";
             ((System.ComponentModel.ISupportInitialize)dgvLogs).EndInit();
             ResumeLayout(false);

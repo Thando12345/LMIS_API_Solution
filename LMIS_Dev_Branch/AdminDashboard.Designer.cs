@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             lblAdminDashboard = new Label();
             btnManageUsers = new Button();
             btnManageTemplates = new Button();
@@ -57,10 +57,9 @@
             lblAdminDashboard.AutoSize = true;
             lblAdminDashboard.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAdminDashboard.ForeColor = Color.DodgerBlue;
-            lblAdminDashboard.Location = new Point(230, 51);
-            lblAdminDashboard.Margin = new Padding(2, 0, 2, 0);
+            lblAdminDashboard.Location = new Point(329, 59);
             lblAdminDashboard.Name = "lblAdminDashboard";
-            lblAdminDashboard.Size = new Size(249, 37);
+            lblAdminDashboard.Size = new Size(365, 54);
             lblAdminDashboard.TabIndex = 0;
             lblAdminDashboard.Text = "Admin Dashboard";
             lblAdminDashboard.Click += lblAdminDashboard_Click;
@@ -68,10 +67,9 @@
             // btnManageUsers
             // 
             btnManageUsers.BackColor = Color.LightGreen;
-            btnManageUsers.Location = new Point(35, 106);
-            btnManageUsers.Margin = new Padding(2);
+            btnManageUsers.Location = new Point(50, 177);
             btnManageUsers.Name = "btnManageUsers";
-            btnManageUsers.Size = new Size(119, 24);
+            btnManageUsers.Size = new Size(197, 59);
             btnManageUsers.TabIndex = 1;
             btnManageUsers.Text = "Manage Users";
             btnManageUsers.UseVisualStyleBackColor = false;
@@ -80,66 +78,64 @@
             // btnManageTemplates
             // 
             btnManageTemplates.BackColor = Color.LightYellow;
-            btnManageTemplates.Location = new Point(35, 134);
-            btnManageTemplates.Margin = new Padding(2);
+            btnManageTemplates.Location = new Point(50, 252);
             btnManageTemplates.Name = "btnManageTemplates";
-            btnManageTemplates.Size = new Size(119, 24);
+            btnManageTemplates.Size = new Size(197, 59);
             btnManageTemplates.TabIndex = 2;
             btnManageTemplates.Text = "Manage Templates";
             btnManageTemplates.UseVisualStyleBackColor = false;
+            btnManageTemplates.Click += btnManageTemplates_Click;
             // 
             // btnViewLogs
             // 
             btnViewLogs.BackColor = Color.LightBlue;
-            btnViewLogs.Location = new Point(35, 162);
-            btnViewLogs.Margin = new Padding(2);
+            btnViewLogs.Location = new Point(50, 320);
             btnViewLogs.Name = "btnViewLogs";
-            btnViewLogs.Size = new Size(119, 24);
+            btnViewLogs.Size = new Size(197, 59);
             btnViewLogs.TabIndex = 3;
             btnViewLogs.Text = "View Logs";
             btnViewLogs.UseVisualStyleBackColor = false;
+            btnViewLogs.Click += btnViewLogs_Click;
             // 
             // btnApproveRequests
             // 
             btnApproveRequests.BackColor = Color.LightCoral;
-            btnApproveRequests.Location = new Point(35, 190);
-            btnApproveRequests.Margin = new Padding(2);
+            btnApproveRequests.Location = new Point(50, 394);
             btnApproveRequests.Name = "btnApproveRequests";
-            btnApproveRequests.Size = new Size(119, 24);
+            btnApproveRequests.Size = new Size(197, 59);
             btnApproveRequests.TabIndex = 4;
             btnApproveRequests.Text = "Approve Requests";
             btnApproveRequests.UseVisualStyleBackColor = false;
+            btnApproveRequests.Click += btnApproveRequests_Click;
             // 
             // dgvUsers
             // 
-            dataGridViewCellStyle2.ForeColor = Color.LightGray;
-            dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.ForeColor = Color.LightGray;
+            dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dgvUsers.BackgroundColor = Color.White;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(230, 106);
-            dgvUsers.Margin = new Padding(2);
+            dgvUsers.Location = new Point(329, 177);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 62;
-            dgvUsers.Size = new Size(385, 240);
+            dgvUsers.Size = new Size(550, 400);
             dgvUsers.TabIndex = 5;
             // 
             // cmbTemplates
             // 
             cmbTemplates.FormattingEnabled = true;
-            cmbTemplates.Location = new Point(230, 359);
-            cmbTemplates.Margin = new Padding(2);
+            cmbTemplates.Items.AddRange(new object[] { "Service SETA (SETA Accreditation No. 2301)", "ETDP SETA (ETDP-1021)", "TETA (TETA 08-156)", "HWSETA (Health and Welfare SETA)", "LGSETA (LGSETA Accreditation No. LG925P)", "CATHSETA (CATHSETA Accreditation No. 1618)" });
+            cmbTemplates.Location = new Point(329, 598);
             cmbTemplates.Name = "cmbTemplates";
-            cmbTemplates.Size = new Size(141, 23);
+            cmbTemplates.Size = new Size(550, 33);
             cmbTemplates.TabIndex = 6;
             // 
             // lblSelectTemplate
             // 
             lblSelectTemplate.AutoSize = true;
             lblSelectTemplate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblSelectTemplate.Location = new Point(35, 359);
-            lblSelectTemplate.Margin = new Padding(2, 0, 2, 0);
+            lblSelectTemplate.Location = new Point(50, 598);
             lblSelectTemplate.Name = "lblSelectTemplate";
-            lblSelectTemplate.Size = new Size(168, 19);
+            lblSelectTemplate.Size = new Size(241, 28);
             lblSelectTemplate.TabIndex = 7;
             lblSelectTemplate.Text = "Select Certificate Template";
             // 
@@ -149,7 +145,8 @@
             mstFrmAdminDashboard.Items.AddRange(new ToolStripItem[] { coursesToolStripMenuItem, studentsToolStripMenuItem, enrollmentsToolStripMenuItem });
             mstFrmAdminDashboard.Location = new Point(0, 0);
             mstFrmAdminDashboard.Name = "mstFrmAdminDashboard";
-            mstFrmAdminDashboard.Size = new Size(792, 24);
+            mstFrmAdminDashboard.Padding = new Padding(9, 3, 0, 3);
+            mstFrmAdminDashboard.Size = new Size(1131, 35);
             mstFrmAdminDashboard.TabIndex = 8;
             mstFrmAdminDashboard.Text = "menuStrip1";
             // 
@@ -157,64 +154,64 @@
             // 
             coursesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addCourseToolStripMenuItem, searchCoursesToolStripMenuItem });
             coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            coursesToolStripMenuItem.Size = new Size(61, 20);
+            coursesToolStripMenuItem.Size = new Size(91, 29);
             coursesToolStripMenuItem.Text = "Courses";
             // 
             // addCourseToolStripMenuItem
             // 
             addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
-            addCourseToolStripMenuItem.Size = new Size(154, 22);
+            addCourseToolStripMenuItem.Size = new Size(234, 34);
             addCourseToolStripMenuItem.Text = "Add Course";
             // 
             // searchCoursesToolStripMenuItem
             // 
             searchCoursesToolStripMenuItem.Name = "searchCoursesToolStripMenuItem";
-            searchCoursesToolStripMenuItem.Size = new Size(154, 22);
+            searchCoursesToolStripMenuItem.Size = new Size(234, 34);
             searchCoursesToolStripMenuItem.Text = "Search Courses";
             // 
             // studentsToolStripMenuItem
             // 
             studentsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registerStudentToolStripMenuItem, findStudentsToolStripMenuItem });
             studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            studentsToolStripMenuItem.Size = new Size(65, 20);
+            studentsToolStripMenuItem.Size = new Size(97, 29);
             studentsToolStripMenuItem.Text = "Students";
             // 
             // registerStudentToolStripMenuItem
             // 
             registerStudentToolStripMenuItem.Name = "registerStudentToolStripMenuItem";
-            registerStudentToolStripMenuItem.Size = new Size(160, 22);
+            registerStudentToolStripMenuItem.Size = new Size(243, 34);
             registerStudentToolStripMenuItem.Text = "Register Student";
             // 
             // findStudentsToolStripMenuItem
             // 
             findStudentsToolStripMenuItem.Name = "findStudentsToolStripMenuItem";
-            findStudentsToolStripMenuItem.Size = new Size(160, 22);
+            findStudentsToolStripMenuItem.Size = new Size(243, 34);
             findStudentsToolStripMenuItem.Text = "Find Students";
             // 
             // enrollmentsToolStripMenuItem
             // 
             enrollmentsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { enrollStudentToolStripMenuItem, viewEnrollmentsToolStripMenuItem });
             enrollmentsToolStripMenuItem.Name = "enrollmentsToolStripMenuItem";
-            enrollmentsToolStripMenuItem.Size = new Size(82, 20);
+            enrollmentsToolStripMenuItem.Size = new Size(121, 29);
             enrollmentsToolStripMenuItem.Text = "Enrollments";
             // 
             // enrollStudentToolStripMenuItem
             // 
             enrollStudentToolStripMenuItem.Name = "enrollStudentToolStripMenuItem";
-            enrollStudentToolStripMenuItem.Size = new Size(165, 22);
+            enrollStudentToolStripMenuItem.Size = new Size(249, 34);
             enrollStudentToolStripMenuItem.Text = "Enroll Student";
             // 
             // viewEnrollmentsToolStripMenuItem
             // 
             viewEnrollmentsToolStripMenuItem.Name = "viewEnrollmentsToolStripMenuItem";
-            viewEnrollmentsToolStripMenuItem.Size = new Size(165, 22);
+            viewEnrollmentsToolStripMenuItem.Size = new Size(249, 34);
             viewEnrollmentsToolStripMenuItem.Text = "View Enrollments";
             // 
             // frmAdminDashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(792, 403);
+            ClientSize = new Size(1131, 672);
             Controls.Add(mstFrmAdminDashboard);
             Controls.Add(lblSelectTemplate);
             Controls.Add(cmbTemplates);
@@ -224,7 +221,6 @@
             Controls.Add(btnManageTemplates);
             Controls.Add(btnManageUsers);
             Controls.Add(lblAdminDashboard);
-            Margin = new Padding(2);
             Name = "frmAdminDashboard";
             Text = "AdminDashboard";
             Load += AdminDashboard_Load;

@@ -39,6 +39,7 @@
             enrollStudentToolStripMenuItem = new ToolStripMenuItem();
             viewEnrollmentsToolStripMenuItem = new ToolStripMenuItem();
             adminDashboardToolStripMenuItem = new ToolStripMenuItem();
+            openDashboardToolStripMenuItem = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
             label4 = new Label();
@@ -53,7 +54,8 @@
             dateTimePicker1 = new DateTimePicker();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
-            openDashboardToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            openDashboardToolStripMenuItem1 = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -65,10 +67,11 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { coursesToolStripMenuItem, studentsToolStripMenuItem, enrollmentsToolStripMenuItem, adminDashboardToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { coursesToolStripMenuItem, studentsToolStripMenuItem, enrollmentsToolStripMenuItem, adminDashboardToolStripMenuItem, toolStripMenuItem1 });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1144, 24);
+            menuStrip1.Padding = new Padding(9, 3, 0, 3);
+            menuStrip1.Size = new Size(1634, 35);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -76,79 +79,88 @@
             // 
             coursesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addCourseToolStripMenuItem, searchCoursesToolStripMenuItem });
             coursesToolStripMenuItem.Name = "coursesToolStripMenuItem";
-            coursesToolStripMenuItem.Size = new Size(61, 20);
+            coursesToolStripMenuItem.Size = new Size(91, 29);
             coursesToolStripMenuItem.Text = "Courses";
             coursesToolStripMenuItem.Click += coursesToolStripMenuItem_Click;
             // 
             // addCourseToolStripMenuItem
             // 
             addCourseToolStripMenuItem.Name = "addCourseToolStripMenuItem";
-            addCourseToolStripMenuItem.Size = new Size(154, 22);
+            addCourseToolStripMenuItem.Size = new Size(234, 34);
             addCourseToolStripMenuItem.Text = "Add Course";
             addCourseToolStripMenuItem.Click += addCourseToolStripMenuItem_Click;
             // 
             // searchCoursesToolStripMenuItem
             // 
             searchCoursesToolStripMenuItem.Name = "searchCoursesToolStripMenuItem";
-            searchCoursesToolStripMenuItem.Size = new Size(154, 22);
+            searchCoursesToolStripMenuItem.Size = new Size(234, 34);
             searchCoursesToolStripMenuItem.Text = "Search Courses";
             // 
             // studentsToolStripMenuItem
             // 
             studentsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { registerStudentToolStripMenuItem, findStudentsToolStripMenuItem });
             studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
-            studentsToolStripMenuItem.Size = new Size(65, 20);
+            studentsToolStripMenuItem.Size = new Size(97, 29);
             studentsToolStripMenuItem.Text = "Students";
             // 
             // registerStudentToolStripMenuItem
             // 
             registerStudentToolStripMenuItem.Name = "registerStudentToolStripMenuItem";
-            registerStudentToolStripMenuItem.Size = new Size(160, 22);
+            registerStudentToolStripMenuItem.Size = new Size(243, 34);
             registerStudentToolStripMenuItem.Text = "Register Student";
             registerStudentToolStripMenuItem.Click += registerStudentToolStripMenuItem_Click;
             // 
             // findStudentsToolStripMenuItem
             // 
             findStudentsToolStripMenuItem.Name = "findStudentsToolStripMenuItem";
-            findStudentsToolStripMenuItem.Size = new Size(160, 22);
+            findStudentsToolStripMenuItem.Size = new Size(243, 34);
             findStudentsToolStripMenuItem.Text = "Find Students";
             // 
             // enrollmentsToolStripMenuItem
             // 
             enrollmentsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { enrollStudentToolStripMenuItem, viewEnrollmentsToolStripMenuItem });
             enrollmentsToolStripMenuItem.Name = "enrollmentsToolStripMenuItem";
-            enrollmentsToolStripMenuItem.Size = new Size(82, 20);
+            enrollmentsToolStripMenuItem.Size = new Size(121, 29);
             enrollmentsToolStripMenuItem.Text = "Enrollments";
             // 
             // enrollStudentToolStripMenuItem
             // 
             enrollStudentToolStripMenuItem.Name = "enrollStudentToolStripMenuItem";
-            enrollStudentToolStripMenuItem.Size = new Size(165, 22);
+            enrollStudentToolStripMenuItem.Size = new Size(249, 34);
             enrollStudentToolStripMenuItem.Text = "Enroll Student";
             enrollStudentToolStripMenuItem.Click += enrollStudentToolStripMenuItem_Click;
             // 
             // viewEnrollmentsToolStripMenuItem
             // 
             viewEnrollmentsToolStripMenuItem.Name = "viewEnrollmentsToolStripMenuItem";
-            viewEnrollmentsToolStripMenuItem.Size = new Size(165, 22);
+            viewEnrollmentsToolStripMenuItem.Size = new Size(249, 34);
             viewEnrollmentsToolStripMenuItem.Text = "View Enrollments";
             // 
             // adminDashboardToolStripMenuItem
             // 
             adminDashboardToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { openDashboardToolStripMenuItem });
             adminDashboardToolStripMenuItem.Name = "adminDashboardToolStripMenuItem";
-            adminDashboardToolStripMenuItem.Size = new Size(115, 20);
-            adminDashboardToolStripMenuItem.Text = "Admin Dashboard";
+            adminDashboardToolStripMenuItem.Size = new Size(131, 29);
+            adminDashboardToolStripMenuItem.Text = "Admin Portal";
             adminDashboardToolStripMenuItem.Click += adminDashboardToolStripMenuItem_Click;
+            // 
+            // openDashboardToolStripMenuItem
+            // 
+            openDashboardToolStripMenuItem.Name = "openDashboardToolStripMenuItem";
+            openDashboardToolStripMenuItem.Size = new Size(270, 34);
+            openDashboardToolStripMenuItem.Text = "Open Dashboard";
+            openDashboardToolStripMenuItem.Click += openDashboardToolStripMenuItem_Click;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(groupBox4);
             groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(groupBox3);
-            groupBox1.Location = new Point(12, 40);
+            groupBox1.Location = new Point(17, 67);
+            groupBox1.Margin = new Padding(4, 5, 4, 5);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(326, 316);
+            groupBox1.Padding = new Padding(4, 5, 4, 5);
+            groupBox1.Size = new Size(466, 527);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Search";
@@ -159,50 +171,57 @@
             groupBox4.Controls.Add(label3);
             groupBox4.Controls.Add(comboBox1);
             groupBox4.Controls.Add(textBox1);
-            groupBox4.Location = new Point(9, 22);
+            groupBox4.Location = new Point(13, 37);
+            groupBox4.Margin = new Padding(4, 5, 4, 5);
             groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(291, 105);
+            groupBox4.Padding = new Padding(4, 5, 4, 5);
+            groupBox4.Size = new Size(416, 175);
             groupBox4.TabIndex = 7;
             groupBox4.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(18, 74);
+            label4.Location = new Point(26, 123);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
-            label4.Size = new Size(79, 15);
+            label4.Size = new Size(119, 25);
             label4.TabIndex = 3;
             label4.Text = "Course Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(18, 39);
+            label3.Location = new Point(26, 65);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(75, 15);
+            label3.Size = new Size(114, 25);
             label3.TabIndex = 2;
             label3.Text = "Course Code";
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(106, 31);
+            comboBox1.Location = new Point(151, 52);
+            comboBox1.Margin = new Padding(4, 5, 4, 5);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
+            comboBox1.Size = new Size(171, 33);
             comboBox1.TabIndex = 1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(103, 71);
+            textBox1.Location = new Point(147, 118);
+            textBox1.Margin = new Padding(4, 5, 4, 5);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(124, 23);
+            textBox1.Size = new Size(175, 31);
             textBox1.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(3, 259);
+            button1.Location = new Point(4, 432);
+            button1.Margin = new Padding(4, 5, 4, 5);
             button1.Name = "button1";
-            button1.Size = new Size(297, 30);
+            button1.Size = new Size(424, 50);
             button1.TabIndex = 6;
             button1.Text = "Search";
             button1.UseVisualStyleBackColor = true;
@@ -213,9 +232,11 @@
             groupBox3.Controls.Add(dateTimePicker2);
             groupBox3.Controls.Add(label2);
             groupBox3.Controls.Add(dateTimePicker1);
-            groupBox3.Location = new Point(6, 133);
+            groupBox3.Location = new Point(9, 222);
+            groupBox3.Margin = new Padding(4, 5, 4, 5);
             groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(294, 120);
+            groupBox3.Padding = new Padding(4, 5, 4, 5);
+            groupBox3.Size = new Size(420, 200);
             groupBox3.TabIndex = 5;
             groupBox3.TabStop = false;
             groupBox3.Text = "Course Dates";
@@ -223,69 +244,84 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(24, 37);
+            label1.Location = new Point(34, 62);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(58, 15);
+            label1.Size = new Size(90, 25);
             label1.TabIndex = 3;
             label1.Text = "Start Date";
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(88, 66);
+            dateTimePicker2.Location = new Point(126, 110);
+            dateTimePicker2.Margin = new Padding(4, 5, 4, 5);
             dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(200, 23);
+            dateTimePicker2.Size = new Size(284, 31);
             dateTimePicker2.TabIndex = 2;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 66);
+            label2.Location = new Point(34, 110);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(54, 15);
+            label2.Size = new Size(84, 25);
             label2.TabIndex = 4;
             label2.Text = "End Date";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(88, 37);
+            dateTimePicker1.Location = new Point(126, 62);
+            dateTimePicker1.Margin = new Padding(4, 5, 4, 5);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(200, 23);
+            dateTimePicker1.Size = new Size(284, 31);
             dateTimePicker1.TabIndex = 1;
             // 
             // groupBox2
             // 
             groupBox2.Controls.Add(dataGridView1);
-            groupBox2.Location = new Point(354, 40);
+            groupBox2.Location = new Point(506, 67);
+            groupBox2.Margin = new Padding(4, 5, 4, 5);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(749, 398);
+            groupBox2.Padding = new Padding(4, 5, 4, 5);
+            groupBox2.Size = new Size(1070, 663);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(22, 22);
+            dataGridView1.Location = new Point(31, 37);
+            dataGridView1.Margin = new Padding(4, 5, 4, 5);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(709, 357);
+            dataGridView1.Size = new Size(1013, 595);
             dataGridView1.TabIndex = 0;
             // 
-            // openDashboardToolStripMenuItem
+            // toolStripMenuItem1
             // 
-            openDashboardToolStripMenuItem.Name = "openDashboardToolStripMenuItem";
-            openDashboardToolStripMenuItem.Size = new Size(180, 22);
-            openDashboardToolStripMenuItem.Text = "Open Dashboard";
-            openDashboardToolStripMenuItem.Click += openDashboardToolStripMenuItem_Click;
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { openDashboardToolStripMenuItem1 });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(113, 29);
+            toolStripMenuItem1.Text = "User Portal";
+            // 
+            // openDashboardToolStripMenuItem1
+            // 
+            openDashboardToolStripMenuItem1.Name = "openDashboardToolStripMenuItem1";
+            openDashboardToolStripMenuItem1.Size = new Size(270, 34);
+            openDashboardToolStripMenuItem1.Text = "Open Dashboard";
+            openDashboardToolStripMenuItem1.Click += openDashboardToolStripMenuItem1_Click;
             // 
             // frmLMIS
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1144, 450);
+            ClientSize = new Size(1634, 750);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(menuStrip1);
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(4, 5, 4, 5);
             Name = "frmLMIS";
             Text = "LMS";
             Load += Form1_Load;
@@ -330,5 +366,7 @@
         private Label label3;
         private ToolStripMenuItem adminDashboardToolStripMenuItem;
         private ToolStripMenuItem openDashboardToolStripMenuItem;
+        private ToolStripMenuItem toolStripMenuItem1;
+        private ToolStripMenuItem openDashboardToolStripMenuItem1;
     }
 }
