@@ -40,6 +40,8 @@
             viewEnrollmentsToolStripMenuItem = new ToolStripMenuItem();
             adminDashboardToolStripMenuItem = new ToolStripMenuItem();
             openDashboardToolStripMenuItem = new ToolStripMenuItem();
+            toolStripMenuItem1 = new ToolStripMenuItem();
+            openDashboardToolStripMenuItem1 = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
             groupBox4 = new GroupBox();
             label4 = new Label();
@@ -54,8 +56,8 @@
             dateTimePicker1 = new DateTimePicker();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
-            toolStripMenuItem1 = new ToolStripMenuItem();
-            openDashboardToolStripMenuItem1 = new ToolStripMenuItem();
+            loginPageToolStripMenuItem = new ToolStripMenuItem();
+            loginToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -67,7 +69,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { coursesToolStripMenuItem, studentsToolStripMenuItem, enrollmentsToolStripMenuItem, adminDashboardToolStripMenuItem, toolStripMenuItem1 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { coursesToolStripMenuItem, studentsToolStripMenuItem, enrollmentsToolStripMenuItem, adminDashboardToolStripMenuItem, toolStripMenuItem1, loginPageToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(9, 3, 0, 3);
@@ -147,9 +149,23 @@
             // openDashboardToolStripMenuItem
             // 
             openDashboardToolStripMenuItem.Name = "openDashboardToolStripMenuItem";
-            openDashboardToolStripMenuItem.Size = new Size(270, 34);
+            openDashboardToolStripMenuItem.Size = new Size(251, 34);
             openDashboardToolStripMenuItem.Text = "Open Dashboard";
             openDashboardToolStripMenuItem.Click += openDashboardToolStripMenuItem_Click;
+            // 
+            // toolStripMenuItem1
+            // 
+            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { openDashboardToolStripMenuItem1 });
+            toolStripMenuItem1.Name = "toolStripMenuItem1";
+            toolStripMenuItem1.Size = new Size(113, 29);
+            toolStripMenuItem1.Text = "User Portal";
+            // 
+            // openDashboardToolStripMenuItem1
+            // 
+            openDashboardToolStripMenuItem1.Name = "openDashboardToolStripMenuItem1";
+            openDashboardToolStripMenuItem1.Size = new Size(251, 34);
+            openDashboardToolStripMenuItem1.Text = "Open Dashboard";
+            openDashboardToolStripMenuItem1.Click += openDashboardToolStripMenuItem1_Click;
             // 
             // groupBox1
             // 
@@ -298,19 +314,19 @@
             dataGridView1.Size = new Size(1013, 595);
             dataGridView1.TabIndex = 0;
             // 
-            // toolStripMenuItem1
+            // loginPageToolStripMenuItem
             // 
-            toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] { openDashboardToolStripMenuItem1 });
-            toolStripMenuItem1.Name = "toolStripMenuItem1";
-            toolStripMenuItem1.Size = new Size(113, 29);
-            toolStripMenuItem1.Text = "User Portal";
+            loginPageToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { loginToolStripMenuItem });
+            loginPageToolStripMenuItem.Name = "loginPageToolStripMenuItem";
+            loginPageToolStripMenuItem.Size = new Size(115, 29);
+            loginPageToolStripMenuItem.Text = "Login Page";
             // 
-            // openDashboardToolStripMenuItem1
+            // loginToolStripMenuItem
             // 
-            openDashboardToolStripMenuItem1.Name = "openDashboardToolStripMenuItem1";
-            openDashboardToolStripMenuItem1.Size = new Size(270, 34);
-            openDashboardToolStripMenuItem1.Text = "Open Dashboard";
-            openDashboardToolStripMenuItem1.Click += openDashboardToolStripMenuItem1_Click;
+            loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            loginToolStripMenuItem.Size = new Size(270, 34);
+            loginToolStripMenuItem.Text = "Login";
+            loginToolStripMenuItem.Click += loginToolStripMenuItem_Click;
             // 
             // frmLMIS
             // 
@@ -368,5 +384,7 @@
         private ToolStripMenuItem openDashboardToolStripMenuItem;
         private ToolStripMenuItem toolStripMenuItem1;
         private ToolStripMenuItem openDashboardToolStripMenuItem1;
+        private ToolStripMenuItem loginPageToolStripMenuItem;
+        private ToolStripMenuItem loginToolStripMenuItem;
     }
 }

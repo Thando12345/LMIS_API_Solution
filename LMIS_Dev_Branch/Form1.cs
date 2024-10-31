@@ -53,5 +53,11 @@ namespace LMIS_Dev_Branch
             FrmUserPortalMain FrmUserPortalMain = new FrmUserPortalMain();
             FrmUserPortalMain.ShowDialog();
         }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmLoginForm frmLoginForm = new FrmLoginForm();
+            frmLoginForm.ShowDialog();
+        }
     }
 }

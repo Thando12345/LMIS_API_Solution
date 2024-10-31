@@ -1,8 +1,8 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    public partial class LoginForm : Form
+    public partial class FrmLoginForm : Form
     {
-        public LoginForm()
+        public FrmLoginForm()
         {
             InitializeComponent();
             this.Load += new EventHandler(LoginForm_Load); // Wire up the Load event
@@ -26,6 +26,16 @@
         {
             // You can add any functionality you want when the PictureBox is clicked
             MessageBox.Show("PictureBox clicked!");
+        }
+
+        private void lblSelectRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmLoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

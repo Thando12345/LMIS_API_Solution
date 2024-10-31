@@ -16,6 +16,9 @@
     <Compile Update="AddCourse.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmAdminGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmEnrol.cs">
       <SubType>Form</SubType>
     </Compile>

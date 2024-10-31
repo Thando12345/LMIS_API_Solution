@@ -49,5 +49,11 @@
             frmManageTemplatesForm frmManageTemplatesForm = new frmManageTemplatesForm();
             frmManageTemplatesForm.ShowDialog();
         }
+
+        private void LblAdminGeneral_Click(object sender, EventArgs e)
+        {
+            FrmAdminGeneral frmAdminGeneral    = new FrmAdminGeneral();
+            frmAdminGeneral.ShowDialog();
+        }
     }
 }

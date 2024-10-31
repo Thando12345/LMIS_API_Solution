@@ -35,7 +35,6 @@
             btnViewLogs = new Button();
             btnApproveRequests = new Button();
             dgvUsers = new DataGridView();
-            cmbTemplates = new ComboBox();
             lblSelectTemplate = new Label();
             mstFrmAdminDashboard = new MenuStrip();
             coursesToolStripMenuItem = new ToolStripMenuItem();
@@ -47,6 +46,7 @@
             enrollmentsToolStripMenuItem = new ToolStripMenuItem();
             enrollStudentToolStripMenuItem = new ToolStripMenuItem();
             viewEnrollmentsToolStripMenuItem = new ToolStripMenuItem();
+            LblAdminGeneral = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             mstFrmAdminDashboard.SuspendLayout();
             SuspendLayout();
@@ -67,7 +67,7 @@
             // btnManageUsers
             // 
             btnManageUsers.BackColor = Color.LightGreen;
-            btnManageUsers.Location = new Point(50, 177);
+            btnManageUsers.Location = new Point(50, 264);
             btnManageUsers.Name = "btnManageUsers";
             btnManageUsers.Size = new Size(197, 59);
             btnManageUsers.TabIndex = 1;
@@ -78,7 +78,7 @@
             // btnManageTemplates
             // 
             btnManageTemplates.BackColor = Color.LightYellow;
-            btnManageTemplates.Location = new Point(50, 252);
+            btnManageTemplates.Location = new Point(50, 341);
             btnManageTemplates.Name = "btnManageTemplates";
             btnManageTemplates.Size = new Size(197, 59);
             btnManageTemplates.TabIndex = 2;
@@ -89,7 +89,7 @@
             // btnViewLogs
             // 
             btnViewLogs.BackColor = Color.LightBlue;
-            btnViewLogs.Location = new Point(50, 320);
+            btnViewLogs.Location = new Point(50, 419);
             btnViewLogs.Name = "btnViewLogs";
             btnViewLogs.Size = new Size(197, 59);
             btnViewLogs.TabIndex = 3;
@@ -100,7 +100,7 @@
             // btnApproveRequests
             // 
             btnApproveRequests.BackColor = Color.LightCoral;
-            btnApproveRequests.Location = new Point(50, 394);
+            btnApproveRequests.Location = new Point(50, 494);
             btnApproveRequests.Name = "btnApproveRequests";
             btnApproveRequests.Size = new Size(197, 59);
             btnApproveRequests.TabIndex = 4;
@@ -120,24 +120,14 @@
             dgvUsers.Size = new Size(550, 400);
             dgvUsers.TabIndex = 5;
             // 
-            // cmbTemplates
-            // 
-            cmbTemplates.FormattingEnabled = true;
-            cmbTemplates.Items.AddRange(new object[] { "Service SETA (SETA Accreditation No. 2301)", "ETDP SETA (ETDP-1021)", "TETA (TETA 08-156)", "HWSETA (Health and Welfare SETA)", "LGSETA (LGSETA Accreditation No. LG925P)", "CATHSETA (CATHSETA Accreditation No. 1618)" });
-            cmbTemplates.Location = new Point(329, 598);
-            cmbTemplates.Name = "cmbTemplates";
-            cmbTemplates.Size = new Size(550, 33);
-            cmbTemplates.TabIndex = 6;
-            // 
             // lblSelectTemplate
             // 
             lblSelectTemplate.AutoSize = true;
             lblSelectTemplate.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblSelectTemplate.Location = new Point(50, 598);
             lblSelectTemplate.Name = "lblSelectTemplate";
-            lblSelectTemplate.Size = new Size(241, 28);
+            lblSelectTemplate.Size = new Size(0, 28);
             lblSelectTemplate.TabIndex = 7;
-            lblSelectTemplate.Text = "Select Certificate Template";
             // 
             // mstFrmAdminDashboard
             // 
@@ -207,14 +197,25 @@
             viewEnrollmentsToolStripMenuItem.Size = new Size(249, 34);
             viewEnrollmentsToolStripMenuItem.Text = "View Enrollments";
             // 
+            // LblAdminGeneral
+            // 
+            LblAdminGeneral.BackColor = Color.DarkGray;
+            LblAdminGeneral.Location = new Point(50, 187);
+            LblAdminGeneral.Name = "LblAdminGeneral";
+            LblAdminGeneral.Size = new Size(197, 59);
+            LblAdminGeneral.TabIndex = 9;
+            LblAdminGeneral.Text = "Admin General";
+            LblAdminGeneral.UseVisualStyleBackColor = false;
+            LblAdminGeneral.Click += LblAdminGeneral_Click;
+            // 
             // frmAdminDashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1131, 672);
+            Controls.Add(LblAdminGeneral);
             Controls.Add(mstFrmAdminDashboard);
             Controls.Add(lblSelectTemplate);
-            Controls.Add(cmbTemplates);
             Controls.Add(dgvUsers);
             Controls.Add(btnApproveRequests);
             Controls.Add(btnViewLogs);
@@ -239,7 +240,6 @@
         private Button btnViewLogs;
         private Button btnApproveRequests;
         private DataGridView dgvUsers;
-        private ComboBox cmbTemplates;
         private Label lblSelectTemplate;
         private MenuStrip mstFrmAdminDashboard;
         private ToolStripMenuItem coursesToolStripMenuItem;
@@ -251,5 +251,6 @@
         private ToolStripMenuItem enrollmentsToolStripMenuItem;
         private ToolStripMenuItem enrollStudentToolStripMenuItem;
         private ToolStripMenuItem viewEnrollmentsToolStripMenuItem;
+        private Button LblAdminGeneral;
     }
 }
