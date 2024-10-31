@@ -82,7 +82,7 @@
             btnCreateUser.BackColor = Color.LightGreen;
             btnCreateUser.Location = new Point(730, 50);
             btnCreateUser.Name = "btnCreateUser";
-            btnCreateUser.Size = new Size(111, 42);
+            btnCreateUser.Size = new Size(111, 48);
             btnCreateUser.TabIndex = 1;
             btnCreateUser.Text = "Create User";
             btnCreateUser.UseVisualStyleBackColor = false;
@@ -91,9 +91,9 @@
             // btnEditUser
             // 
             btnEditUser.BackColor = Color.LightYellow;
-            btnEditUser.Location = new Point(730, 98);
+            btnEditUser.Location = new Point(730, 104);
             btnEditUser.Name = "btnEditUser";
-            btnEditUser.Size = new Size(111, 42);
+            btnEditUser.Size = new Size(111, 48);
             btnEditUser.TabIndex = 2;
             btnEditUser.Text = "Edit User";
             btnEditUser.UseVisualStyleBackColor = false;
@@ -101,9 +101,9 @@
             // btnDeleteUser
             // 
             btnDeleteUser.BackColor = Color.LightCoral;
-            btnDeleteUser.Location = new Point(730, 146);
+            btnDeleteUser.Location = new Point(730, 158);
             btnDeleteUser.Name = "btnDeleteUser";
-            btnDeleteUser.Size = new Size(111, 42);
+            btnDeleteUser.Size = new Size(111, 48);
             btnDeleteUser.TabIndex = 3;
             btnDeleteUser.Text = "Delete User";
             btnDeleteUser.UseVisualStyleBackColor = false;

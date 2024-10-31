@@ -61,7 +61,7 @@
             // 
             // btnCreateCourse
             // 
-            btnCreateCourse.BackColor = Color.LightYellow;
+            btnCreateCourse.BackColor = Color.Blue;
             btnCreateCourse.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreateCourse.Location = new Point(247, 149);
             btnCreateCourse.Name = "btnCreateCourse";
@@ -83,7 +83,7 @@
             // 
             // btnCreateIntervention
             // 
-            btnCreateIntervention.BackColor = Color.LightCoral;
+            btnCreateIntervention.BackColor = Color.Orange;
             btnCreateIntervention.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreateIntervention.Location = new Point(247, 285);
             btnCreateIntervention.Name = "btnCreateIntervention";
@@ -94,7 +94,7 @@
             // 
             // btnGenerateCertificate
             // 
-            btnGenerateCertificate.BackColor = Color.LightYellow;
+            btnGenerateCertificate.BackColor = Color.Yellow;
             btnGenerateCertificate.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnGenerateCertificate.Location = new Point(247, 355);
             btnGenerateCertificate.Name = "btnGenerateCertificate";

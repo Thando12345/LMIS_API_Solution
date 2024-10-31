@@ -11,5 +11,10 @@
         {
 
         }
+
+        private void dgvApprovalRequests_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

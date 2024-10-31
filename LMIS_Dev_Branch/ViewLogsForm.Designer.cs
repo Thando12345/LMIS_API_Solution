@@ -40,6 +40,7 @@
             lblUserFilter = new Label();
             cmbUserFilter = new ComboBox();
             btnSearchLogs = new Button();
+            txtSearch = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dgvLogs).BeginInit();
             SuspendLayout();
             // 
@@ -135,18 +136,26 @@
             // btnSearchLogs
             // 
             btnSearchLogs.BackColor = Color.LightBlue;
-            btnSearchLogs.Location = new Point(394, 55);
+            btnSearchLogs.Location = new Point(418, 138);
             btnSearchLogs.Name = "btnSearchLogs";
             btnSearchLogs.Size = new Size(112, 40);
             btnSearchLogs.TabIndex = 7;
             btnSearchLogs.Text = "Search Logs";
             btnSearchLogs.UseVisualStyleBackColor = false;
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(550, 141);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(200, 31);
+            txtSearch.TabIndex = 8;
+            // 
             // FrmViewLogsForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1066, 616);
+            Controls.Add(txtSearch);
             Controls.Add(btnSearchLogs);
             Controls.Add(cmbUserFilter);
             Controls.Add(lblUserFilter);
@@ -176,5 +185,6 @@
         private Label lblUserFilter;
         private ComboBox cmbUserFilter;
         private Button btnSearchLogs;
+        private TextBox txtSearch;
     }
 }
