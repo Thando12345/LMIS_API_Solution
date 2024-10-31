@@ -86,9 +86,9 @@
             // btnAddTemplate
             // 
             btnAddTemplate.BackColor = Color.LightGreen;
-            btnAddTemplate.Location = new Point(616, 100);
+            btnAddTemplate.Location = new Point(620, 100);
             btnAddTemplate.Name = "btnAddTemplate";
-            btnAddTemplate.Size = new Size(147, 42);
+            btnAddTemplate.Size = new Size(147, 48);
             btnAddTemplate.TabIndex = 1;
             btnAddTemplate.Text = "Add Template";
             btnAddTemplate.UseVisualStyleBackColor = false;
@@ -97,9 +97,9 @@
             // btnEditTemplate
             // 
             btnEditTemplate.BackColor = Color.LightYellow;
-            btnEditTemplate.Location = new Point(620, 150);
+            btnEditTemplate.Location = new Point(620, 154);
             btnEditTemplate.Name = "btnEditTemplate";
-            btnEditTemplate.Size = new Size(147, 42);
+            btnEditTemplate.Size = new Size(147, 48);
             btnEditTemplate.TabIndex = 2;
             btnEditTemplate.Text = "Edit Template";
             btnEditTemplate.UseVisualStyleBackColor = false;
@@ -107,9 +107,9 @@
             // btnDeleteTemplate
             // 
             btnDeleteTemplate.BackColor = Color.LightCoral;
-            btnDeleteTemplate.Location = new Point(620, 200);
+            btnDeleteTemplate.Location = new Point(620, 204);
             btnDeleteTemplate.Name = "btnDeleteTemplate";
-            btnDeleteTemplate.Size = new Size(147, 42);
+            btnDeleteTemplate.Size = new Size(147, 48);
             btnDeleteTemplate.TabIndex = 3;
             btnDeleteTemplate.Text = "Delete Template";
             btnDeleteTemplate.UseVisualStyleBackColor = false;

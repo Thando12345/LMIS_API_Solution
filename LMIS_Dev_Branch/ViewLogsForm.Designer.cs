@@ -119,7 +119,7 @@
             // lblUserFilter
             // 
             lblUserFilter.AutoSize = true;
-            lblUserFilter.Location = new Point(50, 103);
+            lblUserFilter.Location = new Point(50, 107);
             lblUserFilter.Name = "lblUserFilter";
             lblUserFilter.Size = new Size(90, 25);
             lblUserFilter.TabIndex = 5;
@@ -128,7 +128,7 @@
             // cmbUserFilter
             // 
             cmbUserFilter.FormattingEnabled = true;
-            cmbUserFilter.Location = new Point(50, 143);
+            cmbUserFilter.Location = new Point(50, 147);
             cmbUserFilter.Name = "cmbUserFilter";
             cmbUserFilter.Size = new Size(163, 33);
             cmbUserFilter.TabIndex = 6;
@@ -136,7 +136,7 @@
             // btnSearchLogs
             // 
             btnSearchLogs.BackColor = Color.LightBlue;
-            btnSearchLogs.Location = new Point(418, 138);
+            btnSearchLogs.Location = new Point(417, 144);
             btnSearchLogs.Name = "btnSearchLogs";
             btnSearchLogs.Size = new Size(112, 40);
             btnSearchLogs.TabIndex = 7;
@@ -145,10 +145,11 @@
             // 
             // txtSearch
             // 
-            txtSearch.Location = new Point(550, 141);
+            txtSearch.Location = new Point(548, 149);
             txtSearch.Name = "txtSearch";
             txtSearch.Size = new Size(200, 31);
             txtSearch.TabIndex = 8;
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // FrmViewLogsForm
             // 
