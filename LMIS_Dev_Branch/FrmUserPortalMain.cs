@@ -22,5 +22,11 @@ namespace LMIS_Dev_Branch
             frmLearnerInformation frmLearnerInformation = new frmLearnerInformation();
             frmLearnerInformation.ShowDialog();
         }
+
+        private void btnCreateCourse_Click(object sender, EventArgs e)
+        {
+            frmCourses frmCourses = new frmCourses();
+            frmCourses.ShowDialog();
+        }
     }
 }

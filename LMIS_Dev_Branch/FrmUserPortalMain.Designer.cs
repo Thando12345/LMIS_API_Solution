@@ -69,6 +69,7 @@
             btnCreateCourse.TabIndex = 2;
             btnCreateCourse.Text = "Create Course";
             btnCreateCourse.UseVisualStyleBackColor = false;
+            btnCreateCourse.Click += btnCreateCourse_Click;
             // 
             // btnAddPractitioner
             // 

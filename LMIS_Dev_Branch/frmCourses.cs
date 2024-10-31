@@ -16,5 +16,20 @@ namespace LMIS_Dev_Branch
         {
             InitializeComponent();
         }
+
+        private void lblCourseListHeader_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNavigation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCourses_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

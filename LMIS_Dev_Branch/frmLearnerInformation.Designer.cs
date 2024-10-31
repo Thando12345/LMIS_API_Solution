@@ -113,7 +113,6 @@
             btnEdit.Size = new Size(80, 35);
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit ";
-            toolTip1.SetToolTip(btnEdit, "Edit learner information");
             btnEdit.UseVisualStyleBackColor = false;
             btnEdit.Click += btnEdit_Click;
             // 
@@ -126,7 +125,6 @@
             btnUploadID.Size = new Size(120, 42);
             btnUploadID.TabIndex = 7;
             btnUploadID.Text = "Upload ID";
-            toolTip1.SetToolTip(btnUploadID, "Upload the learner's ID document.");
             btnUploadID.UseVisualStyleBackColor = false;
             // 
             // btnUploadQualification
@@ -138,7 +136,6 @@
             btnUploadQualification.Size = new Size(200, 42);
             btnUploadQualification.TabIndex = 8;
             btnUploadQualification.Text = "Upload Qualifications";
-            toolTip1.SetToolTip(btnUploadQualification, "Upload any relevant qualifications for the learner");
             btnUploadQualification.UseVisualStyleBackColor = false;
             btnUploadQualification.Click += btnUploadQualification_Click;
             // 
@@ -222,7 +219,7 @@
             // 
             cmbInter.ForeColor = Color.DarkGray;
             cmbInter.FormattingEnabled = true;
-            cmbInter.Items.AddRange(new object[] { "Male", "Female", "Other (specify)" });
+            cmbInter.Items.AddRange(new object[] { "X", "Y", "Z" });
             cmbInter.Location = new Point(330, 648);
             cmbInter.Name = "cmbInter";
             cmbInter.Size = new Size(200, 33);
@@ -255,7 +252,6 @@
             btnDelete.Size = new Size(80, 35);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
-            toolTip2.SetToolTip(btnDelete, "Delete this learner record");
             btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
@@ -268,7 +264,6 @@
             btnSave.Size = new Size(111, 42);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
-            toolTip2.SetToolTip(btnSave, "Save the current learner’s information");
             btnSave.UseVisualStyleBackColor = false;
             // 
             // dgvLearnerList
