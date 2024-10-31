@@ -127,6 +127,10 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "AdminDashboard.Designer.cs",
@@ -136,12 +140,7 @@
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\AdminDashboard.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:23:56.966Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "WhenOpened": "2024-10-30T13:23:56.966Z"
             },
             {
               "$type": "Document",
@@ -214,8 +213,7 @@
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LoginForm.cs [Design]",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T07:06:24.359Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-30T07:06:24.359Z"
             },
             {
               "$type": "Document",
@@ -296,8 +294,7 @@
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\AdminDashboard.cs [Design]",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\AdminDashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:58:19.306Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-29T19:58:19.306Z"
             },
             {
               "$type": "Document",

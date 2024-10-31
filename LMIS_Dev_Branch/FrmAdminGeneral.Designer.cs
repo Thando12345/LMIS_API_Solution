@@ -111,7 +111,7 @@
             btnEditRole.BackColor = Color.Teal;
             btnEditRole.Location = new Point(567, 151);
             btnEditRole.Name = "btnEditRole";
-            btnEditRole.Size = new Size(112, 42);
+            btnEditRole.Size = new Size(112, 40);
             btnEditRole.TabIndex = 3;
             btnEditRole.Text = "Edit";
             btnEditRole.UseVisualStyleBackColor = false;
@@ -133,7 +133,7 @@
             btnCreateUsers.BackColor = Color.Teal;
             btnCreateUsers.Location = new Point(50, 400);
             btnCreateUsers.Name = "btnCreateUsers";
-            btnCreateUsers.Size = new Size(180, 40);
+            btnCreateUsers.Size = new Size(180, 48);
             btnCreateUsers.TabIndex = 5;
             btnCreateUsers.Text = "Create Users";
             btnCreateUsers.UseVisualStyleBackColor = false;
@@ -143,7 +143,7 @@
             btnLoadTemplates.BackColor = Color.Blue;
             btnLoadTemplates.Location = new Point(250, 400);
             btnLoadTemplates.Name = "btnLoadTemplates";
-            btnLoadTemplates.Size = new Size(180, 40);
+            btnLoadTemplates.Size = new Size(180, 48);
             btnLoadTemplates.TabIndex = 6;
             btnLoadTemplates.Text = "Load All Templates";
             btnLoadTemplates.UseVisualStyleBackColor = false;
@@ -153,7 +153,7 @@
             btnViewLogs.BackColor = Color.Orange;
             btnViewLogs.Location = new Point(450, 400);
             btnViewLogs.Name = "btnViewLogs";
-            btnViewLogs.Size = new Size(180, 40);
+            btnViewLogs.Size = new Size(180, 48);
             btnViewLogs.TabIndex = 7;
             btnViewLogs.Text = "View Logs";
             btnViewLogs.UseVisualStyleBackColor = false;
@@ -163,7 +163,7 @@
             btnAuthorizeCertificates.BackColor = Color.Blue;
             btnAuthorizeCertificates.Location = new Point(650, 400);
             btnAuthorizeCertificates.Name = "btnAuthorizeCertificates";
-            btnAuthorizeCertificates.Size = new Size(190, 40);
+            btnAuthorizeCertificates.Size = new Size(190, 48);
             btnAuthorizeCertificates.TabIndex = 8;
             btnAuthorizeCertificates.Text = "Authorize Certificates";
             btnAuthorizeCertificates.UseVisualStyleBackColor = false;
@@ -174,7 +174,7 @@
             btnAuthorizeCourses.BackColor = Color.Green;
             btnAuthorizeCourses.Location = new Point(850, 400);
             btnAuthorizeCourses.Name = "btnAuthorizeCourses";
-            btnAuthorizeCourses.Size = new Size(190, 40);
+            btnAuthorizeCourses.Size = new Size(190, 48);
             btnAuthorizeCourses.TabIndex = 9;
             btnAuthorizeCourses.Text = "Authorize Courses\n";
             btnAuthorizeCourses.UseVisualStyleBackColor = false;
@@ -184,7 +184,7 @@
             btnCreateUserRole.BackColor = Color.Green;
             btnCreateUserRole.Location = new Point(50, 470);
             btnCreateUserRole.Name = "btnCreateUserRole";
-            btnCreateUserRole.Size = new Size(190, 40);
+            btnCreateUserRole.Size = new Size(190, 48);
             btnCreateUserRole.TabIndex = 10;
             btnCreateUserRole.Text = "Create User Role";
             btnCreateUserRole.UseVisualStyleBackColor = false;
@@ -237,7 +237,7 @@
             btnEdit.BackColor = Color.Teal;
             btnEdit.Location = new Point(567, 660);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(112, 42);
+            btnEdit.Size = new Size(112, 40);
             btnEdit.TabIndex = 13;
             btnEdit.Text = "Edit";
             btnEdit.UseVisualStyleBackColor = false;
@@ -248,7 +248,7 @@
             btnLoadAccreditationTemplates.BackColor = Color.Blue;
             btnLoadAccreditationTemplates.Location = new Point(50, 750);
             btnLoadAccreditationTemplates.Name = "btnLoadAccreditationTemplates";
-            btnLoadAccreditationTemplates.Size = new Size(262, 42);
+            btnLoadAccreditationTemplates.Size = new Size(262, 48);
             btnLoadAccreditationTemplates.TabIndex = 14;
             btnLoadAccreditationTemplates.Text = "Load Accreditation Templates\n";
             btnLoadAccreditationTemplates.UseVisualStyleBackColor = false;
