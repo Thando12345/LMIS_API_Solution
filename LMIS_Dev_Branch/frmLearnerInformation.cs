@@ -72,5 +72,50 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void chkDeclaration_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkDeclaration_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblStartDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTrainingProvider_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEmailAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAlternateID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

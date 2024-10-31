@@ -38,6 +38,12 @@
             txtIdentityNumber = new TextBox();
             txtAlternateID = new TextBox();
             textBox1 = new TextBox();
+            lblStartDate = new DateTimePicker();
+            chkDeclaration = new CheckBox();
+            txtHighestEducation = new TextBox();
+            txtLearningProgramme = new TextBox();
+            dateTimePicker1 = new DateTimePicker();
+            cmbInter = new ComboBox();
             btnEnroll = new Button();
             toolTip2 = new ToolTip(components);
             btnDelete = new Button();
@@ -65,11 +71,11 @@
             txtPhoneNumber = new TextBox();
             txtEmailAddress = new TextBox();
             txtGrantContractNumber = new TextBox();
-            txtIntervention = new TextBox();
             txtTrainingProvider = new TextBox();
-            txtProgrammeDates = new TextBox();
             textBox3 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            txtLastSchoolAttended = new TextBox();
+            lblStatDate = new Label();
+            lblEndDate = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvLearnerList).BeginInit();
             SuspendLayout();
             // 
@@ -115,7 +121,7 @@
             // 
             btnUploadID.BackColor = Color.Teal;
             btnUploadID.ForeColor = Color.White;
-            btnUploadID.Location = new Point(171, 782);
+            btnUploadID.Location = new Point(167, 818);
             btnUploadID.Name = "btnUploadID";
             btnUploadID.Size = new Size(120, 42);
             btnUploadID.TabIndex = 7;
@@ -127,7 +133,7 @@
             // 
             btnUploadQualification.BackColor = Color.Teal;
             btnUploadQualification.ForeColor = Color.White;
-            btnUploadQualification.Location = new Point(311, 782);
+            btnUploadQualification.Location = new Point(302, 818);
             btnUploadQualification.Name = "btnUploadQualification";
             btnUploadQualification.Size = new Size(200, 42);
             btnUploadQualification.TabIndex = 8;
@@ -144,7 +150,6 @@
             txtIdentityNumber.PlaceholderText = "Identity Number";
             txtIdentityNumber.Size = new Size(200, 31);
             txtIdentityNumber.TabIndex = 13;
-            toolTip1.SetToolTip(txtIdentityNumber, "Enter the 13-digit South African ID number. Required if the learner is an RSA citizen.");
             // 
             // txtAlternateID
             // 
@@ -154,7 +159,7 @@
             txtAlternateID.PlaceholderText = "Alternate ID";
             txtAlternateID.Size = new Size(200, 31);
             txtAlternateID.TabIndex = 14;
-            toolTip1.SetToolTip(txtAlternateID, "For non-RSA citizens, enter an alternate ID.");
+            txtAlternateID.TextChanged += txtAlternateID_TextChanged;
             // 
             // textBox1
             // 
@@ -165,6 +170,64 @@
             textBox1.Size = new Size(0, 31);
             textBox1.TabIndex = 15;
             toolTip1.SetToolTip(textBox1, "For non-RSA citizens, enter an alternate ID.");
+            // 
+            // lblStartDate
+            // 
+            lblStartDate.Location = new Point(444, 701);
+            lblStartDate.Name = "lblStartDate";
+            lblStartDate.Size = new Size(246, 31);
+            lblStartDate.TabIndex = 34;
+            lblStartDate.ValueChanged += lblStartDate_ValueChanged;
+            // 
+            // chkDeclaration
+            // 
+            chkDeclaration.AutoSize = true;
+            chkDeclaration.Font = new Font("Arial Narrow", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkDeclaration.Location = new Point(610, 827);
+            chkDeclaration.Name = "chkDeclaration";
+            chkDeclaration.Size = new Size(457, 28);
+            chkDeclaration.TabIndex = 35;
+            chkDeclaration.Text = "I hereby declare the information above is true and correct.";
+            toolTip1.SetToolTip(chkDeclaration, "Check this box to confirm the information is accurate.");
+            chkDeclaration.UseVisualStyleBackColor = true;
+            chkDeclaration.CheckedChanged += chkDeclaration_CheckedChanged_1;
+            // 
+            // txtHighestEducation
+            // 
+            txtHighestEducation.ForeColor = Color.DarkGray;
+            txtHighestEducation.Location = new Point(50, 756);
+            txtHighestEducation.Name = "txtHighestEducation";
+            txtHighestEducation.PlaceholderText = "Highest Level of Education Attained";
+            txtHighestEducation.Size = new Size(300, 31);
+            txtHighestEducation.TabIndex = 36;
+            txtHighestEducation.TextChanged += textBox4_TextChanged;
+            // 
+            // txtLearningProgramme
+            // 
+            txtLearningProgramme.ForeColor = Color.DarkGray;
+            txtLearningProgramme.Location = new Point(50, 703);
+            txtLearningProgramme.Name = "txtLearningProgramme";
+            txtLearningProgramme.PlaceholderText = "Learning Programme";
+            txtLearningProgramme.Size = new Size(250, 31);
+            txtLearningProgramme.TabIndex = 39;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(883, 701);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(246, 31);
+            dateTimePicker1.TabIndex = 42;
+            // 
+            // cmbInter
+            // 
+            cmbInter.ForeColor = Color.DarkGray;
+            cmbInter.FormattingEnabled = true;
+            cmbInter.Items.AddRange(new object[] { "Male", "Female", "Other (specify)" });
+            cmbInter.Location = new Point(330, 648);
+            cmbInter.Name = "cmbInter";
+            cmbInter.Size = new Size(200, 33);
+            cmbInter.TabIndex = 43;
+            cmbInter.Text = " Intervention";
             // 
             // btnEnroll
             // 
@@ -200,7 +263,7 @@
             // 
             btnSave.BackColor = Color.Blue;
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(50, 782);
+            btnSave.Location = new Point(50, 818);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(111, 42);
             btnSave.TabIndex = 6;
@@ -321,6 +384,7 @@
             cmbGender.Size = new Size(200, 33);
             cmbGender.TabIndex = 19;
             cmbGender.Text = "Gender";
+            cmbGender.SelectedIndexChanged += cmbGender_SelectedIndexChanged;
             // 
             // cmbRace
             // 
@@ -408,6 +472,7 @@
             txtEmailAddress.PlaceholderText = "Email Address";
             txtEmailAddress.Size = new Size(300, 31);
             txtEmailAddress.TabIndex = 28;
+            txtEmailAddress.TextChanged += txtEmailAddress_TextChanged;
             // 
             // txtGrantContractNumber
             // 
@@ -418,15 +483,6 @@
             txtGrantContractNumber.Size = new Size(250, 31);
             txtGrantContractNumber.TabIndex = 29;
             // 
-            // txtIntervention
-            // 
-            txtIntervention.ForeColor = Color.DarkGray;
-            txtIntervention.Location = new Point(330, 650);
-            txtIntervention.Name = "txtIntervention";
-            txtIntervention.PlaceholderText = " Intervention";
-            txtIntervention.Size = new Size(250, 31);
-            txtIntervention.TabIndex = 30;
-            // 
             // txtTrainingProvider
             // 
             txtTrainingProvider.ForeColor = Color.DarkGray;
@@ -435,17 +491,7 @@
             txtTrainingProvider.PlaceholderText = "Training Provider Name";
             txtTrainingProvider.Size = new Size(250, 31);
             txtTrainingProvider.TabIndex = 31;
-            // 
-            // txtProgrammeDates
-            // 
-            txtProgrammeDates.ForeColor = Color.DarkGray;
-            txtProgrammeDates.Location = new Point(50, 700);
-            txtProgrammeDates.Name = "txtProgrammeDates";
-            txtProgrammeDates.PlaceholderText = "Programme Dates";
-            txtProgrammeDates.ReadOnly = true;
-            txtProgrammeDates.Size = new Size(200, 31);
-            txtProgrammeDates.TabIndex = 32;
-            txtProgrammeDates.TextChanged += txtProgrammeDates_TextChanged;
+            txtTrainingProvider.TextChanged += txtTrainingProvider_TextChanged;
             // 
             // textBox3
             // 
@@ -456,23 +502,50 @@
             textBox3.Size = new Size(0, 31);
             textBox3.TabIndex = 33;
             // 
-            // dateTimePicker1
+            // txtLastSchoolAttended
             // 
-            dateTimePicker1.Location = new Point(256, 700);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(246, 31);
-            dateTimePicker1.TabIndex = 34;
+            txtLastSchoolAttended.ForeColor = Color.DarkGray;
+            txtLastSchoolAttended.Location = new Point(390, 756);
+            txtLastSchoolAttended.Name = "txtLastSchoolAttended";
+            txtLastSchoolAttended.PlaceholderText = "Enter the name of the last school attended. If not a high school, enter the primary school name.";
+            txtLastSchoolAttended.Size = new Size(760, 31);
+            txtLastSchoolAttended.TabIndex = 37;
+            txtLastSchoolAttended.TextChanged += textBox4_TextChanged_1;
+            // 
+            // lblStatDate
+            // 
+            lblStatDate.AutoSize = true;
+            lblStatDate.Location = new Point(330, 706);
+            lblStatDate.Name = "lblStatDate";
+            lblStatDate.Size = new Size(90, 25);
+            lblStatDate.TabIndex = 40;
+            lblStatDate.Text = "Start Date";
+            // 
+            // lblEndDate
+            // 
+            lblEndDate.AutoSize = true;
+            lblEndDate.Location = new Point(776, 707);
+            lblEndDate.Name = "lblEndDate";
+            lblEndDate.Size = new Size(84, 25);
+            lblEndDate.TabIndex = 41;
+            lblEndDate.Text = "End Date";
             // 
             // frmLearnerInformation
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1178, 863);
+            ClientSize = new Size(1178, 885);
+            Controls.Add(cmbInter);
             Controls.Add(dateTimePicker1);
+            Controls.Add(lblEndDate);
+            Controls.Add(lblStatDate);
+            Controls.Add(txtLearningProgramme);
+            Controls.Add(txtLastSchoolAttended);
+            Controls.Add(txtHighestEducation);
+            Controls.Add(chkDeclaration);
+            Controls.Add(lblStartDate);
             Controls.Add(textBox3);
-            Controls.Add(txtProgrammeDates);
             Controls.Add(txtTrainingProvider);
-            Controls.Add(txtIntervention);
             Controls.Add(txtGrantContractNumber);
             Controls.Add(txtEmailAddress);
             Controls.Add(txtPhoneNumber);
@@ -548,10 +621,17 @@
         private TextBox txtPhoneNumber;
         private TextBox txtEmailAddress;
         private TextBox txtGrantContractNumber;
-        private TextBox txtIntervention;
         private TextBox txtTrainingProvider;
         private TextBox txtProgrammeDates;
         private TextBox textBox3;
+        private DateTimePicker lblStartDate;
+        private CheckBox chkDeclaration;
+        private TextBox txtHighestEducation;
+        private TextBox txtLastSchoolAttended;
+        private TextBox txtLearningProgramme;
+        private Label lblStatDate;
+        private Label lblEndDate;
         private DateTimePicker dateTimePicker1;
+        private ComboBox cmbInter;
     }
 }
