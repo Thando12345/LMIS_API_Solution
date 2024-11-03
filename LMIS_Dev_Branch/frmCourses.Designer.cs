@@ -1,4 +1,4 @@
-﻿namespace LMIS_Dev_Branch
+﻿    namespace LMIS_Dev_Branch
 {
     partial class frmCourses
     {
@@ -35,12 +35,21 @@
             lblAccreditedLearnership = new Label();
             lblNonAccreditedPrograms = new Label();
             btnCreateAccreditedC = new Button();
+            dgvCourses = new DataGridView();
+            CourseName = new DataGridViewTextBoxColumn();
+            CourseType = new DataGridViewTextBoxColumn();
+            Credits = new DataGridViewTextBoxColumn();
+            NQFLevel = new DataGridViewTextBoxColumn();
+            IsAccredited = new DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)dgvCourses).BeginInit();
             SuspendLayout();
             // 
             // lblCourseListHeader
             // 
             lblCourseListHeader.AutoSize = true;
+            lblCourseListHeader.BackColor = Color.Orange;
             lblCourseListHeader.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCourseListHeader.ForeColor = Color.White;
             lblCourseListHeader.Location = new Point(50, 20);
             lblCourseListHeader.Name = "lblCourseListHeader";
             lblCourseListHeader.Size = new Size(195, 37);
@@ -111,11 +120,63 @@
             btnCreateAccreditedC.Text = "Create Accredited Course";
             btnCreateAccreditedC.UseVisualStyleBackColor = false;
             // 
+            // dgvCourses
+            // 
+            dgvCourses.AllowUserToAddRows = false;
+            dgvCourses.AllowUserToDeleteRows = false;
+            dgvCourses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCourses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvCourses.Columns.AddRange(new DataGridViewColumn[] { CourseName, CourseType, Credits, NQFLevel, IsAccredited });
+            dgvCourses.Location = new Point(50, 420);
+            dgvCourses.Name = "dgvCourses";
+            dgvCourses.ReadOnly = true;
+            dgvCourses.RowHeadersWidth = 62;
+            dgvCourses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCourses.Size = new Size(800, 150);
+            dgvCourses.TabIndex = 8;
+            dgvCourses.CellContentClick += dgvCourses_CellContentClick;
+            // 
+            // CourseName
+            // 
+            CourseName.HeaderText = "Course Name";
+            CourseName.MinimumWidth = 8;
+            CourseName.Name = "CourseName";
+            CourseName.ReadOnly = true;
+            // 
+            // CourseType
+            // 
+            CourseType.HeaderText = "Course Type";
+            CourseType.MinimumWidth = 8;
+            CourseType.Name = "CourseType";
+            CourseType.ReadOnly = true;
+            // 
+            // Credits
+            // 
+            Credits.HeaderText = "Credits";
+            Credits.MinimumWidth = 8;
+            Credits.Name = "Credits";
+            Credits.ReadOnly = true;
+            // 
+            // NQFLevel
+            // 
+            NQFLevel.HeaderText = "NQFLevel";
+            NQFLevel.MinimumWidth = 8;
+            NQFLevel.Name = "NQFLevel";
+            NQFLevel.ReadOnly = true;
+            // 
+            // IsAccredited
+            // 
+            IsAccredited.HeaderText = "IsAccredited";
+            IsAccredited.MinimumWidth = 8;
+            IsAccredited.Name = "IsAccredited";
+            IsAccredited.ReadOnly = true;
+            // 
             // frmCourses
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(927, 450);
+            ClientSize = new Size(927, 685);
+            Controls.Add(dgvCourses);
             Controls.Add(btnCreateAccreditedC);
             Controls.Add(lblNonAccreditedPrograms);
             Controls.Add(lblAccreditedLearnership);
@@ -124,8 +185,9 @@
             Controls.Add(btnNavigation);
             Controls.Add(lblCourseListHeader);
             Name = "frmCourses";
-            Text = "frmCourses";
+            Text = "Course Management";
             Load += frmCourses_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvCourses).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -139,5 +201,11 @@
         private Label lblAccreditedLearnership;
         private Label lblNonAccreditedPrograms;
         private Button btnCreateAccreditedC;
+        private DataGridView dgvCourses;
+        private DataGridViewTextBoxColumn CourseName;
+        private DataGridViewTextBoxColumn CourseType;
+        private DataGridViewTextBoxColumn Credits;
+        private DataGridViewTextBoxColumn NQFLevel;
+        private DataGridViewTextBoxColumn IsAccredited;
     }
 }
