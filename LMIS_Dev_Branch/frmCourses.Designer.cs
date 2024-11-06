@@ -1,4 +1,4 @@
-﻿    namespace LMIS_Dev_Branch
+﻿namespace LMIS_Dev_Branch
 {
     partial class frmCourses
     {
@@ -41,6 +41,13 @@
             Credits = new DataGridViewTextBoxColumn();
             NQFLevel = new DataGridViewTextBoxColumn();
             IsAccredited = new DataGridViewTextBoxColumn();
+            btnCreateCourse = new Button();
+            btnCreateNonAccreditedCourse = new Button();
+            txtCourseName = new TextBox();
+            txtCourseType = new TextBox();
+            textBox1 = new TextBox();
+            txtNQFLevel = new TextBox();
+            chkIsAccredited = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dgvCourses).BeginInit();
             SuspendLayout();
             // 
@@ -55,7 +62,6 @@
             lblCourseListHeader.Size = new Size(195, 37);
             lblCourseListHeader.TabIndex = 1;
             lblCourseListHeader.Text = "Course List";
-            //lblCourseListHeader.Click += lblCourseListHeader_Click;
             // 
             // btnNavigation
             // 
@@ -63,7 +69,7 @@
             btnNavigation.ForeColor = Color.White;
             btnNavigation.Location = new Point(700, 20);
             btnNavigation.Name = "btnNavigation";
-            btnNavigation.Size = new Size(112, 42);
+            btnNavigation.Size = new Size(117, 42);
             btnNavigation.TabIndex = 2;
             btnNavigation.Text = "Navigate";
             btnNavigation.UseVisualStyleBackColor = false;
@@ -75,7 +81,7 @@
             cmbSortingOptions.Items.AddRange(new object[] { "Alphabetical", "Date Created", "Most Recent" });
             cmbSortingOptions.Location = new Point(700, 68);
             cmbSortingOptions.Name = "cmbSortingOptions";
-            cmbSortingOptions.Size = new Size(182, 33);
+            cmbSortingOptions.Size = new Size(182, 35);
             cmbSortingOptions.TabIndex = 3;
             cmbSortingOptions.Text = "Sort by";
             // 
@@ -119,6 +125,7 @@
             btnCreateAccreditedC.TabIndex = 7;
             btnCreateAccreditedC.Text = "Create Accredited Course";
             btnCreateAccreditedC.UseVisualStyleBackColor = false;
+            btnCreateAccreditedC.Click += btnCreateAccreditedC_Click;
             // 
             // dgvCourses
             // 
@@ -134,7 +141,6 @@
             dgvCourses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCourses.Size = new Size(800, 150);
             dgvCourses.TabIndex = 8;
-          //  dgvCourses.CellContentClick += dgvCourses_CellContentClick;
             // 
             // CourseName
             // 
@@ -159,23 +165,99 @@
             // 
             // NQFLevel
             // 
-            NQFLevel.HeaderText = "NQFLevel";
+            NQFLevel.HeaderText = "NQF Level";
             NQFLevel.MinimumWidth = 8;
             NQFLevel.Name = "NQFLevel";
             NQFLevel.ReadOnly = true;
             // 
             // IsAccredited
             // 
-            IsAccredited.HeaderText = "IsAccredited";
+            IsAccredited.HeaderText = "Is Accredited";
             IsAccredited.MinimumWidth = 8;
             IsAccredited.Name = "IsAccredited";
             IsAccredited.ReadOnly = true;
             // 
+            // btnCreateCourse
+            // 
+            btnCreateCourse.BackColor = Color.Blue;
+            btnCreateCourse.ForeColor = Color.White;
+            btnCreateCourse.Location = new Point(652, 599);
+            btnCreateCourse.Name = "btnCreateCourse";
+            btnCreateCourse.Size = new Size(198, 38);
+            btnCreateCourse.TabIndex = 9;
+            btnCreateCourse.Text = "Create New Course";
+            btnCreateCourse.UseVisualStyleBackColor = false;
+            btnCreateCourse.Click += btnCreateCourse_Click;
+            // 
+            // btnCreateNonAccreditedCourse
+            // 
+            btnCreateNonAccreditedCourse.BackColor = Color.Blue;
+            btnCreateNonAccreditedCourse.ForeColor = Color.White;
+            btnCreateNonAccreditedCourse.Location = new Point(312, 360);
+            btnCreateNonAccreditedCourse.Name = "btnCreateNonAccreditedCourse";
+            btnCreateNonAccreditedCourse.Size = new Size(271, 42);
+            btnCreateNonAccreditedCourse.TabIndex = 10;
+            btnCreateNonAccreditedCourse.Text = "Create Non-Accredited Course";
+            btnCreateNonAccreditedCourse.UseVisualStyleBackColor = false;
+            btnCreateNonAccreditedCourse.Click += btnCreateNonAccreditedCourse_Click;
+            // 
+            // txtCourseName
+            // 
+            txtCourseName.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCourseName.Location = new Point(357, 161);
+            txtCourseName.Name = "txtCourseName";
+            txtCourseName.PlaceholderText = "Course Name";
+            txtCourseName.Size = new Size(200, 35);
+            txtCourseName.TabIndex = 11;
+            // 
+            // txtCourseType
+            // 
+            txtCourseType.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCourseType.Location = new Point(357, 201);
+            txtCourseType.Name = "txtCourseType";
+            txtCourseType.PlaceholderText = "Course Type";
+            txtCourseType.Size = new Size(200, 35);
+            txtCourseType.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(0, 0);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 31);
+            textBox1.TabIndex = 0;
+            // 
+            // txtNQFLevel
+            // 
+            txtNQFLevel.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtNQFLevel.Location = new Point(357, 241);
+            txtNQFLevel.Name = "txtNQFLevel";
+            txtNQFLevel.PlaceholderText = "NQF Level";
+            txtNQFLevel.Size = new Size(200, 35);
+            txtNQFLevel.TabIndex = 13;
+            // 
+            // chkIsAccredited
+            // 
+            chkIsAccredited.AutoSize = true;
+            chkIsAccredited.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkIsAccredited.Location = new Point(357, 281);
+            chkIsAccredited.Name = "chkIsAccredited";
+            chkIsAccredited.Size = new Size(235, 31);
+            chkIsAccredited.TabIndex = 14;
+            chkIsAccredited.Text = "Accredited Course";
+            chkIsAccredited.UseVisualStyleBackColor = true;
+            // 
             // frmCourses
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(14F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(927, 685);
+            BackColor = Color.LightGray;
+            ClientSize = new Size(904, 675);
+            Controls.Add(chkIsAccredited);
+            Controls.Add(txtNQFLevel);
+            Controls.Add(txtCourseType);
+            Controls.Add(txtCourseName);
+            Controls.Add(btnCreateNonAccreditedCourse);
+            Controls.Add(btnCreateCourse);
             Controls.Add(dgvCourses);
             Controls.Add(btnCreateAccreditedC);
             Controls.Add(lblNonAccreditedPrograms);
@@ -184,9 +266,12 @@
             Controls.Add(cmbSortingOptions);
             Controls.Add(btnNavigation);
             Controls.Add(lblCourseListHeader);
+            Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(5);
             Name = "frmCourses";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Course Management";
-            Load += frmCourses_Load;
             ((System.ComponentModel.ISupportInitialize)dgvCourses).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -207,5 +292,12 @@
         private DataGridViewTextBoxColumn Credits;
         private DataGridViewTextBoxColumn NQFLevel;
         private DataGridViewTextBoxColumn IsAccredited;
+        private Button btnCreateCourse;
+        private Button btnCreateNonAccreditedCourse;
+        private TextBox txtCourseName;
+        private TextBox txtCourseType;
+        private TextBox textBox1;
+        private TextBox txtNQFLevel;
+        private CheckBox chkIsAccredited;
     }
 }

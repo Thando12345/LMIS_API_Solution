@@ -89,5 +89,65 @@ namespace LMIS_Dev_Branch
             // Code to handle navigation button click
             MessageBox.Show("Navigation button clicked!");
         }
+
+        private void btnCreateCourse_Click(object sender, EventArgs e)
+        {
+            CreateCourseForm createCourseForm = new CreateCourseForm();
+            createCourseForm.Show();
+        }
+
+        private void btnCreateAccreditedC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateNonAccreditedCourse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNonAccreditedPrograms_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblAccreditedLearnership_Click(object sender, EventArgs e)
+        {
+            // Trigger logic to create an accredited course.
+            // For example, show a form to enter accredited course details.
+            CreateCourseForm createCourseForm = new CreateCourseForm();
+            createCourseForm.chkAccredited.Checked = true; // Set accreditation to true.
+            createCourseForm.Show();
+        }
+
+        private void lblAccreditedSkillsPrograms_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCourseName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCourseType_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNQFLevel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void chkIsAccredited_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
