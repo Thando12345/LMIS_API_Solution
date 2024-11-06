@@ -90,3 +90,34 @@ C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\RestFull_API\obj\Debug\net
 C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.genruntimeconfig.cache
 C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\RestFull_API\obj\Debug\net8.0\ref\StockSense_DotNET_API.dll
 C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.sourcelink.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\appsettings.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.staticwebassets.runtime.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.exe
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.deps.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.runtimeconfig.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.pdb
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.AssemblyInfoInputs.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.AssemblyInfo.cs
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.csproj.CoreCompileInputs.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.RazorAssemblyInfo.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.RazorAssemblyInfo.cs
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.sourcelink.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets\msbuild.StockSense_DotNET_API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets\msbuild.build.StockSense_DotNET_API.props
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.StockSense_DotNET_API.props
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.StockSense_DotNET_API.props
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\bundle\StockSense_DotNET_API.styles.css
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\projectbundle\StockSense_DotNET_API.bundle.scp.css
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\refint\StockSense_DotNET_API.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.pdb
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.genruntimeconfig.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\ref\StockSense_DotNET_API.dll

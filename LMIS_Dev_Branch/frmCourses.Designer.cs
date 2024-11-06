@@ -55,7 +55,7 @@
             lblCourseListHeader.Size = new Size(195, 37);
             lblCourseListHeader.TabIndex = 1;
             lblCourseListHeader.Text = "Course List";
-            lblCourseListHeader.Click += lblCourseListHeader_Click;
+            //lblCourseListHeader.Click += lblCourseListHeader_Click;
             // 
             // btnNavigation
             // 
@@ -134,7 +134,7 @@
             dgvCourses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCourses.Size = new Size(800, 150);
             dgvCourses.TabIndex = 8;
-            dgvCourses.CellContentClick += dgvCourses_CellContentClick;
+          //  dgvCourses.CellContentClick += dgvCourses_CellContentClick;
             // 
             // CourseName
             // 

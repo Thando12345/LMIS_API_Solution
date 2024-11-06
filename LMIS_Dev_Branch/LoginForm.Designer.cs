@@ -45,7 +45,7 @@
             pictureBox1.BackColor = SystemColors.Control;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(422, 34);
+            pictureBox1.Location = new Point(394, 38);
             pictureBox1.Margin = new Padding(2, 3, 2, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(136, 132);
