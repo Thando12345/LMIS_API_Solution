@@ -103,3 +103,5 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.FrmAdminGeneral.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.frmCourses.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.CourseDetailsForm.resources
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.CreateCourseForm.resources
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.frmCourses1.resources

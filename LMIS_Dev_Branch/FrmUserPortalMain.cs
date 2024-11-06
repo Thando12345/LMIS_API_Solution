@@ -25,8 +25,8 @@ namespace LMIS_Dev_Branch
 
         private void btnCreateCourse_Click(object sender, EventArgs e)
         {
-            frmCourses frmCourses = new frmCourses();
-            frmCourses.ShowDialog();
+            frmCourses1 frmCourses1 = new frmCourses1();
+            frmCourses1.ShowDialog();
         }
     }
 }

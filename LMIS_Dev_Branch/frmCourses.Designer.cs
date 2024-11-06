@@ -1,6 +1,6 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    partial class frmCourses
+    partial class frmCourses1
     {
         /// <summary>
         /// Required designer variable.
@@ -246,7 +246,7 @@
             chkIsAccredited.Text = "Accredited Course";
             chkIsAccredited.UseVisualStyleBackColor = true;
             // 
-            // frmCourses
+            // frmCourses1
             // 
             AutoScaleDimensions = new SizeF(14F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -269,7 +269,7 @@
             Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(5);
-            Name = "frmCourses";
+            Name = "frmCourses1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Course Management";
             ((System.ComponentModel.ISupportInitialize)dgvCourses).EndInit();
