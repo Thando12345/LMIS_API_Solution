@@ -63,5 +63,10 @@ namespace LMIS_Dev_Branch
             // Optional: Show message or action for editing course details
             MessageBox.Show("Edit functionality is not available yet.", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void lblCourseName_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

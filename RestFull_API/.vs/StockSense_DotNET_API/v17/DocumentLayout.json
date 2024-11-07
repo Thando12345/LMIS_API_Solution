@@ -3,6 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\RestFull_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmaddstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmlearnerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmaddstudent.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmlearnerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\coursedetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\coursedetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\createcourseform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmuserportalmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -33,28 +54,16 @@
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmcourses.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\coursedetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmuserportalmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\coursedetailsform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\coursedetailsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmadmingeneral.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmlearnerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\frmlearnerinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{282592DE-654A-4E66-AFBE-8A05BBB250C3}|..\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj|c:\\users\\cash crusaders north\\onedrive - networx for career development\\desktop\\my workspace\\repos\\lmis_api_solution\\lmis_dev_branch\\managetemplatesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
@@ -169,7 +178,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -177,7 +186,131 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmAddStudent.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAddStudent.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmAddStudent.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAddStudent.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\FrmAddStudent.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T16:23:13.212Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmAddStudent.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAddStudent.Designer.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmAddStudent.Designer.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAddStudent.Designer.cs",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\FrmAddStudent.Designer.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T16:23:11.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmLearnerInformation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:28:09.938Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLearnerInformation.cs",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
+              "ViewState": "AQIAAGkAAAAAAAAAAAA4wH0AAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T08:35:03.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateCourseForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CreateCourseForm.Designer.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CreateCourseForm.Designer.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CreateCourseForm.Designer.cs",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\CreateCourseForm.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T16:21:33.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmUserPortalMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T06:56:21.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "CourseDetailsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:38:54.937Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourseDetailsForm.cs",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAIwEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T12:50:21.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "frmCourses.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmCourses.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-01T07:32:51.831Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\Form1.cs",
+              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\LMIS_Dev_Branch\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T19:57:32.35Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\LoginForm.cs",
@@ -190,56 +323,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\Form1.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T19:57:32.35Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmCourses.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmCourses.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T07:32:51.831Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmUserPortalMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs [Design]",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T06:56:21.644Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "FrmUserPortalMain.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAIwBwAAAAXAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T11:07:27.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LoginForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\LoginForm.cs",
@@ -251,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "CreateCourseForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CreateCourseForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CreateCourseForm.cs",
@@ -263,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "frmCourses.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmCourses.cs",
@@ -275,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "frmCourses.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmCourses.Designer.cs",
@@ -288,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "frmCourses.resx",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.resx",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmCourses.resx",
@@ -300,18 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CourseDetailsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:38:54.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "FrmUserPortalMain.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmUserPortalMain.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmUserPortalMain.Designer.cs",
@@ -324,31 +410,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "CourseDetailsForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CourseDetailsForm.Designer.cs",
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.Designer.cs",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.Designer.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAkwFkAAAA5AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAkwBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-06T08:50:34.569Z"
+              "WhenOpened": "2024-11-06T08:50:34.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CourseDetailsForm.cs",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T12:50:21.345Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "FrmAdminGeneral.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAdminGeneral.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmAdminGeneral.cs",
@@ -359,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\LoginForm.Designer.cs",
@@ -372,20 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "frmLearnerInformation.cs",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T08:35:03.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "ViewLogsForm.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ViewLogsForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ViewLogsForm.cs",
@@ -398,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "ApproveRequestsForm.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ApproveRequestsForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ApproveRequestsForm.cs",
@@ -411,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "ApproveRequestsForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ApproveRequestsForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ApproveRequestsForm.Designer.cs",
@@ -423,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "AdminDashboard.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\AdminDashboard.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\AdminDashboard.Designer.cs",
@@ -435,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "FrmAdminGeneral.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\FrmAdminGeneral.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\FrmAdminGeneral.cs",
@@ -447,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 33,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\Form1.Designer.cs",
@@ -460,18 +522,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmLearnerInformation.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs",
-              "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmLearnerInformation.cs [Design]",
-              "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmLearnerInformation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T20:28:09.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ViewLogsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ViewLogsForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ViewLogsForm.cs",
@@ -482,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "ManageTemplatesForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ManageTemplatesForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ManageTemplatesForm.cs",
@@ -493,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "AdminDashboard.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\AdminDashboard.cs",
@@ -506,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "ManageUsersForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ManageUsersForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ManageUsersForm.cs",
@@ -517,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\Form1.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\Form1.cs",
@@ -530,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "AdminDashboard.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\AdminDashboard.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\AdminDashboard.cs",
@@ -541,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "ApproveRequestsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\ApproveRequestsForm.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\ApproveRequestsForm.cs",
@@ -552,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "UserPortalMain.Designer.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\UserPortalMain.Designer.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\UserPortalMain.Designer.cs",
@@ -563,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 54,
               "Title": "UserPortalMain.cs",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\UserPortalMain.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\UserPortalMain.cs",
@@ -574,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "UserPortalMain.cs [Design]",
               "DocumentMoniker": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\UserPortalMain.cs",
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\UserPortalMain.cs",
@@ -585,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "AddCourse.Designer.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.Designer.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.Designer.cs",
@@ -597,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\Student.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\Student.cs",
@@ -609,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "RegistrationModel.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\RegistrationModel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\RegistrationModel.cs",
@@ -621,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 39,
               "Title": "MessagingModel.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\MessagingModel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\MessagingModel.cs",
@@ -633,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 40,
               "Title": "IModel.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\IModel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\IModel.cs",
@@ -645,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 41,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\ErrorViewModel.cs",
@@ -657,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\Course.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Models\\Course.cs",
@@ -668,7 +719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "GetAllStudentsHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Student Handlers\\GetAllStudentsHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Student Handlers\\GetAllStudentsHandler.cs",
@@ -680,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "AddStudentHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Student Handlers\\AddStudentHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Student Handlers\\AddStudentHandler.cs",
@@ -692,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "GetCourseByIdHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\GetCourseByIdHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\GetCourseByIdHandler.cs",
@@ -704,7 +755,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 45,
               "Title": "GetAllCoursesHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\GetAllCoursesHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\GetAllCoursesHandler.cs",
@@ -716,7 +767,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 46,
               "Title": "CreateCourseHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\CreateCourseHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Course_Handlers\\CreateCourseHandler.cs",
@@ -728,7 +779,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 47,
               "Title": "IProcessHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\IProcessHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\IProcessHandler.cs",
@@ -740,7 +791,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 48,
               "Title": "AddCourse.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.cs",
@@ -751,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 49,
               "Title": "RegistrationHandler.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Admin_Handlers\\RegistrationHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Process_Handlers\\Admin_Handlers\\RegistrationHandler.cs",
@@ -763,7 +814,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 50,
               "Title": "frmEnrol.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\frmEnrol.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\frmEnrol.cs",
@@ -775,7 +826,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 51,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Form1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Form1.cs",
@@ -786,7 +837,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 52,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Form1.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\Form1.cs",
@@ -797,7 +848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 53,
               "Title": "AddCourse.cs [Design]",
               "DocumentMoniker": "C:\\Users\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\phiwo\\Desktop\\Thando Nogemane Workspace\\LMIS\\LMIS_Dev_Branch\\AddCourse.cs",

@@ -32,14 +32,14 @@
             btnSearch = new Button();
             txtSearchLearner = new TextBox();
             toolTip1 = new ToolTip(components);
+            textBox1 = new TextBox();
+            chkDeclaration = new CheckBox();
             btnEdit = new Button();
             btnUploadID = new Button();
             btnUploadQualification = new Button();
             txtIdentityNumber = new TextBox();
             txtAlternateID = new TextBox();
-            textBox1 = new TextBox();
             lblStartDate = new DateTimePicker();
-            chkDeclaration = new CheckBox();
             txtHighestEducation = new TextBox();
             txtLearningProgramme = new TextBox();
             dateTimePicker1 = new DateTimePicker();
@@ -104,6 +104,29 @@
             toolTip1.ToolTipTitle = "Enter Learner ID or Surname to search.";
             toolTip1.Popup += toolTip1_Popup;
             // 
+            // textBox1
+            // 
+            textBox1.ForeColor = Color.DarkGray;
+            textBox1.Location = new Point(489, 357);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "Alternate ID";
+            textBox1.Size = new Size(0, 31);
+            textBox1.TabIndex = 15;
+            toolTip1.SetToolTip(textBox1, "For non-RSA citizens, enter an alternate ID.");
+            // 
+            // chkDeclaration
+            // 
+            chkDeclaration.AutoSize = true;
+            chkDeclaration.Font = new Font("Arial Narrow", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            chkDeclaration.Location = new Point(610, 827);
+            chkDeclaration.Name = "chkDeclaration";
+            chkDeclaration.Size = new Size(457, 28);
+            chkDeclaration.TabIndex = 35;
+            chkDeclaration.Text = "I hereby declare the information above is true and correct.";
+            toolTip1.SetToolTip(chkDeclaration, "Check this box to confirm the information is accurate.");
+            chkDeclaration.UseVisualStyleBackColor = true;
+            chkDeclaration.CheckedChanged += chkDeclaration_CheckedChanged_1;
+            // 
             // btnEdit
             // 
             btnEdit.BackColor = Color.DeepSkyBlue;
@@ -158,16 +181,6 @@
             txtAlternateID.TabIndex = 14;
             txtAlternateID.TextChanged += txtAlternateID_TextChanged;
             // 
-            // textBox1
-            // 
-            textBox1.ForeColor = Color.DarkGray;
-            textBox1.Location = new Point(489, 357);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "Alternate ID";
-            textBox1.Size = new Size(0, 31);
-            textBox1.TabIndex = 15;
-            toolTip1.SetToolTip(textBox1, "For non-RSA citizens, enter an alternate ID.");
-            // 
             // lblStartDate
             // 
             lblStartDate.Location = new Point(444, 701);
@@ -175,19 +188,6 @@
             lblStartDate.Size = new Size(246, 31);
             lblStartDate.TabIndex = 34;
             lblStartDate.ValueChanged += lblStartDate_ValueChanged;
-            // 
-            // chkDeclaration
-            // 
-            chkDeclaration.AutoSize = true;
-            chkDeclaration.Font = new Font("Arial Narrow", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkDeclaration.Location = new Point(610, 827);
-            chkDeclaration.Name = "chkDeclaration";
-            chkDeclaration.Size = new Size(457, 28);
-            chkDeclaration.TabIndex = 35;
-            chkDeclaration.Text = "I hereby declare the information above is true and correct.";
-            toolTip1.SetToolTip(chkDeclaration, "Check this box to confirm the information is accurate.");
-            chkDeclaration.UseVisualStyleBackColor = true;
-            chkDeclaration.CheckedChanged += chkDeclaration_CheckedChanged_1;
             // 
             // txtHighestEducation
             // 
@@ -265,6 +265,7 @@
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
             // dgvLearnerList
             // 

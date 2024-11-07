@@ -77,6 +77,7 @@
             lblCourseName.TabIndex = 2;
             lblCourseName.Text = "Displays course name";
             lblCourseName.UseVisualStyleBackColor = false;
+            lblCourseName.Click += lblCourseName_Click;
             // 
             // lblCourseType
             // 

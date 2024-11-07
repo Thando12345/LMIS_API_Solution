@@ -117,5 +117,13 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            //add DB context instance 
+            //add learner info object 
+            //collect learner info from form and add to LIF object 
+            //call add LIF from Db context and pass it through the LIF object 
+        }
     }
 }
