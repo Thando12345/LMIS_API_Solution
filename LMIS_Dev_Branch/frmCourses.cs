@@ -92,8 +92,8 @@ namespace LMIS_Dev_Branch
 
         private void btnCreateCourse_Click(object sender, EventArgs e)
         {
-            CreateCourseForm createCourseForm = new CreateCourseForm();
-            createCourseForm.Show();
+            FrmCreateCourseForm FrmCreateCourseForm = new FrmCreateCourseForm();
+            FrmCreateCourseForm.Show();
         }
 
         private void btnCreateAccreditedC_Click(object sender, EventArgs e)
@@ -115,8 +115,8 @@ namespace LMIS_Dev_Branch
         {
             // Trigger logic to create an accredited course.
             // For example, show a form to enter accredited course details.
-            CreateCourseForm createCourseForm = new CreateCourseForm();
-            createCourseForm.chkAccredited.Checked = true; // Set accreditation to true.
+            FrmCreateCourseForm createCourseForm = new FrmCreateCourseForm();
+            //createCourseForm.chkAccredited.Checked = true; // Set accreditation to true.
             createCourseForm.Show();
         }
 

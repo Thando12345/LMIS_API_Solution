@@ -1,6 +1,6 @@
 ﻿namespace LMIS_Dev_Branch
 {
-    partial class CreateCourseForm
+    partial class FrmCreateCourseForm
     {
         /// <summary>
         /// Required designer variable.
@@ -34,19 +34,19 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(352, 90);
+            label1.Location = new Point(363, 57);
             label1.Name = "label1";
             label1.Size = new Size(59, 25);
             label1.TabIndex = 0;
             label1.Text = "label1";
             // 
-            // CreateCourseForm
+            // FrmCreateCourseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Name = "CreateCourseForm";
+            Name = "FrmCreateCourseForm";
             Text = "CreateCourseForm";
             ResumeLayout(false);
             PerformLayout();

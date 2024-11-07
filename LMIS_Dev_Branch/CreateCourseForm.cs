@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LMIS_Dev_Branch
 {
-    public partial class CreateCourseForm : Form
+    public partial class FrmCreateCourseForm : Form
     {
-        public CreateCourseForm()
+        public FrmCreateCourseForm()
         {
             InitializeComponent();
         }
