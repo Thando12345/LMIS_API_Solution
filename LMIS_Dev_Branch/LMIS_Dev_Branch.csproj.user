@@ -34,6 +34,12 @@
     <Compile Update="frmLearnerInformation.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmPractitionerCreateEditScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPractitionersViewScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmUserPortalMain.cs">
       <SubType>Form</SubType>
     </Compile>
