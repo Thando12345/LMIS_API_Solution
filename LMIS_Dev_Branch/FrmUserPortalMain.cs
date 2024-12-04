@@ -28,5 +28,11 @@ namespace LMIS_Dev_Branch
             frmCourses1 frmCourses1 = new frmCourses1();
             frmCourses1.ShowDialog();
         }
+
+        private void btnAddPractitioner_Click(object sender, EventArgs e)
+        {
+            frmPractitionersViewScreen frmPractitionersViewScreen = new frmPractitionersViewScreen();
+            frmPractitionersViewScreen .ShowDialog();
+        }
     }
 }

@@ -81,6 +81,7 @@
             btnAddPractitioner.TabIndex = 3;
             btnAddPractitioner.Text = "Add Practitioner";
             btnAddPractitioner.UseVisualStyleBackColor = false;
+            btnAddPractitioner.Click += btnAddPractitioner_Click;
             // 
             // btnCreateIntervention
             // 
