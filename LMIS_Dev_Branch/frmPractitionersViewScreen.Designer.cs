@@ -33,12 +33,12 @@
             textBox1 = new TextBox();
             btnSearchPractitioner = new Button();
             dgvPractitioner = new DataGridView();
-            Name = new DataGridViewTextBoxColumn();
+            btnEditPractitioner = new Button();
+            btnCreatePractitioner = new Button();
+            First_Name = new DataGridViewTextBoxColumn();
             Surname = new DataGridViewTextBoxColumn();
             Role = new DataGridViewTextBoxColumn();
             Course = new DataGridViewTextBoxColumn();
-            btnEditPractitioner = new Button();
-            btnCreatePractitioner = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPractitioner).BeginInit();
             SuspendLayout();
@@ -90,19 +90,44 @@
             // dgvPractitioner
             // 
             dgvPractitioner.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPractitioner.Columns.AddRange(new DataGridViewColumn[] { Name, Surname, Role, Course });
+            dgvPractitioner.Columns.AddRange(new DataGridViewColumn[] { First_Name, Surname, Role, Course });
             dgvPractitioner.Location = new Point(48, 193);
             dgvPractitioner.Name = "dgvPractitioner";
             dgvPractitioner.RowHeadersWidth = 62;
             dgvPractitioner.Size = new Size(1109, 225);
             dgvPractitioner.TabIndex = 3;
             // 
-            // Name
+            // btnEditPractitioner
             // 
-            Name.HeaderText = "Name ";
-            Name.MinimumWidth = 8;
-            Name.Name = "Name";
-            Name.Width = 150;
+            btnEditPractitioner.BackColor = Color.Green;
+            btnEditPractitioner.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEditPractitioner.ForeColor = Color.White;
+            btnEditPractitioner.Location = new Point(717, 219);
+            btnEditPractitioner.Name = "btnEditPractitioner";
+            btnEditPractitioner.Size = new Size(81, 41);
+            btnEditPractitioner.TabIndex = 4;
+            btnEditPractitioner.Text = "Edit";
+            btnEditPractitioner.UseVisualStyleBackColor = false;
+            // 
+            // btnCreatePractitioner
+            // 
+            btnCreatePractitioner.BackColor = Color.DarkBlue;
+            btnCreatePractitioner.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCreatePractitioner.ForeColor = Color.White;
+            btnCreatePractitioner.Location = new Point(888, 455);
+            btnCreatePractitioner.Name = "btnCreatePractitioner";
+            btnCreatePractitioner.Size = new Size(269, 41);
+            btnCreatePractitioner.TabIndex = 5;
+            btnCreatePractitioner.Text = "Create New Practitioner";
+            btnCreatePractitioner.UseVisualStyleBackColor = false;
+            btnCreatePractitioner.Click += btnCreatePractitioner_Click;
+            // 
+            // First_Name
+            // 
+            First_Name.HeaderText = "First Name";
+            First_Name.MinimumWidth = 8;
+            First_Name.Name = "First_Name";
+            First_Name.Width = 150;
             // 
             // Surname
             // 
@@ -124,31 +149,6 @@
             Course.MinimumWidth = 8;
             Course.Name = "Course";
             Course.Width = 150;
-            // 
-            // btnEditPractitioner
-            // 
-            btnEditPractitioner.BackColor = Color.Green;
-            btnEditPractitioner.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEditPractitioner.ForeColor = Color.White;
-            btnEditPractitioner.Location = new Point(724, 222);
-            btnEditPractitioner.Name = "btnEditPractitioner";
-            btnEditPractitioner.Size = new Size(81, 41);
-            btnEditPractitioner.TabIndex = 4;
-            btnEditPractitioner.Text = "Edit";
-            btnEditPractitioner.UseVisualStyleBackColor = false;
-            // 
-            // btnCreatePractitioner
-            // 
-            btnCreatePractitioner.BackColor = Color.DarkBlue;
-            btnCreatePractitioner.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreatePractitioner.ForeColor = Color.White;
-            btnCreatePractitioner.Location = new Point(888, 455);
-            btnCreatePractitioner.Name = "btnCreatePractitioner";
-            btnCreatePractitioner.Size = new Size(269, 41);
-            btnCreatePractitioner.TabIndex = 5;
-            btnCreatePractitioner.Text = "Create New Practitioner";
-            btnCreatePractitioner.UseVisualStyleBackColor = false;
-            btnCreatePractitioner.Click += btnCreatePractitioner_Click;
             // 
             // frmPractitionersViewScreen
             // 
@@ -177,11 +177,11 @@
         private TextBox textBox1;
         private Button btnSearchPractitioner;
         private DataGridView dgvPractitioner;
-        private DataGridViewTextBoxColumn Name;
+        private Button btnEditPractitioner;
+        private Button btnCreatePractitioner;
+        private DataGridViewTextBoxColumn First_Name;
         private DataGridViewTextBoxColumn Surname;
         private DataGridViewTextBoxColumn Role;
         private DataGridViewTextBoxColumn Course;
-        private Button btnEditPractitioner;
-        private Button btnCreatePractitioner;
     }
 }

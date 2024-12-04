@@ -27,5 +27,15 @@ namespace LMIS_Dev_Branch
 
 
         }
+
+        private void dgvPractitionerRole_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
