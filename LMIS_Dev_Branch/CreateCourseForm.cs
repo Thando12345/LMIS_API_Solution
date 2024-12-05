@@ -16,5 +16,13 @@ namespace LMIS_Dev_Branch
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
+=======
+
+        private void tooltipAddUnitStandard_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+>>>>>>> Thando-Branch
     }
 }

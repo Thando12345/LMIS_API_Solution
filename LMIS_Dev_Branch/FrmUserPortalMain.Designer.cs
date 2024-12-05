@@ -81,6 +81,10 @@
             btnAddPractitioner.TabIndex = 3;
             btnAddPractitioner.Text = "Add Practitioner";
             btnAddPractitioner.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
+=======
+            btnAddPractitioner.Click += btnAddPractitioner_Click;
+>>>>>>> Thando-Branch
             // 
             // btnCreateIntervention
             // 

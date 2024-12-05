@@ -34,7 +34,7 @@
             groupBox7 = new GroupBox();
             label9 = new Label();
             textBox6 = new TextBox();
-            comboBox2 = new ComboBox();
+            cbxCourseCode = new ComboBox();
             label1 = new Label();
             label5 = new Label();
             textBox1 = new TextBox();
@@ -104,7 +104,7 @@
             // 
             groupBox7.Controls.Add(label9);
             groupBox7.Controls.Add(textBox6);
-            groupBox7.Controls.Add(comboBox2);
+            groupBox7.Controls.Add(cbxCourseCode);
             groupBox7.Controls.Add(label1);
             groupBox7.Controls.Add(label5);
             groupBox7.Controls.Add(textBox1);
@@ -134,13 +134,14 @@
             textBox6.TabIndex = 15;
             textBox6.TextChanged += textBox6_TextChanged;
             // 
-            // comboBox2
+            // cbxCourseCode
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(159, 30);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(282, 23);
-            comboBox2.TabIndex = 14;
+            cbxCourseCode.FormattingEnabled = true;
+            cbxCourseCode.Location = new Point(159, 30);
+            cbxCourseCode.Name = "cbxCourseCode";
+            cbxCourseCode.Size = new Size(282, 23);
+            cbxCourseCode.TabIndex = 14;
+            cbxCourseCode.SelectedIndexChanged += cbxCourseCode_SelectedIndexChanged;
             // 
             // label1
             // 
@@ -421,7 +422,7 @@
         private GroupBox groupBox4;
         private GroupBox groupBox5;
         private GroupBox groupBox7;
-        private ComboBox comboBox2;
+        private ComboBox cbxCourseCode;
         private GroupBox groupBox6;
         private Button button2;
         private Button button4;

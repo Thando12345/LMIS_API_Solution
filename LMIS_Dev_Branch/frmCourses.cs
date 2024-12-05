@@ -92,8 +92,13 @@ namespace LMIS_Dev_Branch
 
         private void btnCreateCourse_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmCreateCourseForm FrmCreateCourseForm = new FrmCreateCourseForm();
             FrmCreateCourseForm.Show();
+=======
+            FrmCreateCourseForm createCourseForm = new FrmCreateCourseForm();
+            createCourseForm.Show();
+>>>>>>> Thando-Branch
         }
 
         private void btnCreateAccreditedC_Click(object sender, EventArgs e)
@@ -116,7 +121,11 @@ namespace LMIS_Dev_Branch
             // Trigger logic to create an accredited course.
             // For example, show a form to enter accredited course details.
             FrmCreateCourseForm createCourseForm = new FrmCreateCourseForm();
+<<<<<<< HEAD
             //createCourseForm.chkAccredited.Checked = true; // Set accreditation to true.
+=======
+            // createCourseForm.chkAccredited.Checked = true; // Set accreditation to true.
+>>>>>>> Thando-Branch
             createCourseForm.Show();
         }
 
@@ -149,5 +158,18 @@ namespace LMIS_Dev_Branch
         {
 
         }
+<<<<<<< HEAD
+=======
+
+        private void frmCourses1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlCourseListSection_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+>>>>>>> Thando-Branch
     }
 }

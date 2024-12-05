@@ -43,11 +43,15 @@
             IsAccredited = new DataGridViewTextBoxColumn();
             btnCreateCourse = new Button();
             btnCreateNonAccreditedCourse = new Button();
+<<<<<<< HEAD
             txtCourseName = new TextBox();
             txtCourseType = new TextBox();
             textBox1 = new TextBox();
             txtNQFLevel = new TextBox();
             chkIsAccredited = new CheckBox();
+=======
+            textBox1 = new TextBox();
+>>>>>>> Thando-Branch
             ((System.ComponentModel.ISupportInitialize)dgvCourses).BeginInit();
             SuspendLayout();
             // 
@@ -181,9 +185,15 @@
             // 
             btnCreateCourse.BackColor = Color.Blue;
             btnCreateCourse.ForeColor = Color.White;
+<<<<<<< HEAD
             btnCreateCourse.Location = new Point(652, 599);
             btnCreateCourse.Name = "btnCreateCourse";
             btnCreateCourse.Size = new Size(198, 38);
+=======
+            btnCreateCourse.Location = new Point(619, 360);
+            btnCreateCourse.Name = "btnCreateCourse";
+            btnCreateCourse.Size = new Size(198, 42);
+>>>>>>> Thando-Branch
             btnCreateCourse.TabIndex = 9;
             btnCreateCourse.Text = "Create New Course";
             btnCreateCourse.UseVisualStyleBackColor = false;
@@ -201,6 +211,7 @@
             btnCreateNonAccreditedCourse.UseVisualStyleBackColor = false;
             btnCreateNonAccreditedCourse.Click += btnCreateNonAccreditedCourse_Click;
             // 
+<<<<<<< HEAD
             // txtCourseName
             // 
             txtCourseName.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -219,6 +230,8 @@
             txtCourseType.Size = new Size(200, 35);
             txtCourseType.TabIndex = 12;
             // 
+=======
+>>>>>>> Thando-Branch
             // textBox1
             // 
             textBox1.Location = new Point(0, 0);
@@ -226,6 +239,7 @@
             textBox1.Size = new Size(100, 31);
             textBox1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // txtNQFLevel
             // 
             txtNQFLevel.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -246,16 +260,21 @@
             chkIsAccredited.Text = "Accredited Course";
             chkIsAccredited.UseVisualStyleBackColor = true;
             // 
+=======
+>>>>>>> Thando-Branch
             // frmCourses1
             // 
             AutoScaleDimensions = new SizeF(14F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
             ClientSize = new Size(904, 675);
+<<<<<<< HEAD
             Controls.Add(chkIsAccredited);
             Controls.Add(txtNQFLevel);
             Controls.Add(txtCourseType);
             Controls.Add(txtCourseName);
+=======
+>>>>>>> Thando-Branch
             Controls.Add(btnCreateNonAccreditedCourse);
             Controls.Add(btnCreateCourse);
             Controls.Add(dgvCourses);
@@ -272,6 +291,10 @@
             Name = "frmCourses1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Course Management";
+<<<<<<< HEAD
+=======
+            Load += frmCourses1_Load;
+>>>>>>> Thando-Branch
             ((System.ComponentModel.ISupportInitialize)dgvCourses).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -294,10 +317,14 @@
         private DataGridViewTextBoxColumn IsAccredited;
         private Button btnCreateCourse;
         private Button btnCreateNonAccreditedCourse;
+<<<<<<< HEAD
         private TextBox txtCourseName;
         private TextBox txtCourseType;
         private TextBox textBox1;
         private TextBox txtNQFLevel;
         private CheckBox chkIsAccredited;
+=======
+        private TextBox textBox1;
+>>>>>>> Thando-Branch
     }
 }

@@ -1,5 +1,7 @@
-﻿using LMIS_Dev_Branch.Models;
+﻿using Dapper;
+using LMIS_Dev_Branch.Models;
 using LMIS_Dev_Branch.Process_Handler;
+using LMIS_Dev_Branch.Process_Handlers.Database;
 
 namespace LMIS_Dev_Branch.Process_Handlers.Student_Handlers
 {
@@ -16,14 +18,30 @@ namespace LMIS_Dev_Branch.Process_Handlers.Student_Handlers
 
         public void PerformTask()
         {
-            //Add Student Details to database using DB Context
-
-            //Add message to list
+            AddStudentToDatabase(this.StudentDetails);
             ReturnModel.Add(new MessagingModel("Student Successfully Added"));
         }
         public List<IModel> GetModel()
         {
             return ReturnModel;
+        }
+
+
+        public void AddStudentToDatabase(Student student)
+        {
+            DBContext dBContext = new DBContext();
+
+            DynamicParameters dynamicParameters = new DynamicParameters();
+
+            dynamicParameters.Add(this.StudentDetails.FirstName);
+            dynamicParameters.Add(this.StudentDetails.LastName);
+            dynamicParameters.Add(this.StudentDetails.StudentNumber);
+
+            dBContext.UpdateProcedure("SP_AddStudent", dynamicParameters);
+
+
+
+
         }
     }
 }
