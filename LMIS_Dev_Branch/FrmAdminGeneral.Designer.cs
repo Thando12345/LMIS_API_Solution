@@ -178,6 +178,7 @@
             btnAuthorizeCourses.TabIndex = 9;
             btnAuthorizeCourses.Text = "Authorize Courses\n";
             btnAuthorizeCourses.UseVisualStyleBackColor = false;
+            btnAuthorizeCourses.Click += btnAuthorizeCourses_Click;
             // 
             // btnCreateUserRole
             // 

@@ -41,5 +41,10 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnAuthorizeCourses_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

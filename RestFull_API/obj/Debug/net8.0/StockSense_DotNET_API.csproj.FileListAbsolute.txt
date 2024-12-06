@@ -214,8 +214,6 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.runtimeconfig.json
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\StockSense_DotNET_API.pdb
-<<<<<<< HEAD
-=======
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\Dapper.dll
@@ -328,7 +326,6 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.csproj.AssemblyReference.cache
->>>>>>> Thando-Branch
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.AssemblyInfoInputs.cache
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.AssemblyInfo.cs
@@ -347,10 +344,7 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\bundle\StockSense_DotNET_API.styles.css
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\scopedcss\projectbundle\StockSense_DotNET_API.bundle.scp.css
-<<<<<<< HEAD
-=======
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSen.76F69938.Up2Date
->>>>>>> Thando-Branch
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\refint\StockSense_DotNET_API.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0\StockSense_DotNET_API.pdb
