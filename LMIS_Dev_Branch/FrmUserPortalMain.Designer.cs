@@ -93,6 +93,7 @@
             btnCreateIntervention.TabIndex = 4;
             btnCreateIntervention.Text = "Create Intervention";
             btnCreateIntervention.UseVisualStyleBackColor = false;
+            btnCreateIntervention.Click += btnCreateIntervention_Click;
             // 
             // btnGenerateCertificate
             // 

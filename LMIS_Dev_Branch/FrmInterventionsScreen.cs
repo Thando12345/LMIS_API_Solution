@@ -21,5 +21,21 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCreateIntervention_Click(object sender, EventArgs e)
+        {
+            FrmCreateInterventionScreen FrmCreateInterventionScreen = new FrmCreateInterventionScreen();
+            FrmCreateInterventionScreen.ShowDialog();
+        }
     }
 }

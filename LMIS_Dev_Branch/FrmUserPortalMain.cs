@@ -32,7 +32,13 @@ namespace LMIS_Dev_Branch
         private void btnAddPractitioner_Click(object sender, EventArgs e)
         {
             frmPractitionersViewScreen frmPractitionersViewScreen = new frmPractitionersViewScreen();
-            frmPractitionersViewScreen .ShowDialog();
+            frmPractitionersViewScreen.ShowDialog();
+        }
+
+        private void btnCreateIntervention_Click(object sender, EventArgs e)
+        {
+            FrmInterventionsScreen FrmInterventionsScreen = new FrmInterventionsScreen();
+           FrmInterventionsScreen.ShowDialog();
         }
     }
 }
