@@ -5,16 +5,16 @@ namespace LMIS_Dev_Branch.Data
 {
     public static class DbContextProvider
     {
-        private static AppDbContext _context;
+        private static @null _context;
 
-        public static AppDbContext GetContext()
+        public static @null GetContext()
         {
             if (_context == null)
             {
-                var optionsBuilder = new DbContextOptionsBuilder<AppDbContext>();
+                var optionsBuilder = new DbContextOptionsBuilder<@null>();
                 optionsBuilder.UseSqlServer("Server=DESKTOP-RULM89R\\SQLEXPRESS;Database=LMS_Db;Trusted_Connection=True;TrustServerCertificate=True;");
 
-                _context = new AppDbContext(optionsBuilder.Options);
+                _context = new @null(optionsBuilder.Options);
             }
             return _context;
         }

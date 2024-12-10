@@ -1,4 +1,5 @@
 ﻿
+using LMIS_Dev_Branch.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +18,7 @@ namespace LMIS_Dev_Branch
         public frmLearnerInformation()
         {
             InitializeComponent();
-
+            @null db = new @null();
 
         }
 
@@ -55,9 +56,8 @@ namespace LMIS_Dev_Branch
 
         private void frmLearnerInformation_Load(object sender, EventArgs e)
         {
-
+           
         }
-
         private void btnUploadQualification_Click(object sender, EventArgs e)
         {
 

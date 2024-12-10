@@ -34,6 +34,7 @@ namespace LMIS_Dev_Branch.Models
         public bool Declaration { get; set; }
         public string IdentityDocumentPath { get; set; }
         public string QualificationDocumentPath { get; set; }
+        //public object Enrollments { get; internal set; }
 
         // Navigation property for enrollments
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();

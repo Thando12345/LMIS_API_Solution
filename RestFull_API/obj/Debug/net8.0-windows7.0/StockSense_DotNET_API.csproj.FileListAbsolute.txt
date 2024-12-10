@@ -1,0 +1,9 @@
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.csproj.AssemblyReference.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.AssemblyInfoInputs.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.AssemblyInfo.cs
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.csproj.CoreCompileInputs.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.RazorAssemblyInfo.cache
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.RazorAssemblyInfo.cs
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\RestFull_API\obj\Debug\net8.0-windows7.0\StockSense_DotNET_API.sourcelink.json
