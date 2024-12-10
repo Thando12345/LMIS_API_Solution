@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace LMIS_Dev_Branch
 {
-    public partial class FrmCreateInterventionScreen : Form
+    public partial class FrmBatchCertificatesScreen : Form
     {
-        public FrmCreateInterventionScreen()
+        public FrmBatchCertificatesScreen()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSaveIntervention_Click(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

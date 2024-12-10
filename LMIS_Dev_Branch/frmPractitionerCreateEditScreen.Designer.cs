@@ -122,6 +122,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Orange;
             panel1.Controls.Add(label1);
             panel1.Location = new Point(-4, 1);
             panel1.Name = "panel1";
@@ -165,7 +166,7 @@
             btnEdit.BackColor = Color.Blue;
             btnEdit.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(437, 387);
+            btnEdit.Location = new Point(421, 387);
             btnEdit.Name = "btnEdit";
             btnEdit.Size = new Size(60, 34);
             btnEdit.TabIndex = 9;
@@ -178,7 +179,7 @@
             btnDelete.BackColor = Color.Red;
             btnDelete.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(506, 387);
+            btnDelete.Location = new Point(500, 387);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(79, 34);
             btnDelete.TabIndex = 10;
@@ -193,7 +194,7 @@
             btnAddRole.ForeColor = Color.White;
             btnAddRole.Location = new Point(50, 604);
             btnAddRole.Name = "btnAddRole";
-            btnAddRole.Size = new Size(129, 34);
+            btnAddRole.Size = new Size(129, 40);
             btnAddRole.TabIndex = 11;
             btnAddRole.Text = "Add Role";
             btnAddRole.UseVisualStyleBackColor = false;
@@ -206,7 +207,7 @@
             btnSavePractitioner.ForeColor = Color.White;
             btnSavePractitioner.Location = new Point(203, 604);
             btnSavePractitioner.Name = "btnSavePractitioner";
-            btnSavePractitioner.Size = new Size(129, 34);
+            btnSavePractitioner.Size = new Size(129, 40);
             btnSavePractitioner.TabIndex = 12;
             btnSavePractitioner.Text = "Save";
             btnSavePractitioner.UseVisualStyleBackColor = false;
@@ -219,7 +220,7 @@
             btnCancelPractitioner.ForeColor = Color.White;
             btnCancelPractitioner.Location = new Point(1009, 604);
             btnCancelPractitioner.Name = "btnCancelPractitioner";
-            btnCancelPractitioner.Size = new Size(91, 34);
+            btnCancelPractitioner.Size = new Size(91, 40);
             btnCancelPractitioner.TabIndex = 13;
             btnCancelPractitioner.Text = "Cancel";
             btnCancelPractitioner.UseVisualStyleBackColor = false;

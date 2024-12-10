@@ -25,6 +25,12 @@
     <Compile Update="FrmAdminGeneral.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmBatchCertificatesScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmCertificationScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmCourses.cs">
       <SubType>Form</SubType>
     </Compile>

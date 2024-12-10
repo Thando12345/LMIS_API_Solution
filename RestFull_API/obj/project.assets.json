@@ -1508,6 +1508,16 @@
             "rid": "win"
           }
         }
+      },
+      "LMIS_Dev_Branch/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/LMIS_Dev_Branch.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LMIS_Dev_Branch.dll": {}
+        }
       }
     }
   },
@@ -4064,11 +4074,17 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "LMIS_Dev_Branch/1.0.0": {
+      "type": "project",
+      "path": "../LMIS_Dev_Branch/LMIS_Dev_Branch.csproj",
+      "msbuildProject": "../LMIS_Dev_Branch/LMIS_Dev_Branch.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Dapper >= 2.1.35",
+      "LMIS_Dev_Branch >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.10"
@@ -4106,7 +4122,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj": {
+              "projectPath": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\LMIS_Dev_Branch.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -4165,5 +4185,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project LMIS_Dev_Branch is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Project LMIS_Dev_Branch supports: net8.0-windows7.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "LMIS_Dev_Branch",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

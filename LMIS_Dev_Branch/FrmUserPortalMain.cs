@@ -38,7 +38,18 @@ namespace LMIS_Dev_Branch
         private void btnCreateIntervention_Click(object sender, EventArgs e)
         {
             FrmInterventionsScreen FrmInterventionsScreen = new FrmInterventionsScreen();
-           FrmInterventionsScreen.ShowDialog();
+            FrmInterventionsScreen.ShowDialog();
+        }
+
+        private void lblUserPortal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGenerateCertificate_Click(object sender, EventArgs e)
+        {
+            FrmCertificationScreen FrmCertificationScreen = new FrmCertificationScreen();
+            FrmCertificationScreen.ShowDialog();
         }
     }
 }

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\StockSense_DotNET_API.props" />
-</Project>

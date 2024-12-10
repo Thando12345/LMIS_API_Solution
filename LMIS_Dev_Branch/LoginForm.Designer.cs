@@ -45,10 +45,11 @@
             pictureBox1.BackColor = SystemColors.Control;
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(394, 38);
+            pictureBox1.Location = new Point(540, 33);
             pictureBox1.Margin = new Padding(2, 3, 2, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(136, 132);
+            pictureBox1.Size = new Size(97, 117);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -56,67 +57,70 @@
             // lblSelectRole
             // 
             lblSelectRole.AutoSize = true;
-            lblSelectRole.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSelectRole.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblSelectRole.ForeColor = Color.DarkBlue;
             lblSelectRole.Location = new Point(139, 256);
             lblSelectRole.Margin = new Padding(2, 0, 2, 0);
             lblSelectRole.Name = "lblSelectRole";
-            lblSelectRole.Size = new Size(109, 26);
+            lblSelectRole.Size = new Size(155, 32);
             lblSelectRole.TabIndex = 1;
             lblSelectRole.Text = "Select Role";
             lblSelectRole.Click += lblSelectRole_Click;
             // 
             // comboBox1
             // 
+            comboBox1.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "Admin", "User" });
-            comboBox1.Location = new Point(385, 256);
+            comboBox1.Location = new Point(339, 256);
             comboBox1.Margin = new Padding(2, 3, 2, 3);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(499, 33);
+            comboBox1.Size = new Size(499, 40);
             comboBox1.TabIndex = 2;
             comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUsername.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUsername.ForeColor = Color.DarkBlue;
             lblUsername.Location = new Point(139, 326);
             lblUsername.Margin = new Padding(2, 0, 2, 0);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(99, 26);
+            lblUsername.Size = new Size(142, 32);
             lblUsername.TabIndex = 3;
             lblUsername.Text = "Username";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(385, 326);
+            textBox1.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(339, 326);
             textBox1.Margin = new Padding(2, 3, 2, 3);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter your username";
-            textBox1.Size = new Size(499, 31);
+            textBox1.Size = new Size(499, 40);
             textBox1.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Arial Narrow", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.DarkBlue;
             label1.Location = new Point(139, 388);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(97, 26);
+            label1.Size = new Size(135, 32);
             label1.TabIndex = 5;
             label1.Text = "Password";
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(385, 388);
+            textBox2.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox2.Location = new Point(339, 388);
             textBox2.Margin = new Padding(2, 3, 2, 3);
             textBox2.Name = "textBox2";
             textBox2.PlaceholderText = "Enter your password";
-            textBox2.Size = new Size(499, 31);
+            textBox2.Size = new Size(499, 40);
             textBox2.TabIndex = 6;
             // 
             // FrmLoginForm
@@ -135,6 +139,7 @@
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(2, 3, 2, 3);
             Name = "FrmLoginForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "LoginForm";
             Load += FrmLoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

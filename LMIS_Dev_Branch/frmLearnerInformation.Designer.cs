@@ -39,10 +39,10 @@
             btnUploadQualification = new Button();
             txtIdentityNumber = new TextBox();
             txtAlternateID = new TextBox();
-            lblStartDate = new DateTimePicker();
+            DatePickerStartDate = new DateTimePicker();
             txtHighestEducation = new TextBox();
             txtLearningProgramme = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
+            DatePickerEndDate = new DateTimePicker();
             cmbInter = new ComboBox();
             btnEnroll = new Button();
             toolTip2 = new ToolTip(components);
@@ -67,7 +67,7 @@
             txtOFOCode = new TextBox();
             txtCompanyName = new TextBox();
             txtHomeAddress = new TextBox();
-            textBox2 = new TextBox();
+            txtPostAdrress = new TextBox();
             txtPhoneNumber = new TextBox();
             txtEmailAddress = new TextBox();
             txtGrantContractNumber = new TextBox();
@@ -90,6 +90,7 @@
             btnSearch.Text = "Search";
             toolTip1.SetToolTip(btnSearch, "Enter Learner ID or Surname to search.");
             btnSearch.UseVisualStyleBackColor = false;
+            btnSearch.Click += btnSearch_Click;
             // 
             // txtSearchLearner
             // 
@@ -98,6 +99,7 @@
             txtSearchLearner.Size = new Size(200, 31);
             txtSearchLearner.TabIndex = 1;
             toolTip1.SetToolTip(txtSearchLearner, "Enter Learner ID or Surname to search.");
+            txtSearchLearner.TextChanged += txtSearchLearner_TextChanged;
             // 
             // toolTip1
             // 
@@ -149,6 +151,7 @@
             btnUploadID.TabIndex = 7;
             btnUploadID.Text = "Upload ID";
             btnUploadID.UseVisualStyleBackColor = false;
+            btnUploadID.Click += btnUploadID_Click;
             // 
             // btnUploadQualification
             // 
@@ -170,6 +173,7 @@
             txtIdentityNumber.PlaceholderText = "Identity Number";
             txtIdentityNumber.Size = new Size(200, 31);
             txtIdentityNumber.TabIndex = 13;
+            txtIdentityNumber.TextChanged += txtIdentityNumber_TextChanged;
             // 
             // txtAlternateID
             // 
@@ -181,13 +185,13 @@
             txtAlternateID.TabIndex = 14;
             txtAlternateID.TextChanged += txtAlternateID_TextChanged;
             // 
-            // lblStartDate
+            // DatePickerStartDate
             // 
-            lblStartDate.Location = new Point(444, 701);
-            lblStartDate.Name = "lblStartDate";
-            lblStartDate.Size = new Size(246, 31);
-            lblStartDate.TabIndex = 34;
-            lblStartDate.ValueChanged += lblStartDate_ValueChanged;
+            DatePickerStartDate.Location = new Point(444, 701);
+            DatePickerStartDate.Name = "DatePickerStartDate";
+            DatePickerStartDate.Size = new Size(246, 31);
+            DatePickerStartDate.TabIndex = 34;
+            DatePickerStartDate.ValueChanged += lblStartDate_ValueChanged;
             // 
             // txtHighestEducation
             // 
@@ -208,12 +212,12 @@
             txtLearningProgramme.Size = new Size(250, 31);
             txtLearningProgramme.TabIndex = 39;
             // 
-            // dateTimePicker1
+            // DatePickerEndDate
             // 
-            dateTimePicker1.Location = new Point(883, 701);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(246, 31);
-            dateTimePicker1.TabIndex = 42;
+            DatePickerEndDate.Location = new Point(883, 701);
+            DatePickerEndDate.Name = "DatePickerEndDate";
+            DatePickerEndDate.Size = new Size(246, 31);
+            DatePickerEndDate.TabIndex = 42;
             // 
             // cmbInter
             // 
@@ -237,6 +241,7 @@
             btnEnroll.Text = "Enroll";
             toolTip2.SetToolTip(btnEnroll, "Search for a learner based on ID or Surname.");
             btnEnroll.UseVisualStyleBackColor = false;
+            btnEnroll.Click += btnEnroll_Click;
             // 
             // toolTip2
             // 
@@ -276,6 +281,7 @@
             dgvLearnerList.RowHeadersWidth = 62;
             dgvLearnerList.Size = new Size(1100, 300);
             dgvLearnerList.TabIndex = 3;
+            dgvLearnerList.CellContentClick += dgvLearnerList_CellContentClick;
             // 
             // Learner_surname
             // 
@@ -320,6 +326,7 @@
             txtSurname.PlaceholderText = "Surname";
             txtSurname.Size = new Size(250, 31);
             txtSurname.TabIndex = 10;
+            txtSurname.TextChanged += txtSurname_TextChanged;
             // 
             // label1
             // 
@@ -338,6 +345,7 @@
             txtFullNames.PlaceholderText = "Full Names";
             txtFullNames.Size = new Size(250, 31);
             txtFullNames.TabIndex = 12;
+            txtFullNames.TextChanged += txtFullNames_TextChanged;
             // 
             // cmbNationality
             // 
@@ -349,6 +357,7 @@
             cmbNationality.Size = new Size(200, 33);
             cmbNationality.TabIndex = 16;
             cmbNationality.Text = "Nationality";
+            cmbNationality.SelectedIndexChanged += cmbNationality_SelectedIndexChanged;
             // 
             // cmbHomeLanguage
             // 
@@ -360,6 +369,7 @@
             cmbHomeLanguage.Size = new Size(200, 33);
             cmbHomeLanguage.TabIndex = 17;
             cmbHomeLanguage.Text = "Home Language";
+            cmbHomeLanguage.SelectedIndexChanged += cmbHomeLanguage_SelectedIndexChanged;
             // 
             // txtAge
             // 
@@ -369,6 +379,7 @@
             txtAge.PlaceholderText = "Age";
             txtAge.Size = new Size(100, 31);
             txtAge.TabIndex = 18;
+            txtAge.TextChanged += txtAge_TextChanged;
             // 
             // cmbGender
             // 
@@ -442,14 +453,14 @@
             txtHomeAddress.Size = new Size(500, 31);
             txtHomeAddress.TabIndex = 25;
             // 
-            // textBox2
+            // txtPostAdrress
             // 
-            textBox2.ForeColor = Color.DarkGray;
-            textBox2.Location = new Point(570, 550);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "Postal Address";
-            textBox2.Size = new Size(500, 31);
-            textBox2.TabIndex = 26;
+            txtPostAdrress.ForeColor = Color.DarkGray;
+            txtPostAdrress.Location = new Point(570, 550);
+            txtPostAdrress.Name = "txtPostAdrress";
+            txtPostAdrress.PlaceholderText = "Postal Address";
+            txtPostAdrress.Size = new Size(500, 31);
+            txtPostAdrress.TabIndex = 26;
             // 
             // txtPhoneNumber
             // 
@@ -532,20 +543,20 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1178, 885);
             Controls.Add(cmbInter);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(DatePickerEndDate);
             Controls.Add(lblEndDate);
             Controls.Add(lblStatDate);
             Controls.Add(txtLearningProgramme);
             Controls.Add(txtLastSchoolAttended);
             Controls.Add(txtHighestEducation);
             Controls.Add(chkDeclaration);
-            Controls.Add(lblStartDate);
+            Controls.Add(DatePickerStartDate);
             Controls.Add(textBox3);
             Controls.Add(txtTrainingProvider);
             Controls.Add(txtGrantContractNumber);
             Controls.Add(txtEmailAddress);
             Controls.Add(txtPhoneNumber);
-            Controls.Add(textBox2);
+            Controls.Add(txtPostAdrress);
             Controls.Add(txtHomeAddress);
             Controls.Add(txtCompanyName);
             Controls.Add(txtOFOCode);
@@ -613,21 +624,21 @@
         private TextBox txtOFOCode;
         private TextBox txtCompanyName;
         private TextBox txtHomeAddress;
-        private TextBox textBox2;
+        private TextBox txtPostAdrress;
         private TextBox txtPhoneNumber;
         private TextBox txtEmailAddress;
         private TextBox txtGrantContractNumber;
         private TextBox txtTrainingProvider;
         private TextBox txtProgrammeDates;
         private TextBox textBox3;
-        private DateTimePicker lblStartDate;
+        private DateTimePicker DatePickerStartDate;
         private CheckBox chkDeclaration;
         private TextBox txtHighestEducation;
         private TextBox txtLastSchoolAttended;
         private TextBox txtLearningProgramme;
         private Label lblStatDate;
         private Label lblEndDate;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DatePickerEndDate;
         private ComboBox cmbInter;
     }
 }

@@ -58,7 +58,9 @@
             lblAdminApprovalNote = new Label();
             tooltipAddUnitStandard = new ToolTip(components);
             toolTipCancelUnitStandard = new ToolTip(components);
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblTitle
@@ -67,11 +69,12 @@
             lblTitle.BackColor = Color.Blue;
             lblTitle.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(250, 10);
+            lblTitle.Location = new Point(239, 13);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(291, 46);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Create Course";
+            lblTitle.Click += lblTitle_Click_1;
             // 
             // lblCourseName
             // 
@@ -85,9 +88,10 @@
             // 
             // txtCourseName
             // 
+            txtCourseName.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtCourseName.Location = new Point(250, 93);
             txtCourseName.Name = "txtCourseName";
-            txtCourseName.Size = new Size(291, 31);
+            txtCourseName.Size = new Size(291, 30);
             txtCourseName.TabIndex = 2;
             // 
             // dgvUnitStandards
@@ -335,11 +339,21 @@
             // 
             tooltipAddUnitStandard.Popup += tooltipAddUnitStandard_Popup;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Orange;
+            panel1.Controls.Add(lblTitle);
+            panel1.Location = new Point(3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(792, 66);
+            panel1.TabIndex = 27;
+            // 
             // FrmCreateCourseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(797, 755);
+            Controls.Add(panel1);
             Controls.Add(lblAdminApprovalNote);
             Controls.Add(btnNext);
             Controls.Add(btnPrevious);
@@ -366,10 +380,11 @@
             Controls.Add(dgvUnitStandards);
             Controls.Add(txtCourseName);
             Controls.Add(lblCourseName);
-            Controls.Add(lblTitle);
             Name = "FrmCreateCourseForm";
             Text = "CreateCourseForm";
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -405,5 +420,6 @@
         private Label lblAdminApprovalNote;
         private ToolTip tooltipAddUnitStandard;
         private ToolTip toolTipCancelUnitStandard;
+        private Panel panel1;
     }
 }

@@ -33,18 +33,19 @@
             textBox1 = new TextBox();
             btnSearchPractitioner = new Button();
             dgvPractitioner = new DataGridView();
-            btnEditPractitioner = new Button();
-            btnCreatePractitioner = new Button();
             First_Name = new DataGridViewTextBoxColumn();
             Surname = new DataGridViewTextBoxColumn();
             Role = new DataGridViewTextBoxColumn();
             Course = new DataGridViewTextBoxColumn();
+            btnEditPractitioner = new Button();
+            btnCreatePractitioner = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPractitioner).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = Color.Orange;
             panel1.Controls.Add(lblSearchPractitioner);
             panel1.Location = new Point(1, 1);
             panel1.Name = "panel1";
@@ -97,31 +98,6 @@
             dgvPractitioner.Size = new Size(1109, 225);
             dgvPractitioner.TabIndex = 3;
             // 
-            // btnEditPractitioner
-            // 
-            btnEditPractitioner.BackColor = Color.Green;
-            btnEditPractitioner.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEditPractitioner.ForeColor = Color.White;
-            btnEditPractitioner.Location = new Point(717, 219);
-            btnEditPractitioner.Name = "btnEditPractitioner";
-            btnEditPractitioner.Size = new Size(81, 41);
-            btnEditPractitioner.TabIndex = 4;
-            btnEditPractitioner.Text = "Edit";
-            btnEditPractitioner.UseVisualStyleBackColor = false;
-            // 
-            // btnCreatePractitioner
-            // 
-            btnCreatePractitioner.BackColor = Color.DarkBlue;
-            btnCreatePractitioner.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreatePractitioner.ForeColor = Color.White;
-            btnCreatePractitioner.Location = new Point(888, 455);
-            btnCreatePractitioner.Name = "btnCreatePractitioner";
-            btnCreatePractitioner.Size = new Size(269, 41);
-            btnCreatePractitioner.TabIndex = 5;
-            btnCreatePractitioner.Text = "Create New Practitioner";
-            btnCreatePractitioner.UseVisualStyleBackColor = false;
-            btnCreatePractitioner.Click += btnCreatePractitioner_Click;
-            // 
             // First_Name
             // 
             First_Name.HeaderText = "First Name";
@@ -149,6 +125,31 @@
             Course.MinimumWidth = 8;
             Course.Name = "Course";
             Course.Width = 150;
+            // 
+            // btnEditPractitioner
+            // 
+            btnEditPractitioner.BackColor = Color.Green;
+            btnEditPractitioner.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEditPractitioner.ForeColor = Color.White;
+            btnEditPractitioner.Location = new Point(717, 219);
+            btnEditPractitioner.Name = "btnEditPractitioner";
+            btnEditPractitioner.Size = new Size(81, 41);
+            btnEditPractitioner.TabIndex = 4;
+            btnEditPractitioner.Text = "Edit";
+            btnEditPractitioner.UseVisualStyleBackColor = false;
+            // 
+            // btnCreatePractitioner
+            // 
+            btnCreatePractitioner.BackColor = Color.DarkBlue;
+            btnCreatePractitioner.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCreatePractitioner.ForeColor = Color.White;
+            btnCreatePractitioner.Location = new Point(888, 455);
+            btnCreatePractitioner.Name = "btnCreatePractitioner";
+            btnCreatePractitioner.Size = new Size(269, 45);
+            btnCreatePractitioner.TabIndex = 5;
+            btnCreatePractitioner.Text = "Create New Practitioner";
+            btnCreatePractitioner.UseVisualStyleBackColor = false;
+            btnCreatePractitioner.Click += btnCreatePractitioner_Click;
             // 
             // frmPractitionersViewScreen
             // 

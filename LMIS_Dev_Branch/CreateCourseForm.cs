@@ -21,5 +21,15 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

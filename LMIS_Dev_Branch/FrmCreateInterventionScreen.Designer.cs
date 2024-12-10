@@ -45,7 +45,8 @@
             cmbModeratorDropdown = new ComboBox();
             btnLinkLearners = new Button();
             toolTip1 = new ToolTip(components);
-            button1 = new Button();
+            btnSaveIntervention = new Button();
+            btnCancelIntervention = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -103,9 +104,9 @@
             lblDates.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblDates.Location = new Point(40, 207);
             lblDates.Name = "lblDates";
-            lblDates.Size = new Size(62, 23);
+            lblDates.Size = new Size(52, 23);
             lblDates.TabIndex = 5;
-            lblDates.Text = "Dates";
+            lblDates.Text = "Date";
             // 
             // lblFunder
             // 
@@ -189,7 +190,7 @@
             btnLinkLearners.BackColor = Color.Blue;
             btnLinkLearners.Font = new Font("Arial", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLinkLearners.ForeColor = Color.White;
-            btnLinkLearners.Location = new Point(40, 540);
+            btnLinkLearners.Location = new Point(40, 544);
             btnLinkLearners.Name = "btnLinkLearners";
             btnLinkLearners.Size = new Size(50, 50);
             btnLinkLearners.TabIndex = 14;
@@ -201,25 +202,38 @@
             // 
             toolTip1.ToolTipIcon = ToolTipIcon.Info;
             // 
-            // button1
+            // btnSaveIntervention
             // 
-            button1.BackColor = Color.Blue;
-            button1.Font = new Font("Arial", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(413, 580);
-            button1.Name = "button1";
-            button1.Size = new Size(50, 50);
-            button1.TabIndex = 15;
-            button1.Text = " ";
-            toolTip1.SetToolTip(button1, "Add learner by ID");
-            button1.UseVisualStyleBackColor = false;
+            btnSaveIntervention.BackColor = Color.Green;
+            btnSaveIntervention.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnSaveIntervention.ForeColor = Color.White;
+            btnSaveIntervention.Location = new Point(294, 550);
+            btnSaveIntervention.Name = "btnSaveIntervention";
+            btnSaveIntervention.Size = new Size(150, 50);
+            btnSaveIntervention.TabIndex = 15;
+            btnSaveIntervention.Text = "Save";
+            btnSaveIntervention.UseVisualStyleBackColor = false;
+            btnSaveIntervention.Click += btnSaveIntervention_Click;
+            // 
+            // btnCancelIntervention
+            // 
+            btnCancelIntervention.BackColor = Color.Red;
+            btnCancelIntervention.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCancelIntervention.ForeColor = Color.White;
+            btnCancelIntervention.Location = new Point(603, 550);
+            btnCancelIntervention.Name = "btnCancelIntervention";
+            btnCancelIntervention.Size = new Size(150, 50);
+            btnCancelIntervention.TabIndex = 16;
+            btnCancelIntervention.Text = "Cancel";
+            btnCancelIntervention.UseVisualStyleBackColor = false;
             // 
             // FrmCreateInterventionScreen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 783);
-            Controls.Add(button1);
+            ClientSize = new Size(800, 637);
+            Controls.Add(btnCancelIntervention);
+            Controls.Add(btnSaveIntervention);
             Controls.Add(btnLinkLearners);
             Controls.Add(cmbModeratorDropdown);
             Controls.Add(lblModerator);
@@ -260,6 +274,7 @@
         private ComboBox cmbModeratorDropdown;
         private Button btnLinkLearners;
         private ToolTip toolTip1;
-        private Button button1;
+        private Button btnSaveIntervention;
+        private Button btnCancelIntervention;
     }
 }

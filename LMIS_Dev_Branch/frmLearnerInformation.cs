@@ -125,5 +125,60 @@ namespace LMIS_Dev_Branch
             //collect learner info from form and add to LIF object 
             //call add LIF from Db context and pass it through the LIF object 
         }
+
+        private void txtSearchLearner_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEnroll_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvLearnerList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtSurname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtFullNames_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdentityNumber_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbNationality_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbHomeLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAge_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUploadID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
