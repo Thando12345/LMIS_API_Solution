@@ -37,11 +37,11 @@
             label1 = new Label();
             panel1 = new Panel();
             dgvPractitionerRole = new DataGridView();
-            btnEdit = new Button();
-            btnDelete = new Button();
             Role_Name = new DataGridViewTextBoxColumn();
             Selected = new DataGridViewTextBoxColumn();
             Actions = new DataGridViewTextBoxColumn();
+            btnEdit = new Button();
+            btnDelete = new Button();
             btnAddRole = new Button();
             btnSavePractitioner = new Button();
             btnCancelPractitioner = new Button();
@@ -139,31 +139,6 @@
             dgvPractitionerRole.TabIndex = 8;
             dgvPractitionerRole.CellContentClick += dgvPractitionerRole_CellContentClick;
             // 
-            // btnEdit
-            // 
-            btnEdit.BackColor = Color.Blue;
-            btnEdit.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(437, 387);
-            btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(60, 34);
-            btnEdit.TabIndex = 9;
-            btnEdit.Text = "Edit ";
-            btnEdit.UseVisualStyleBackColor = false;
-            // 
-            // btnDelete
-            // 
-            btnDelete.BackColor = Color.Red;
-            btnDelete.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(506, 387);
-            btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(79, 34);
-            btnDelete.TabIndex = 10;
-            btnDelete.Text = "Delete";
-            btnDelete.UseVisualStyleBackColor = false;
-            btnDelete.Click += btnDelete_Click;
-            // 
             // Role_Name
             // 
             Role_Name.HeaderText = "Role Name";
@@ -185,6 +160,32 @@
             Actions.Name = "Actions";
             Actions.Width = 200;
             // 
+            // btnEdit
+            // 
+            btnEdit.BackColor = Color.Blue;
+            btnEdit.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnEdit.ForeColor = Color.White;
+            btnEdit.Location = new Point(437, 387);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(60, 34);
+            btnEdit.TabIndex = 9;
+            btnEdit.Text = "Edit ";
+            btnEdit.UseVisualStyleBackColor = false;
+            btnEdit.Click += btnEdit_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.BackColor = Color.Red;
+            btnDelete.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnDelete.ForeColor = Color.White;
+            btnDelete.Location = new Point(506, 387);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(79, 34);
+            btnDelete.TabIndex = 10;
+            btnDelete.Text = "Delete";
+            btnDelete.UseVisualStyleBackColor = false;
+            btnDelete.Click += btnDelete_Click;
+            // 
             // btnAddRole
             // 
             btnAddRole.BackColor = Color.Blue;
@@ -196,6 +197,7 @@
             btnAddRole.TabIndex = 11;
             btnAddRole.Text = "Add Role";
             btnAddRole.UseVisualStyleBackColor = false;
+            btnAddRole.Click += btnAddRole_Click;
             // 
             // btnSavePractitioner
             // 
@@ -208,6 +210,7 @@
             btnSavePractitioner.TabIndex = 12;
             btnSavePractitioner.Text = "Save";
             btnSavePractitioner.UseVisualStyleBackColor = false;
+            btnSavePractitioner.Click += btnSavePractitioner_Click;
             // 
             // btnCancelPractitioner
             // 
@@ -220,6 +223,7 @@
             btnCancelPractitioner.TabIndex = 13;
             btnCancelPractitioner.Text = "Cancel";
             btnCancelPractitioner.UseVisualStyleBackColor = false;
+            btnCancelPractitioner.Click += btnCancelPractitioner_Click;
             // 
             // frmPractitionerCreateEditScreen
             // 

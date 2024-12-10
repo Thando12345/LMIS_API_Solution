@@ -37,5 +37,25 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSavePractitioner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelPractitioner_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
