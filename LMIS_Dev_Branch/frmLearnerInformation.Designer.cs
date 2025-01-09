@@ -49,11 +49,6 @@
             btnDelete = new Button();
             btnSave = new Button();
             dgvLearnerList = new DataGridView();
-            Learner_surname = new DataGridViewTextBoxColumn();
-            Learner_first_name = new DataGridViewTextBoxColumn();
-            Learner_ID = new DataGridViewTextBoxColumn();
-            Course = new DataGridViewTextBoxColumn();
-            Action = new DataGridViewTextBoxColumn();
             txtSurname = new TextBox();
             label1 = new Label();
             txtFullNames = new TextBox();
@@ -82,10 +77,11 @@
             // btnSearch
             // 
             btnSearch.BackColor = Color.Blue;
+            btnSearch.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = Color.White;
-            btnSearch.Location = new Point(260, 20);
+            btnSearch.Location = new Point(286, 18);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(80, 36);
+            btnSearch.Size = new Size(99, 35);
             btnSearch.TabIndex = 0;
             btnSearch.Text = "Search";
             toolTip1.SetToolTip(btnSearch, "Enter Learner ID or Surname to search.");
@@ -94,9 +90,10 @@
             // 
             // txtSearchLearner
             // 
-            txtSearchLearner.Location = new Point(50, 20);
+            txtSearchLearner.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSearchLearner.Location = new Point(55, 18);
             txtSearchLearner.Name = "txtSearchLearner";
-            txtSearchLearner.Size = new Size(200, 31);
+            txtSearchLearner.Size = new Size(220, 35);
             txtSearchLearner.TabIndex = 1;
             toolTip1.SetToolTip(txtSearchLearner, "Enter Learner ID or Surname to search.");
             txtSearchLearner.TextChanged += txtSearchLearner_TextChanged;
@@ -109,10 +106,10 @@
             // textBox1
             // 
             textBox1.ForeColor = Color.DarkGray;
-            textBox1.Location = new Point(489, 357);
+            textBox1.Location = new Point(538, 328);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Alternate ID";
-            textBox1.Size = new Size(0, 31);
+            textBox1.Size = new Size(1, 30);
             textBox1.TabIndex = 15;
             toolTip1.SetToolTip(textBox1, "For non-RSA citizens, enter an alternate ID.");
             // 
@@ -120,7 +117,7 @@
             // 
             chkDeclaration.AutoSize = true;
             chkDeclaration.Font = new Font("Arial Narrow", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            chkDeclaration.Location = new Point(610, 827);
+            chkDeclaration.Location = new Point(646, 871);
             chkDeclaration.Name = "chkDeclaration";
             chkDeclaration.Size = new Size(457, 28);
             chkDeclaration.TabIndex = 35;
@@ -133,9 +130,9 @@
             // 
             btnEdit.BackColor = Color.DeepSkyBlue;
             btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(864, 154);
+            btnEdit.Location = new Point(1271, 156);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(80, 35);
+            btnEdit.Size = new Size(88, 32);
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit ";
             btnEdit.UseVisualStyleBackColor = false;
@@ -145,9 +142,9 @@
             // 
             btnUploadID.BackColor = Color.Teal;
             btnUploadID.ForeColor = Color.White;
-            btnUploadID.Location = new Point(167, 818);
+            btnUploadID.Location = new Point(182, 858);
             btnUploadID.Name = "btnUploadID";
-            btnUploadID.Size = new Size(120, 42);
+            btnUploadID.Size = new Size(132, 49);
             btnUploadID.TabIndex = 7;
             btnUploadID.Text = "Upload ID";
             btnUploadID.UseVisualStyleBackColor = false;
@@ -157,9 +154,9 @@
             // 
             btnUploadQualification.BackColor = Color.Teal;
             btnUploadQualification.ForeColor = Color.White;
-            btnUploadQualification.Location = new Point(302, 818);
+            btnUploadQualification.Location = new Point(333, 859);
             btnUploadQualification.Name = "btnUploadQualification";
-            btnUploadQualification.Size = new Size(200, 42);
+            btnUploadQualification.Size = new Size(220, 48);
             btnUploadQualification.TabIndex = 8;
             btnUploadQualification.Text = "Upload Qualifications";
             btnUploadQualification.UseVisualStyleBackColor = false;
@@ -168,55 +165,55 @@
             // txtIdentityNumber
             // 
             txtIdentityNumber.ForeColor = Color.DarkGray;
-            txtIdentityNumber.Location = new Point(610, 400);
+            txtIdentityNumber.Location = new Point(671, 447);
             txtIdentityNumber.Name = "txtIdentityNumber";
             txtIdentityNumber.PlaceholderText = "Identity Number";
-            txtIdentityNumber.Size = new Size(200, 31);
+            txtIdentityNumber.Size = new Size(220, 30);
             txtIdentityNumber.TabIndex = 13;
             txtIdentityNumber.TextChanged += txtIdentityNumber_TextChanged;
             // 
             // txtAlternateID
             // 
             txtAlternateID.ForeColor = Color.DarkGray;
-            txtAlternateID.Location = new Point(830, 400);
+            txtAlternateID.Location = new Point(913, 447);
             txtAlternateID.Name = "txtAlternateID";
             txtAlternateID.PlaceholderText = "Alternate ID";
-            txtAlternateID.Size = new Size(200, 31);
+            txtAlternateID.Size = new Size(220, 30);
             txtAlternateID.TabIndex = 14;
             txtAlternateID.TextChanged += txtAlternateID_TextChanged;
             // 
             // DatePickerStartDate
             // 
-            DatePickerStartDate.Location = new Point(444, 701);
+            DatePickerStartDate.Location = new Point(488, 724);
             DatePickerStartDate.Name = "DatePickerStartDate";
-            DatePickerStartDate.Size = new Size(246, 31);
+            DatePickerStartDate.Size = new Size(271, 30);
             DatePickerStartDate.TabIndex = 34;
             DatePickerStartDate.ValueChanged += lblStartDate_ValueChanged;
             // 
             // txtHighestEducation
             // 
             txtHighestEducation.ForeColor = Color.DarkGray;
-            txtHighestEducation.Location = new Point(50, 756);
+            txtHighestEducation.Location = new Point(55, 775);
             txtHighestEducation.Name = "txtHighestEducation";
             txtHighestEducation.PlaceholderText = "Highest Level of Education Attained";
-            txtHighestEducation.Size = new Size(300, 31);
+            txtHighestEducation.Size = new Size(330, 30);
             txtHighestEducation.TabIndex = 36;
             txtHighestEducation.TextChanged += textBox4_TextChanged;
             // 
             // txtLearningProgramme
             // 
             txtLearningProgramme.ForeColor = Color.DarkGray;
-            txtLearningProgramme.Location = new Point(50, 703);
+            txtLearningProgramme.Location = new Point(55, 726);
             txtLearningProgramme.Name = "txtLearningProgramme";
             txtLearningProgramme.PlaceholderText = "Learning Programme";
-            txtLearningProgramme.Size = new Size(250, 31);
+            txtLearningProgramme.Size = new Size(275, 30);
             txtLearningProgramme.TabIndex = 39;
             // 
             // DatePickerEndDate
             // 
-            DatePickerEndDate.Location = new Point(883, 701);
+            DatePickerEndDate.Location = new Point(971, 724);
             DatePickerEndDate.Name = "DatePickerEndDate";
-            DatePickerEndDate.Size = new Size(246, 31);
+            DatePickerEndDate.Size = new Size(271, 30);
             DatePickerEndDate.TabIndex = 42;
             // 
             // cmbInter
@@ -224,19 +221,20 @@
             cmbInter.ForeColor = Color.DarkGray;
             cmbInter.FormattingEnabled = true;
             cmbInter.Items.AddRange(new object[] { "X", "Y", "Z" });
-            cmbInter.Location = new Point(330, 648);
+            cmbInter.Location = new Point(363, 675);
             cmbInter.Name = "cmbInter";
-            cmbInter.Size = new Size(200, 33);
+            cmbInter.Size = new Size(220, 31);
             cmbInter.TabIndex = 43;
             cmbInter.Text = " Intervention";
             // 
             // btnEnroll
             // 
             btnEnroll.BackColor = Color.Green;
+            btnEnroll.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnEnroll.ForeColor = Color.White;
-            btnEnroll.Location = new Point(360, 20);
+            btnEnroll.Location = new Point(396, 18);
             btnEnroll.Name = "btnEnroll";
-            btnEnroll.Size = new Size(100, 36);
+            btnEnroll.Size = new Size(110, 35);
             btnEnroll.TabIndex = 2;
             btnEnroll.Text = "Enroll";
             toolTip2.SetToolTip(btnEnroll, "Search for a learner based on ID or Surname.");
@@ -252,9 +250,9 @@
             // 
             btnDelete.BackColor = Color.Red;
             btnDelete.ForeColor = Color.White;
-            btnDelete.Location = new Point(864, 195);
+            btnDelete.Location = new Point(1271, 118);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(80, 35);
+            btnDelete.Size = new Size(88, 32);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
@@ -264,9 +262,9 @@
             // 
             btnSave.BackColor = Color.Blue;
             btnSave.ForeColor = Color.White;
-            btnSave.Location = new Point(50, 818);
+            btnSave.Location = new Point(53, 858);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(111, 42);
+            btnSave.Size = new Size(122, 49);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
@@ -275,75 +273,39 @@
             // dgvLearnerList
             // 
             dgvLearnerList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvLearnerList.Columns.AddRange(new DataGridViewColumn[] { Learner_surname, Learner_first_name, Learner_ID, Course, Action });
-            dgvLearnerList.Location = new Point(50, 70);
+            dgvLearnerList.Location = new Point(55, 118);
             dgvLearnerList.Name = "dgvLearnerList";
             dgvLearnerList.RowHeadersWidth = 62;
-            dgvLearnerList.Size = new Size(1100, 300);
+            dgvLearnerList.Size = new Size(1210, 276);
             dgvLearnerList.TabIndex = 3;
             dgvLearnerList.CellContentClick += dgvLearnerList_CellContentClick;
-            // 
-            // Learner_surname
-            // 
-            Learner_surname.HeaderText = "Learner's surname";
-            Learner_surname.MinimumWidth = 8;
-            Learner_surname.Name = "Learner_surname";
-            Learner_surname.Width = 150;
-            // 
-            // Learner_first_name
-            // 
-            Learner_first_name.HeaderText = "Learner's first name(s)";
-            Learner_first_name.MinimumWidth = 8;
-            Learner_first_name.Name = "Learner_first_name";
-            Learner_first_name.Width = 150;
-            // 
-            // Learner_ID
-            // 
-            Learner_ID.HeaderText = "Learner's ID number";
-            Learner_ID.MinimumWidth = 8;
-            Learner_ID.Name = "Learner_ID";
-            Learner_ID.Width = 150;
-            // 
-            // Course
-            // 
-            Course.HeaderText = "Course enrolled by the learner";
-            Course.MinimumWidth = 8;
-            Course.Name = "Course";
-            Course.Width = 150;
-            // 
-            // Action
-            // 
-            Action.HeaderText = "Action";
-            Action.MinimumWidth = 8;
-            Action.Name = "Action";
-            Action.Width = 150;
             // 
             // txtSurname
             // 
             txtSurname.ForeColor = Color.DarkGray;
-            txtSurname.Location = new Point(50, 400);
+            txtSurname.Location = new Point(55, 447);
             txtSurname.Name = "txtSurname";
             txtSurname.PlaceholderText = "Surname";
-            txtSurname.Size = new Size(250, 31);
+            txtSurname.Size = new Size(275, 30);
             txtSurname.TabIndex = 10;
             txtSurname.TextChanged += txtSurname_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(-73, 0);
+            label1.Location = new Point(-80, 0);
             label1.Name = "label1";
-            label1.Size = new Size(82, 25);
+            label1.Size = new Size(88, 23);
             label1.TabIndex = 11;
             label1.Text = "Surname";
             // 
             // txtFullNames
             // 
             txtFullNames.ForeColor = Color.DarkGray;
-            txtFullNames.Location = new Point(330, 400);
+            txtFullNames.Location = new Point(363, 447);
             txtFullNames.Name = "txtFullNames";
             txtFullNames.PlaceholderText = "Full Names";
-            txtFullNames.Size = new Size(250, 31);
+            txtFullNames.Size = new Size(275, 30);
             txtFullNames.TabIndex = 12;
             txtFullNames.TextChanged += txtFullNames_TextChanged;
             // 
@@ -352,9 +314,9 @@
             cmbNationality.ForeColor = Color.DarkGray;
             cmbNationality.FormattingEnabled = true;
             cmbNationality.Items.AddRange(new object[] { "South Africa", "Zimbabwe", "Nigeria", "Kenya", "Tanzania", "Uganda", "Ghana", "Ethiopia", "Somalia" });
-            cmbNationality.Location = new Point(50, 450);
+            cmbNationality.Location = new Point(55, 493);
             cmbNationality.Name = "cmbNationality";
-            cmbNationality.Size = new Size(200, 33);
+            cmbNationality.Size = new Size(220, 31);
             cmbNationality.TabIndex = 16;
             cmbNationality.Text = "Nationality";
             cmbNationality.SelectedIndexChanged += cmbNationality_SelectedIndexChanged;
@@ -364,9 +326,9 @@
             cmbHomeLanguage.ForeColor = Color.DarkGray;
             cmbHomeLanguage.FormattingEnabled = true;
             cmbHomeLanguage.Items.AddRange(new object[] { "Zulu", "Xhosa", "Afrikaans", "English", "Sesotho", "Setswana", "Sepedi (Northern Sotho)", "Tswana", "Venda", "Tsonga", "Ndebele", "South African Sign Language", "Other (specify)" });
-            cmbHomeLanguage.Location = new Point(270, 450);
+            cmbHomeLanguage.Location = new Point(297, 493);
             cmbHomeLanguage.Name = "cmbHomeLanguage";
-            cmbHomeLanguage.Size = new Size(200, 33);
+            cmbHomeLanguage.Size = new Size(220, 31);
             cmbHomeLanguage.TabIndex = 17;
             cmbHomeLanguage.Text = "Home Language";
             cmbHomeLanguage.SelectedIndexChanged += cmbHomeLanguage_SelectedIndexChanged;
@@ -374,10 +336,10 @@
             // txtAge
             // 
             txtAge.ForeColor = Color.DarkGray;
-            txtAge.Location = new Point(490, 450);
+            txtAge.Location = new Point(539, 493);
             txtAge.Name = "txtAge";
             txtAge.PlaceholderText = "Age";
-            txtAge.Size = new Size(100, 31);
+            txtAge.Size = new Size(110, 30);
             txtAge.TabIndex = 18;
             txtAge.TextChanged += txtAge_TextChanged;
             // 
@@ -386,9 +348,9 @@
             cmbGender.ForeColor = Color.DarkGray;
             cmbGender.FormattingEnabled = true;
             cmbGender.Items.AddRange(new object[] { "Male", "Female", "Other (specify)" });
-            cmbGender.Location = new Point(610, 450);
+            cmbGender.Location = new Point(671, 493);
             cmbGender.Name = "cmbGender";
-            cmbGender.Size = new Size(200, 33);
+            cmbGender.Size = new Size(220, 31);
             cmbGender.TabIndex = 19;
             cmbGender.Text = "Gender";
             cmbGender.SelectedIndexChanged += cmbGender_SelectedIndexChanged;
@@ -398,9 +360,9 @@
             cmbRace.ForeColor = Color.DarkGray;
             cmbRace.FormattingEnabled = true;
             cmbRace.Items.AddRange(new object[] { "Male", "Female", "Other (specify)" });
-            cmbRace.Location = new Point(830, 450);
+            cmbRace.Location = new Point(913, 493);
             cmbRace.Name = "cmbRace";
-            cmbRace.Size = new Size(200, 33);
+            cmbRace.Size = new Size(220, 31);
             cmbRace.TabIndex = 20;
             cmbRace.Text = "Race";
             // 
@@ -409,9 +371,9 @@
             cmbDisabilityStatus.ForeColor = Color.DarkGray;
             cmbDisabilityStatus.FormattingEnabled = true;
             cmbDisabilityStatus.Items.AddRange(new object[] { "No Disability", "Visual Impairment", "", "Hearing Impairment", "", "Mobility Impairment", "", "Cognitive Impairment", "", "Mental Health Condition", "", "Chronic Illness", "", "Learning Disability", "", "Speech or Language Impairment", "", "Developmental Disability", "", "Other (specify)" });
-            cmbDisabilityStatus.Location = new Point(50, 500);
+            cmbDisabilityStatus.Location = new Point(55, 539);
             cmbDisabilityStatus.Name = "cmbDisabilityStatus";
-            cmbDisabilityStatus.Size = new Size(200, 33);
+            cmbDisabilityStatus.Size = new Size(220, 31);
             cmbDisabilityStatus.TabIndex = 21;
             cmbDisabilityStatus.Text = "Disability Status";
             // 
@@ -420,128 +382,128 @@
             cmbEmploymentStatus.ForeColor = Color.DarkGray;
             cmbEmploymentStatus.FormattingEnabled = true;
             cmbEmploymentStatus.Items.AddRange(new object[] { "Employed Full-Time", "", "Employed Part-Time", "", "Self-Employed", "", "Unemployed", "", "Student", "", "Retired", "", "Freelance", "", "Contract Worker", "", "Intern", "", "Other (specify)" });
-            cmbEmploymentStatus.Location = new Point(270, 500);
+            cmbEmploymentStatus.Location = new Point(297, 539);
             cmbEmploymentStatus.Name = "cmbEmploymentStatus";
-            cmbEmploymentStatus.Size = new Size(200, 33);
+            cmbEmploymentStatus.Size = new Size(220, 31);
             cmbEmploymentStatus.TabIndex = 22;
             cmbEmploymentStatus.Text = "Employment Status";
             // 
             // txtOFOCode
             // 
             txtOFOCode.ForeColor = Color.DarkGray;
-            txtOFOCode.Location = new Point(490, 500);
+            txtOFOCode.Location = new Point(539, 539);
             txtOFOCode.Name = "txtOFOCode";
             txtOFOCode.PlaceholderText = " OFO Code";
-            txtOFOCode.Size = new Size(200, 31);
+            txtOFOCode.Size = new Size(220, 30);
             txtOFOCode.TabIndex = 23;
             // 
             // txtCompanyName
             // 
             txtCompanyName.ForeColor = Color.DarkGray;
-            txtCompanyName.Location = new Point(710, 500);
+            txtCompanyName.Location = new Point(781, 539);
             txtCompanyName.Name = "txtCompanyName";
             txtCompanyName.PlaceholderText = "Company Name";
-            txtCompanyName.Size = new Size(320, 31);
+            txtCompanyName.Size = new Size(352, 30);
             txtCompanyName.TabIndex = 24;
             // 
             // txtHomeAddress
             // 
             txtHomeAddress.ForeColor = Color.DarkGray;
-            txtHomeAddress.Location = new Point(50, 550);
+            txtHomeAddress.Location = new Point(55, 585);
             txtHomeAddress.Name = "txtHomeAddress";
             txtHomeAddress.PlaceholderText = "Home Address";
-            txtHomeAddress.Size = new Size(500, 31);
+            txtHomeAddress.Size = new Size(550, 30);
             txtHomeAddress.TabIndex = 25;
             // 
             // txtPostAdrress
             // 
             txtPostAdrress.ForeColor = Color.DarkGray;
-            txtPostAdrress.Location = new Point(570, 550);
+            txtPostAdrress.Location = new Point(627, 585);
             txtPostAdrress.Name = "txtPostAdrress";
             txtPostAdrress.PlaceholderText = "Postal Address";
-            txtPostAdrress.Size = new Size(500, 31);
+            txtPostAdrress.Size = new Size(550, 30);
             txtPostAdrress.TabIndex = 26;
             // 
             // txtPhoneNumber
             // 
             txtPhoneNumber.ForeColor = Color.DarkGray;
-            txtPhoneNumber.Location = new Point(50, 600);
+            txtPhoneNumber.Location = new Point(55, 631);
             txtPhoneNumber.Name = "txtPhoneNumber";
             txtPhoneNumber.PlaceholderText = "Phone Number";
-            txtPhoneNumber.Size = new Size(200, 31);
+            txtPhoneNumber.Size = new Size(220, 30);
             txtPhoneNumber.TabIndex = 27;
             // 
             // txtEmailAddress
             // 
             txtEmailAddress.ForeColor = Color.DarkGray;
-            txtEmailAddress.Location = new Point(270, 600);
+            txtEmailAddress.Location = new Point(297, 631);
             txtEmailAddress.Name = "txtEmailAddress";
             txtEmailAddress.PlaceholderText = "Email Address";
-            txtEmailAddress.Size = new Size(300, 31);
+            txtEmailAddress.Size = new Size(330, 30);
             txtEmailAddress.TabIndex = 28;
             txtEmailAddress.TextChanged += txtEmailAddress_TextChanged;
             // 
             // txtGrantContractNumber
             // 
             txtGrantContractNumber.ForeColor = Color.DarkGray;
-            txtGrantContractNumber.Location = new Point(50, 650);
+            txtGrantContractNumber.Location = new Point(55, 677);
             txtGrantContractNumber.Name = "txtGrantContractNumber";
             txtGrantContractNumber.PlaceholderText = "Discretionary Grant Contract Number (if applicable)";
-            txtGrantContractNumber.Size = new Size(250, 31);
+            txtGrantContractNumber.Size = new Size(275, 30);
             txtGrantContractNumber.TabIndex = 29;
             // 
             // txtTrainingProvider
             // 
             txtTrainingProvider.ForeColor = Color.DarkGray;
-            txtTrainingProvider.Location = new Point(610, 650);
+            txtTrainingProvider.Location = new Point(671, 677);
             txtTrainingProvider.Name = "txtTrainingProvider";
             txtTrainingProvider.PlaceholderText = "Training Provider Name";
-            txtTrainingProvider.Size = new Size(250, 31);
+            txtTrainingProvider.Size = new Size(275, 30);
             txtTrainingProvider.TabIndex = 31;
             txtTrainingProvider.TextChanged += txtTrainingProvider_TextChanged;
             // 
             // textBox3
             // 
             textBox3.ForeColor = Color.DarkGray;
-            textBox3.Location = new Point(489, 416);
+            textBox3.Location = new Point(538, 462);
             textBox3.Name = "textBox3";
             textBox3.PlaceholderText = "Programme Dates";
-            textBox3.Size = new Size(0, 31);
+            textBox3.Size = new Size(1, 30);
             textBox3.TabIndex = 33;
             // 
             // txtLastSchoolAttended
             // 
             txtLastSchoolAttended.ForeColor = Color.DarkGray;
-            txtLastSchoolAttended.Location = new Point(390, 756);
+            txtLastSchoolAttended.Location = new Point(429, 775);
             txtLastSchoolAttended.Name = "txtLastSchoolAttended";
             txtLastSchoolAttended.PlaceholderText = "Enter the name of the last school attended. If not a high school, enter the primary school name.";
-            txtLastSchoolAttended.Size = new Size(760, 31);
+            txtLastSchoolAttended.Size = new Size(836, 30);
             txtLastSchoolAttended.TabIndex = 37;
             txtLastSchoolAttended.TextChanged += textBox4_TextChanged_1;
             // 
             // lblStatDate
             // 
             lblStatDate.AutoSize = true;
-            lblStatDate.Location = new Point(330, 706);
+            lblStatDate.Location = new Point(363, 729);
             lblStatDate.Name = "lblStatDate";
-            lblStatDate.Size = new Size(90, 25);
+            lblStatDate.Size = new Size(101, 23);
             lblStatDate.TabIndex = 40;
             lblStatDate.Text = "Start Date";
             // 
             // lblEndDate
             // 
             lblEndDate.AutoSize = true;
-            lblEndDate.Location = new Point(776, 707);
+            lblEndDate.Location = new Point(854, 729);
             lblEndDate.Name = "lblEndDate";
-            lblEndDate.Size = new Size(84, 25);
+            lblEndDate.Size = new Size(92, 23);
             lblEndDate.TabIndex = 41;
             lblEndDate.Text = "End Date";
             // 
             // frmLearnerInformation
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1178, 885);
+            ClientSize = new Size(1512, 964);
             Controls.Add(cmbInter);
             Controls.Add(DatePickerEndDate);
             Controls.Add(lblEndDate);
@@ -582,6 +544,7 @@
             Controls.Add(btnEnroll);
             Controls.Add(txtSearchLearner);
             Controls.Add(btnSearch);
+            Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "frmLearnerInformation";
             Text = "frmLearnerInformation";
             Load += frmLearnerInformation_Load;
@@ -600,11 +563,6 @@
         private DataGridView dgvLearnerList;
         private Button btnEdit;
         private Button btnDelete;
-        private DataGridViewTextBoxColumn Learner_surname;
-        private DataGridViewTextBoxColumn Learner_first_name;
-        private DataGridViewTextBoxColumn Learner_ID;
-        private DataGridViewTextBoxColumn Course;
-        private DataGridViewTextBoxColumn Action;
         private Button btnSave;
         private Button btnUploadID;
         private Button btnUploadQualification;

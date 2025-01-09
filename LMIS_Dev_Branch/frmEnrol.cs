@@ -22,7 +22,12 @@ namespace LMIS_Dev_Branch
 
         private void cbxCourseCode_SelectedIndexChanged(object sender, EventArgs e)
         {
-           Course course = new GetCourseByIdHandler(cbxCourseCode.Text).Course;  
+            //Course course = new GetCourseByIdHandler(cbxCourseCode.Text).Course;
+        }
+
+        private void frmEnrol_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
