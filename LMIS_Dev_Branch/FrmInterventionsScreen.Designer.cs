@@ -43,6 +43,7 @@
             btnDelete = new Button();
             btnCreateIntervention = new Button();
             panel1 = new Panel();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCourseDetail).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -170,7 +171,7 @@
             btnCreateIntervention.BackColor = Color.Green;
             btnCreateIntervention.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCreateIntervention.ForeColor = Color.White;
-            btnCreateIntervention.Location = new Point(948, 470);
+            btnCreateIntervention.Location = new Point(12, 476);
             btnCreateIntervention.Name = "btnCreateIntervention";
             btnCreateIntervention.Size = new Size(200, 50);
             btnCreateIntervention.TabIndex = 7;
@@ -188,11 +189,25 @@
             panel1.TabIndex = 8;
             panel1.Paint += panel1_Paint;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1037, 476);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 46;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // FrmInterventionsScreen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1166, 609);
+            Controls.Add(btnClose);
             Controls.Add(panel1);
             Controls.Add(btnCreateIntervention);
             Controls.Add(btnDelete);
@@ -201,6 +216,7 @@
             Controls.Add(btnSearch);
             Controls.Add(txtInterventionSearch);
             Name = "FrmInterventionsScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmInterventionsScreen";
             ((System.ComponentModel.ISupportInitialize)dgvCourseDetail).EndInit();
             panel1.ResumeLayout(false);
@@ -226,5 +242,6 @@
         private Button btnDelete;
         private Button btnCreateIntervention;
         private Panel panel1;
+        private Button btnClose;
     }
 }

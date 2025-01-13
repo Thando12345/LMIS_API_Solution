@@ -42,11 +42,11 @@
             // 
             lblUserPortal.AutoSize = true;
             lblUserPortal.BackColor = Color.DarkBlue;
-            lblUserPortal.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserPortal.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblUserPortal.ForeColor = Color.White;
-            lblUserPortal.Location = new Point(244, 7);
+            lblUserPortal.Location = new Point(462, 7);
             lblUserPortal.Name = "lblUserPortal";
-            lblUserPortal.Size = new Size(233, 46);
+            lblUserPortal.Size = new Size(281, 56);
             lblUserPortal.TabIndex = 0;
             lblUserPortal.Text = "User Portal";
             lblUserPortal.Click += lblUserPortal_Click;
@@ -54,10 +54,10 @@
             // btnEnrollLearner
             // 
             btnEnrollLearner.BackColor = Color.LightGreen;
-            btnEnrollLearner.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEnrollLearner.Location = new Point(247, 107);
+            btnEnrollLearner.Font = new Font("Arial", 11F);
+            btnEnrollLearner.Location = new Point(465, 111);
             btnEnrollLearner.Name = "btnEnrollLearner";
-            btnEnrollLearner.Size = new Size(197, 59);
+            btnEnrollLearner.Size = new Size(233, 77);
             btnEnrollLearner.TabIndex = 1;
             btnEnrollLearner.Text = "Enroll Learner";
             btnEnrollLearner.UseVisualStyleBackColor = false;
@@ -66,10 +66,10 @@
             // btnCreateCourse
             // 
             btnCreateCourse.BackColor = Color.Blue;
-            btnCreateCourse.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreateCourse.Location = new Point(247, 186);
+            btnCreateCourse.Font = new Font("Arial", 11F);
+            btnCreateCourse.Location = new Point(465, 200);
             btnCreateCourse.Name = "btnCreateCourse";
-            btnCreateCourse.Size = new Size(197, 59);
+            btnCreateCourse.Size = new Size(233, 77);
             btnCreateCourse.TabIndex = 2;
             btnCreateCourse.Text = "Create Course";
             btnCreateCourse.UseVisualStyleBackColor = false;
@@ -78,10 +78,10 @@
             // btnAddPractitioner
             // 
             btnAddPractitioner.BackColor = Color.LightBlue;
-            btnAddPractitioner.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAddPractitioner.Location = new Point(247, 264);
+            btnAddPractitioner.Font = new Font("Arial", 11F);
+            btnAddPractitioner.Location = new Point(465, 283);
             btnAddPractitioner.Name = "btnAddPractitioner";
-            btnAddPractitioner.Size = new Size(197, 59);
+            btnAddPractitioner.Size = new Size(233, 77);
             btnAddPractitioner.TabIndex = 3;
             btnAddPractitioner.Text = "Add Practitioner";
             btnAddPractitioner.UseVisualStyleBackColor = false;
@@ -90,10 +90,10 @@
             // btnCreateIntervention
             // 
             btnCreateIntervention.BackColor = Color.Orange;
-            btnCreateIntervention.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreateIntervention.Location = new Point(247, 341);
+            btnCreateIntervention.Font = new Font("Arial", 11F);
+            btnCreateIntervention.Location = new Point(465, 366);
             btnCreateIntervention.Name = "btnCreateIntervention";
-            btnCreateIntervention.Size = new Size(197, 59);
+            btnCreateIntervention.Size = new Size(233, 77);
             btnCreateIntervention.TabIndex = 4;
             btnCreateIntervention.Text = "Create Intervention";
             btnCreateIntervention.UseVisualStyleBackColor = false;
@@ -102,10 +102,10 @@
             // btnGenerateCertificate
             // 
             btnGenerateCertificate.BackColor = Color.Yellow;
-            btnGenerateCertificate.Font = new Font("Arial", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnGenerateCertificate.Location = new Point(247, 421);
+            btnGenerateCertificate.Font = new Font("Arial", 11F);
+            btnGenerateCertificate.Location = new Point(465, 458);
             btnGenerateCertificate.Name = "btnGenerateCertificate";
-            btnGenerateCertificate.Size = new Size(197, 59);
+            btnGenerateCertificate.Size = new Size(233, 77);
             btnGenerateCertificate.TabIndex = 5;
             btnGenerateCertificate.Text = "Generate Certificate";
             btnGenerateCertificate.UseVisualStyleBackColor = false;
@@ -115,17 +115,18 @@
             // 
             panel1.BackColor = Color.Orange;
             panel1.Controls.Add(lblUserPortal);
-            panel1.Font = new Font("Arial", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            panel1.Font = new Font("Arial", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             panel1.Location = new Point(3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(797, 71);
+            panel1.Size = new Size(1209, 71);
             panel1.TabIndex = 6;
             // 
             // FrmUserPortalMain
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(796, 514);
+            BackgroundImage = Properties.Resources.user_img1;
+            ClientSize = new Size(1214, 654);
             Controls.Add(panel1);
             Controls.Add(btnGenerateCertificate);
             Controls.Add(btnCreateIntervention);

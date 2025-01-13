@@ -32,5 +32,15 @@ namespace LMIS_Dev_Branch
             FrmBatchCertificatesScreen FrmBatchCertificatesScreen = new FrmBatchCertificatesScreen();
             FrmBatchCertificatesScreen.ShowDialog();
         }
+
+        private void lblCertification_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

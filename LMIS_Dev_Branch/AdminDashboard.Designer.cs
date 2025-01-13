@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
             lblAdminDashboard = new Label();
             btnManageUsers = new Button();
             btnManageTemplates = new Button();
@@ -47,6 +47,7 @@
             enrollStudentToolStripMenuItem = new ToolStripMenuItem();
             viewEnrollmentsToolStripMenuItem = new ToolStripMenuItem();
             LblAdminGeneral = new Button();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUsers).BeginInit();
             mstFrmAdminDashboard.SuspendLayout();
             SuspendLayout();
@@ -57,7 +58,7 @@
             lblAdminDashboard.AutoSize = true;
             lblAdminDashboard.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblAdminDashboard.ForeColor = Color.DodgerBlue;
-            lblAdminDashboard.Location = new Point(329, 59);
+            lblAdminDashboard.Location = new Point(327, 87);
             lblAdminDashboard.Name = "lblAdminDashboard";
             lblAdminDashboard.Size = new Size(365, 54);
             lblAdminDashboard.TabIndex = 0;
@@ -67,7 +68,7 @@
             // btnManageUsers
             // 
             btnManageUsers.BackColor = Color.LightGreen;
-            btnManageUsers.Location = new Point(50, 264);
+            btnManageUsers.Location = new Point(79, 256);
             btnManageUsers.Name = "btnManageUsers";
             btnManageUsers.Size = new Size(197, 59);
             btnManageUsers.TabIndex = 1;
@@ -78,7 +79,7 @@
             // btnManageTemplates
             // 
             btnManageTemplates.BackColor = Color.LightYellow;
-            btnManageTemplates.Location = new Point(50, 341);
+            btnManageTemplates.Location = new Point(79, 333);
             btnManageTemplates.Name = "btnManageTemplates";
             btnManageTemplates.Size = new Size(197, 59);
             btnManageTemplates.TabIndex = 2;
@@ -89,7 +90,7 @@
             // btnViewLogs
             // 
             btnViewLogs.BackColor = Color.LightBlue;
-            btnViewLogs.Location = new Point(50, 419);
+            btnViewLogs.Location = new Point(79, 411);
             btnViewLogs.Name = "btnViewLogs";
             btnViewLogs.Size = new Size(197, 59);
             btnViewLogs.TabIndex = 3;
@@ -100,7 +101,7 @@
             // btnApproveRequests
             // 
             btnApproveRequests.BackColor = Color.LightCoral;
-            btnApproveRequests.Location = new Point(50, 494);
+            btnApproveRequests.Location = new Point(79, 486);
             btnApproveRequests.Name = "btnApproveRequests";
             btnApproveRequests.Size = new Size(197, 59);
             btnApproveRequests.TabIndex = 4;
@@ -110,14 +111,14 @@
             // 
             // dgvUsers
             // 
-            dataGridViewCellStyle1.ForeColor = Color.LightGray;
-            dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.ForeColor = Color.LightGray;
+            dgvUsers.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             dgvUsers.BackgroundColor = Color.White;
             dgvUsers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvUsers.Location = new Point(329, 177);
+            dgvUsers.Location = new Point(327, 179);
             dgvUsers.Name = "dgvUsers";
             dgvUsers.RowHeadersWidth = 62;
-            dgvUsers.Size = new Size(550, 400);
+            dgvUsers.Size = new Size(852, 449);
             dgvUsers.TabIndex = 5;
             // 
             // lblSelectTemplate
@@ -136,7 +137,7 @@
             mstFrmAdminDashboard.Location = new Point(0, 0);
             mstFrmAdminDashboard.Name = "mstFrmAdminDashboard";
             mstFrmAdminDashboard.Padding = new Padding(9, 3, 0, 3);
-            mstFrmAdminDashboard.Size = new Size(1131, 35);
+            mstFrmAdminDashboard.Size = new Size(1259, 35);
             mstFrmAdminDashboard.TabIndex = 8;
             mstFrmAdminDashboard.Text = "menuStrip1";
             // 
@@ -200,7 +201,7 @@
             // LblAdminGeneral
             // 
             LblAdminGeneral.BackColor = Color.DarkGray;
-            LblAdminGeneral.Location = new Point(50, 187);
+            LblAdminGeneral.Location = new Point(79, 179);
             LblAdminGeneral.Name = "LblAdminGeneral";
             LblAdminGeneral.Size = new Size(197, 59);
             LblAdminGeneral.TabIndex = 9;
@@ -208,11 +209,25 @@
             LblAdminGeneral.UseVisualStyleBackColor = false;
             LblAdminGeneral.Click += LblAdminGeneral_Click;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1068, 656);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 47;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // frmAdminDashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1131, 672);
+            ClientSize = new Size(1259, 745);
+            Controls.Add(btnClose);
             Controls.Add(LblAdminGeneral);
             Controls.Add(mstFrmAdminDashboard);
             Controls.Add(lblSelectTemplate);
@@ -223,6 +238,7 @@
             Controls.Add(btnManageUsers);
             Controls.Add(lblAdminDashboard);
             Name = "frmAdminDashboard";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "AdminDashboard";
             Load += AdminDashboard_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUsers).EndInit();
@@ -252,5 +268,6 @@
         private ToolStripMenuItem enrollStudentToolStripMenuItem;
         private ToolStripMenuItem viewEnrollmentsToolStripMenuItem;
         private Button LblAdminGeneral;
+        private Button btnClose;
     }
 }

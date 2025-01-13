@@ -26,5 +26,10 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnCancelIntervention_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

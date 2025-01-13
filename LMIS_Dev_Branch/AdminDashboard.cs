@@ -52,8 +52,18 @@
 
         private void LblAdminGeneral_Click(object sender, EventArgs e)
         {
-            FrmAdminGeneral frmAdminGeneral    = new FrmAdminGeneral();
+            FrmAdminGeneral frmAdminGeneral = new FrmAdminGeneral();
             frmAdminGeneral.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

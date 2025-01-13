@@ -71,6 +71,7 @@
             txtLastSchoolAttended = new TextBox();
             lblStatDate = new Label();
             lblEndDate = new Label();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvLearnerList).BeginInit();
             SuspendLayout();
             // 
@@ -81,7 +82,7 @@
             btnSearch.ForeColor = Color.White;
             btnSearch.Location = new Point(286, 18);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(99, 35);
+            btnSearch.Size = new Size(99, 45);
             btnSearch.TabIndex = 0;
             btnSearch.Text = "Search";
             toolTip1.SetToolTip(btnSearch, "Enter Learner ID or Surname to search.");
@@ -90,10 +91,10 @@
             // 
             // txtSearchLearner
             // 
-            txtSearchLearner.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtSearchLearner.Location = new Point(55, 18);
+            txtSearchLearner.Font = new Font("Arial", 14F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtSearchLearner.Location = new Point(55, 23);
             txtSearchLearner.Name = "txtSearchLearner";
-            txtSearchLearner.Size = new Size(220, 35);
+            txtSearchLearner.Size = new Size(220, 40);
             txtSearchLearner.TabIndex = 1;
             toolTip1.SetToolTip(txtSearchLearner, "Enter Learner ID or Surname to search.");
             txtSearchLearner.TextChanged += txtSearchLearner_TextChanged;
@@ -130,9 +131,9 @@
             // 
             btnEdit.BackColor = Color.DeepSkyBlue;
             btnEdit.ForeColor = Color.White;
-            btnEdit.Location = new Point(1271, 156);
+            btnEdit.Location = new Point(1271, 170);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(88, 32);
+            btnEdit.Size = new Size(88, 46);
             btnEdit.TabIndex = 4;
             btnEdit.Text = "Edit ";
             btnEdit.UseVisualStyleBackColor = false;
@@ -144,7 +145,7 @@
             btnUploadID.ForeColor = Color.White;
             btnUploadID.Location = new Point(182, 858);
             btnUploadID.Name = "btnUploadID";
-            btnUploadID.Size = new Size(132, 49);
+            btnUploadID.Size = new Size(132, 50);
             btnUploadID.TabIndex = 7;
             btnUploadID.Text = "Upload ID";
             btnUploadID.UseVisualStyleBackColor = false;
@@ -156,7 +157,7 @@
             btnUploadQualification.ForeColor = Color.White;
             btnUploadQualification.Location = new Point(333, 859);
             btnUploadQualification.Name = "btnUploadQualification";
-            btnUploadQualification.Size = new Size(220, 48);
+            btnUploadQualification.Size = new Size(220, 50);
             btnUploadQualification.TabIndex = 8;
             btnUploadQualification.Text = "Upload Qualifications";
             btnUploadQualification.UseVisualStyleBackColor = false;
@@ -234,7 +235,7 @@
             btnEnroll.ForeColor = Color.White;
             btnEnroll.Location = new Point(396, 18);
             btnEnroll.Name = "btnEnroll";
-            btnEnroll.Size = new Size(110, 35);
+            btnEnroll.Size = new Size(110, 45);
             btnEnroll.TabIndex = 2;
             btnEnroll.Text = "Enroll";
             toolTip2.SetToolTip(btnEnroll, "Search for a learner based on ID or Surname.");
@@ -252,7 +253,7 @@
             btnDelete.ForeColor = Color.White;
             btnDelete.Location = new Point(1271, 118);
             btnDelete.Name = "btnDelete";
-            btnDelete.Size = new Size(88, 32);
+            btnDelete.Size = new Size(88, 46);
             btnDelete.TabIndex = 5;
             btnDelete.Text = "Delete";
             btnDelete.UseVisualStyleBackColor = false;
@@ -264,7 +265,7 @@
             btnSave.ForeColor = Color.White;
             btnSave.Location = new Point(53, 858);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(122, 49);
+            btnSave.Size = new Size(122, 50);
             btnSave.TabIndex = 6;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = false;
@@ -499,11 +500,25 @@
             lblEndDate.TabIndex = 41;
             lblEndDate.Text = "End Date";
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1271, 861);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 44;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // frmLearnerInformation
             // 
             AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1512, 964);
+            ClientSize = new Size(1406, 964);
+            Controls.Add(btnClose);
             Controls.Add(cmbInter);
             Controls.Add(DatePickerEndDate);
             Controls.Add(lblEndDate);
@@ -546,6 +561,7 @@
             Controls.Add(btnSearch);
             Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "frmLearnerInformation";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmLearnerInformation";
             Load += frmLearnerInformation_Load;
             ((System.ComponentModel.ISupportInitialize)dgvLearnerList).EndInit();
@@ -598,5 +614,6 @@
         private Label lblEndDate;
         private DateTimePicker DatePickerEndDate;
         private ComboBox cmbInter;
+        private Button btnClose;
     }
 }

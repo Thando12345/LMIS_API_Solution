@@ -51,5 +51,10 @@ namespace LMIS_Dev_Branch
             FrmCertificationScreen FrmCertificationScreen = new FrmCertificationScreen();
             FrmCertificationScreen.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

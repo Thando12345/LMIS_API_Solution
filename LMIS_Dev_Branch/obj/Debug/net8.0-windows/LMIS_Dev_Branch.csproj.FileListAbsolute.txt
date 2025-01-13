@@ -199,19 +199,23 @@ C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\LMIS_Dev_Branch\obj\Debug\
 C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.FrmViewLogsForm.resources
 C:\Users\phiwo\Desktop\Thando Nogemane Workspace\LMIS\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev.CCA8D95A.Up2Date
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\LMIS_Dev_Branch.exe
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\LMIS_Dev_Branch.deps.json
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\LMIS_Dev_Branch.runtimeconfig.json
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\LMIS_Dev_Branch.dll
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\LMIS_Dev_Branch.pdb
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Azure.Core.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Azure.Identity.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Dapper.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Humanizer.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.Build.Locator.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -309,6 +313,19 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
@@ -326,10 +343,7 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.csproj.AssemblyReference.cache
@@ -355,6 +369,7 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.frmManageTemplatesForm.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.FrmManageUsersForm.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.Properties.Resources.resources
+C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.Splash.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.FrmViewLogsForm.resources
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.csproj.GenerateResource.cache
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.GeneratedMSBuildEditorConfig.editorconfig
@@ -366,5 +381,3 @@ C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\refint\LMIS_Dev_Branch.dll
 C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.pdb
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\LMIS_Dev_Branch.genruntimeconfig.cache
-C:\Users\CASH CRUSADERS NORTH\OneDrive - Networx for Career Development\Desktop\My Workspace\REPOS\LMIS_API_Solution\LMIS_Dev_Branch\obj\Debug\net8.0-windows\ref\LMIS_Dev_Branch.dll

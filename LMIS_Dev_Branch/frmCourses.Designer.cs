@@ -44,6 +44,7 @@
             btnCreateCourse = new Button();
             btnCreateNonAccreditedCourse = new Button();
             textBox1 = new TextBox();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvCourses).BeginInit();
             SuspendLayout();
             // 
@@ -135,7 +136,7 @@
             dgvCourses.ReadOnly = true;
             dgvCourses.RowHeadersWidth = 62;
             dgvCourses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvCourses.Size = new Size(800, 150);
+            dgvCourses.Size = new Size(917, 180);
             dgvCourses.TabIndex = 8;
             // 
             // CourseName
@@ -204,12 +205,26 @@
             textBox1.Size = new Size(100, 31);
             textBox1.TabIndex = 0;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(856, 615);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 45;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // frmCourses1
             // 
             AutoScaleDimensions = new SizeF(14F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
-            ClientSize = new Size(904, 675);
+            ClientSize = new Size(993, 675);
+            Controls.Add(btnClose);
             Controls.Add(btnCreateNonAccreditedCourse);
             Controls.Add(btnCreateCourse);
             Controls.Add(dgvCourses);
@@ -250,5 +265,6 @@
         private Button btnCreateCourse;
         private Button btnCreateNonAccreditedCourse;
         private TextBox textBox1;
+        private Button btnClose;
     }
 }

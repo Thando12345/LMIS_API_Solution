@@ -59,6 +59,7 @@
             tooltipAddUnitStandard = new ToolTip(components);
             toolTipCancelUnitStandard = new ToolTip(components);
             panel1 = new Panel();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -100,7 +101,7 @@
             dgvUnitStandards.Location = new Point(50, 156);
             dgvUnitStandards.Name = "dgvUnitStandards";
             dgvUnitStandards.RowHeadersWidth = 62;
-            dgvUnitStandards.Size = new Size(713, 570);
+            dgvUnitStandards.Size = new Size(719, 570);
             dgvUnitStandards.TabIndex = 3;
             // 
             // lblUsNumber
@@ -116,9 +117,10 @@
             // 
             // txtUsNumberInput
             // 
+            txtUsNumberInput.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsNumberInput.Location = new Point(126, 167);
             txtUsNumberInput.Name = "txtUsNumberInput";
-            txtUsNumberInput.Size = new Size(193, 31);
+            txtUsNumberInput.Size = new Size(193, 34);
             txtUsNumberInput.TabIndex = 5;
             // 
             // lblUsName
@@ -134,9 +136,10 @@
             // 
             // txtUsNameInput
             // 
+            txtUsNameInput.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsNameInput.Location = new Point(468, 169);
             txtUsNameInput.Name = "txtUsNameInput";
-            txtUsNameInput.Size = new Size(193, 31);
+            txtUsNameInput.Size = new Size(193, 34);
             txtUsNameInput.TabIndex = 7;
             // 
             // lblUsId
@@ -152,9 +155,10 @@
             // 
             // txtUsId
             // 
+            txtUsId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsId.Location = new Point(126, 215);
             txtUsId.Name = "txtUsId";
-            txtUsId.Size = new Size(193, 31);
+            txtUsId.Size = new Size(193, 34);
             txtUsId.TabIndex = 9;
             // 
             // lblUsCredits
@@ -170,9 +174,10 @@
             // 
             // txtUsCredits
             // 
+            txtUsCredits.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsCredits.Location = new Point(468, 219);
             txtUsCredits.Name = "txtUsCredits";
-            txtUsCredits.Size = new Size(193, 31);
+            txtUsCredits.Size = new Size(193, 34);
             txtUsCredits.TabIndex = 11;
             // 
             // lblUsNqfLevel
@@ -188,9 +193,10 @@
             // 
             // txtUsNqfLevel
             // 
+            txtUsNqfLevel.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtUsNqfLevel.Location = new Point(208, 269);
             txtUsNqfLevel.Name = "txtUsNqfLevel";
-            txtUsNqfLevel.Size = new Size(193, 31);
+            txtUsNqfLevel.Size = new Size(193, 34);
             txtUsNqfLevel.TabIndex = 13;
             // 
             // btnAddUnitStandard
@@ -204,6 +210,7 @@
             btnAddUnitStandard.Text = "+";
             tooltipAddUnitStandard.SetToolTip(btnAddUnitStandard, "Click to add a new unit standard row");
             btnAddUnitStandard.UseVisualStyleBackColor = false;
+            btnAddUnitStandard.Click += btnAddUnitStandard_Click;
             // 
             // btnCancelUnitStandard
             // 
@@ -216,6 +223,7 @@
             btnCancelUnitStandard.Text = "Cancel";
             toolTipCancelUnitStandard.SetToolTip(btnCancelUnitStandard, "Click to remove this unit standard row");
             btnCancelUnitStandard.UseVisualStyleBackColor = false;
+            btnCancelUnitStandard.Click += btnCancelUnitStandard_Click;
             // 
             // lblAccreditationToggle
             // 
@@ -265,9 +273,10 @@
             // 
             // txtAccreditationBody
             // 
+            txtAccreditationBody.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtAccreditationBody.Location = new Point(468, 389);
             txtAccreditationBody.Name = "txtAccreditationBody";
-            txtAccreditationBody.Size = new Size(193, 31);
+            txtAccreditationBody.Size = new Size(193, 34);
             txtAccreditationBody.TabIndex = 20;
             // 
             // lblAccreditationNumber
@@ -283,9 +292,10 @@
             // 
             // txtAccreditationNumber
             // 
+            txtAccreditationNumber.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtAccreditationNumber.Location = new Point(468, 439);
             txtAccreditationNumber.Name = "txtAccreditationNumber";
-            txtAccreditationNumber.Size = new Size(193, 31);
+            txtAccreditationNumber.Size = new Size(193, 34);
             txtAccreditationNumber.TabIndex = 22;
             // 
             // btnSaveCourse
@@ -299,6 +309,7 @@
             btnSaveCourse.TabIndex = 23;
             btnSaveCourse.Text = "Save";
             btnSaveCourse.UseVisualStyleBackColor = false;
+            btnSaveCourse.Click += btnSaveCourse_Click;
             // 
             // btnPrevious
             // 
@@ -348,11 +359,25 @@
             panel1.Size = new Size(792, 66);
             panel1.TabIndex = 27;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(658, 748);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 45;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // FrmCreateCourseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(797, 755);
+            ClientSize = new Size(797, 835);
+            Controls.Add(btnClose);
             Controls.Add(panel1);
             Controls.Add(lblAdminApprovalNote);
             Controls.Add(btnNext);
@@ -381,6 +406,7 @@
             Controls.Add(txtCourseName);
             Controls.Add(lblCourseName);
             Name = "FrmCreateCourseForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CreateCourseForm";
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).EndInit();
             panel1.ResumeLayout(false);
@@ -421,5 +447,6 @@
         private ToolTip tooltipAddUnitStandard;
         private ToolTip toolTipCancelUnitStandard;
         private Panel panel1;
+        private Button btnClose;
     }
 }

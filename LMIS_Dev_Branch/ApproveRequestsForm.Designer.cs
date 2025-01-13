@@ -41,6 +41,7 @@
             checkBox5 = new CheckBox();
             btnApprove = new Button();
             btnReject = new Button();
+            btnClose = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvApprovalRequests).BeginInit();
             SuspendLayout();
             // 
@@ -48,10 +49,10 @@
             // 
             dgvApprovalRequests.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvApprovalRequests.Columns.AddRange(new DataGridViewColumn[] { Request_ID, User, Request_Type, Date, Status });
-            dgvApprovalRequests.Location = new Point(50, 100);
+            dgvApprovalRequests.Location = new Point(52, 132);
             dgvApprovalRequests.Name = "dgvApprovalRequests";
             dgvApprovalRequests.RowHeadersWidth = 62;
-            dgvApprovalRequests.Size = new Size(830, 400);
+            dgvApprovalRequests.Size = new Size(1323, 412);
             dgvApprovalRequests.TabIndex = 0;
             dgvApprovalRequests.CellContentClick += dgvApprovalRequests_CellContentClick;
             // 
@@ -60,40 +61,40 @@
             Request_ID.HeaderText = "Request ID";
             Request_ID.MinimumWidth = 8;
             Request_ID.Name = "Request_ID";
-            Request_ID.Width = 150;
+            Request_ID.Width = 250;
             // 
             // User
             // 
             User.HeaderText = "User";
             User.MinimumWidth = 8;
             User.Name = "User";
-            User.Width = 150;
+            User.Width = 250;
             // 
             // Request_Type
             // 
             Request_Type.HeaderText = "Request Type";
             Request_Type.MinimumWidth = 8;
             Request_Type.Name = "Request_Type";
-            Request_Type.Width = 150;
+            Request_Type.Width = 250;
             // 
             // Date
             // 
             Date.HeaderText = "Date";
             Date.MinimumWidth = 8;
             Date.Name = "Date";
-            Date.Width = 150;
+            Date.Width = 250;
             // 
             // Status
             // 
             Status.HeaderText = "Status";
             Status.MinimumWidth = 8;
             Status.Name = "Status";
-            Status.Width = 150;
+            Status.Width = 250;
             // 
             // chkApproveRequest
             // 
             chkApproveRequest.AutoSize = true;
-            chkApproveRequest.Location = new Point(114, 207);
+            chkApproveRequest.Location = new Point(112, 209);
             chkApproveRequest.Name = "chkApproveRequest";
             chkApproveRequest.Size = new Size(124, 29);
             chkApproveRequest.TabIndex = 1;
@@ -103,7 +104,7 @@
             // checkBox2
             // 
             checkBox2.AutoSize = true;
-            checkBox2.Location = new Point(263, 207);
+            checkBox2.Location = new Point(362, 209);
             checkBox2.Name = "checkBox2";
             checkBox2.Size = new Size(73, 29);
             checkBox2.TabIndex = 2;
@@ -113,7 +114,7 @@
             // checkBox3
             // 
             checkBox3.AutoSize = true;
-            checkBox3.Location = new Point(401, 207);
+            checkBox3.Location = new Point(617, 209);
             checkBox3.Name = "checkBox3";
             checkBox3.Size = new Size(143, 29);
             checkBox3.TabIndex = 3;
@@ -123,7 +124,7 @@
             // checkBox4
             // 
             checkBox4.AutoSize = true;
-            checkBox4.Location = new Point(566, 207);
+            checkBox4.Location = new Point(869, 209);
             checkBox4.Name = "checkBox4";
             checkBox4.Size = new Size(75, 29);
             checkBox4.TabIndex = 4;
@@ -133,7 +134,7 @@
             // checkBox5
             // 
             checkBox5.AutoSize = true;
-            checkBox5.Location = new Point(719, 207);
+            checkBox5.Location = new Point(1113, 209);
             checkBox5.Name = "checkBox5";
             checkBox5.Size = new Size(81, 29);
             checkBox5.TabIndex = 5;
@@ -143,7 +144,7 @@
             // btnApprove
             // 
             btnApprove.BackColor = Color.LightGreen;
-            btnApprove.Location = new Point(566, 46);
+            btnApprove.Location = new Point(1129, 78);
             btnApprove.Name = "btnApprove";
             btnApprove.Size = new Size(111, 48);
             btnApprove.TabIndex = 6;
@@ -154,18 +155,32 @@
             // btnReject
             // 
             btnReject.BackColor = Color.LightCoral;
-            btnReject.Location = new Point(706, 46);
+            btnReject.Location = new Point(1264, 78);
             btnReject.Name = "btnReject";
             btnReject.Size = new Size(111, 48);
             btnReject.TabIndex = 7;
             btnReject.Text = "Reject";
             btnReject.UseVisualStyleBackColor = false;
             // 
+            // btnClose
+            // 
+            btnClose.BackColor = Color.Red;
+            btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClose.ForeColor = Color.White;
+            btnClose.Location = new Point(1264, 561);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(111, 48);
+            btnClose.TabIndex = 48;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = false;
+            btnClose.Click += btnClose_Click;
+            // 
             // FrmApproveRequestsForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1036, 572);
+            ClientSize = new Size(1440, 680);
+            Controls.Add(btnClose);
             Controls.Add(btnReject);
             Controls.Add(btnApprove);
             Controls.Add(checkBox5);
@@ -175,6 +190,7 @@
             Controls.Add(chkApproveRequest);
             Controls.Add(dgvApprovalRequests);
             Name = "FrmApproveRequestsForm";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ApproveRequestsForm";
             ((System.ComponentModel.ISupportInitialize)dgvApprovalRequests).EndInit();
             ResumeLayout(false);
@@ -184,11 +200,6 @@
         #endregion
 
         private DataGridView dgvApprovalRequests;
-        private DataGridViewTextBoxColumn Request_ID;
-        private DataGridViewTextBoxColumn User;
-        private DataGridViewTextBoxColumn Request_Type;
-        private DataGridViewTextBoxColumn Date;
-        private DataGridViewTextBoxColumn Status;
         private CheckBox chkApproveRequest;
         private CheckBox checkBox2;
         private CheckBox checkBox3;
@@ -196,5 +207,11 @@
         private CheckBox checkBox5;
         private Button btnApprove;
         private Button btnReject;
+        private DataGridViewTextBoxColumn Request_ID;
+        private DataGridViewTextBoxColumn User;
+        private DataGridViewTextBoxColumn Request_Type;
+        private DataGridViewTextBoxColumn Date;
+        private DataGridViewTextBoxColumn Status;
+        private Button btnClose;
     }
 }

@@ -22,5 +22,15 @@ namespace LMIS_Dev_Branch
             frmPractitionerCreateEditScreen frmPractitionerCreateEditScreen = new frmPractitionerCreateEditScreen();
             frmPractitionerCreateEditScreen.ShowDialog();
         }
+
+        private void lblSearchPractitioner_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close ();
+        }
     }
 }

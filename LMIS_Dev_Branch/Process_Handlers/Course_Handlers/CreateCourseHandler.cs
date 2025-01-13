@@ -4,10 +4,10 @@ namespace LMIS_Dev_Branch.Process_Handler.Course_Handlers
 {
     public class CreateCourseHandler : IProcessHandler
     {
-        private Course CourseDetails { get; set; }
+        private Null_Course CourseDetails { get; set; }
         private List<IModel> ReturnModel { get; set; }
 
-        public CreateCourseHandler(Course course)
+        public CreateCourseHandler(Null_Course course)
         {
             this.CourseDetails = course;
             ReturnModel = new List<IModel>();

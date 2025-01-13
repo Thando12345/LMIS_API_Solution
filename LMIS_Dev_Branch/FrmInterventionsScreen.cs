@@ -37,5 +37,10 @@ namespace LMIS_Dev_Branch
             FrmCreateInterventionScreen FrmCreateInterventionScreen = new FrmCreateInterventionScreen();
             FrmCreateInterventionScreen.ShowDialog();
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

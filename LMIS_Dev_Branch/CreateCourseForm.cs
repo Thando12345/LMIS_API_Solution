@@ -31,5 +31,25 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnAddUnitStandard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveCourse_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelUnitStandard_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

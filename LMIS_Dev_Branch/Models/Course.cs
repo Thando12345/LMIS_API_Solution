@@ -1,17 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace LMIS_Dev_Branch.Models
 {
-    public class Course : IModel
+    public class Course
     {
-        public string CourseID { get; set; } // Unique identifier for the course
-        public string CourseDescription { get; set; } // Detailed description of the course
-        public DateTime StartDate { get; set; } // Start date of the course
-        public DateTime EndDate { get; set; } // End date of the course
-        public int DurationInMonths { get; set; } // Duration of the course in months
+        [Key]
+        public int CourseId { get; set; }
 
-        // Navigation property for enrollments
-        public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
+        [Required]
+        [MaxLength(100)]
+        public string Name { get; set; }
+
+        [Required]
+        public string Type { get; set; } // Example: "Accredited" or "Non-Accredited"
+
+        public int Credits { get; set; }
+
+        public int NQFLevel { get; set; }
+
+        public bool IsAccredited { get; set; }
+
+        [MaxLength(200)]
+        public string AccreditationBody { get; set; }
+
+        [MaxLength(100)]
+        public string AccreditationNumber { get; set; }
+
+        // Navigation property
+        public ICollection<UnitStandard> UnitStandards { get; set; }
     }
 }

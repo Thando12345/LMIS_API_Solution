@@ -59,5 +59,24 @@ namespace LMIS_Dev_Branch
             FrmLoginForm frmLoginForm = new FrmLoginForm();
             frmLoginForm.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Get the parent form's client size
+            int formWidth = this.ClientSize.Width;
+            int formHeight = this.ClientSize.Height;
+
+            // Get the PictureBox size
+            int pictureBoxWidth = pictureBox1.Width;
+            int pictureBoxHeight = pictureBox1.Height;
+
+            // Calculate the new location to center the PictureBox
+            int newX = (formWidth - pictureBoxWidth) / 2;
+            int newY = (formHeight - pictureBoxHeight) / 2;
+
+            // Set the PictureBox's location
+            pictureBox1.Location = new Point(newX, newY);
+        }
+
     }
 }

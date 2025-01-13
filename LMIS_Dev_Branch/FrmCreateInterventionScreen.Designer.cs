@@ -226,6 +226,7 @@
             btnCancelIntervention.TabIndex = 16;
             btnCancelIntervention.Text = "Cancel";
             btnCancelIntervention.UseVisualStyleBackColor = false;
+            btnCancelIntervention.Click += btnCancelIntervention_Click;
             // 
             // FrmCreateInterventionScreen
             // 
@@ -249,6 +250,7 @@
             Controls.Add(textBox1);
             Controls.Add(lblCourseName);
             Name = "FrmCreateInterventionScreen";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmCreateInterventionScreen";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
