@@ -67,3 +67,48 @@ BEGIN
         CONSTRAINT FK_UnitStandard_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
     );
 END;
+--New schema   14-01-2025
+
+-- Ensure the Practitioners table exists
+IF OBJECT_ID('[dbo].[Practitioners]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Practitioners]
+    (
+        [PractitionerId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary Key
+        [Name] VARCHAR(255) NOT NULL, -- Practitioner Name
+        [Surname] VARCHAR(255) NOT NULL, -- Practitioner Surname
+        [IDNumber] VARCHAR(13) NOT NULL UNIQUE, -- Unique ID Number
+        [Role] VARCHAR(50) NOT NULL, -- Practitioner Role
+        [CourseId] INT, -- Foreign Key to Course Table
+        CONSTRAINT FK_Practitioners_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
+    );
+END;
+
+-- Ensure the PractitionerRoles table exists
+IF OBJECT_ID('[dbo].[PractitionerRoles]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[PractitionerRoles]
+    (
+        [RoleId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary Key
+        [RoleName] VARCHAR(50) NOT NULL -- Role Name (e.g., Facilitator, Assessor, Moderator)
+    );
+END;
+
+-- Ensure the PractitionerCourseAssignments table exists
+IF OBJECT_ID('[dbo].[PractitionerCourseAssignments]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[PractitionerCourseAssignments]
+    (
+        [AssignmentId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary Key
+        [PractitionerId] INT NOT NULL, -- Foreign Key to Practitioners
+        [CourseId] INT NOT NULL, -- Foreign Key to Course
+        [RoleId] INT NOT NULL, -- Foreign Key to PractitionerRoles
+        CONSTRAINT FK_Assignments_Practitioner FOREIGN KEY (PractitionerId) REFERENCES [dbo].[Practitioners]([PractitionerId]),
+        CONSTRAINT FK_Assignments_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId]),
+        CONSTRAINT FK_Assignments_Role FOREIGN KEY (RoleId) REFERENCES [dbo].[PractitionerRoles]([RoleId])
+    );
+END;
+
+
+--TEST CASE
+

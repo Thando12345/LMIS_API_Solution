@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockSense_DotNET_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efb682e51e0696ef217bcad467ce30ad7dd5e758")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92fa9fc1b55492b750231cea7f2d348709aab330")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockSense_DotNET_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockSense_DotNET_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
