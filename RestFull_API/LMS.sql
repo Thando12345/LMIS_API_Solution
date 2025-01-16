@@ -33,9 +33,12 @@ BEGIN
         [LastSchoolAttended] VARCHAR(255) NOT NULL, -- Last school attended (max 255 characters)
         [Declaration] BIT NOT NULL, -- Declaration (boolean)
         [IdentityDocumentPath] VARCHAR(255), -- Path to identity document (max 255 characters)
-        [QualificationDocumentPath] VARCHAR(255) -- Path to qualification document (max 255 characters)
+        [QualificationDocumentPath] VARCHAR(255), -- Path to qualification document (max 255 characters)
+        [CourseId] INT NOT NULL, -- Foreign Key to Course table
+        CONSTRAINT FK_LearnerEnrTbl_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
     );
 END;
+
 
 -- Create the Course table if it doesn't already exist
 IF OBJECT_ID('[dbo].[Course]', 'U') IS NULL
@@ -110,5 +113,104 @@ BEGIN
 END;
 
 
---TEST CASE
+--New Schema 2025/01/15
+-- Step 1: Creating the Learners table (if not exists)
+IF OBJECT_ID('[dbo].[Learners]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Learners]
+    (
+        [LearnerId] INT IDENTITY(1,1) PRIMARY KEY,
+        [LearnerName] NVARCHAR(255) NOT NULL
+    );
+END;
 
+-- Step 2: Creating the Users table for Facilitators, Assessors, and Moderators (if not exists)
+IF OBJECT_ID('[dbo].[Users]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Users]
+    (
+        [UserId] INT IDENTITY(1,1) PRIMARY KEY,
+        [UserName] NVARCHAR(255) NOT NULL,
+        [Role] NVARCHAR(50) NOT NULL -- Facilitator, Assessor, Moderator, etc.
+    );
+END;
+
+-- Step 3: Creating the Interventions table (if not exists)
+IF OBJECT_ID('[dbo].[Interventions]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Interventions]
+    (
+        [InterventionId] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+        [CourseId] INT NOT NULL, -- Foreign Key to Courses table
+        [Funder] NVARCHAR(255) NOT NULL,
+        [StartDate] DATE NOT NULL,
+        [EndDate] DATE NOT NULL,
+        [FacilitatorId] INT NOT NULL, -- Foreign Key to Users table
+        [AssessorId] INT NOT NULL, -- Foreign Key to Users table
+        [ModeratorId] INT NOT NULL, -- Foreign Key to Users table
+        CONSTRAINT FK_Interventions_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId]),
+        CONSTRAINT FK_Interventions_Facilitator FOREIGN KEY (FacilitatorId) REFERENCES [dbo].[Users]([UserId]),
+        CONSTRAINT FK_Interventions_Assessor FOREIGN KEY (AssessorId) REFERENCES [dbo].[Users]([UserId]),
+        CONSTRAINT FK_Interventions_Moderator FOREIGN KEY (ModeratorId) REFERENCES [dbo].[Users]([UserId])
+    );
+END;
+
+-- Step 4: Creating the LearnerInterventionLinks table (if not exists)
+IF OBJECT_ID('[dbo].[LearnerInterventionLinks]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[LearnerInterventionLinks]
+    (
+        [LinkId] INT IDENTITY(1,1) PRIMARY KEY,
+        [LearnerId] INT NOT NULL, -- Foreign Key to Learners table
+        [InterventionId] INT NOT NULL, -- Foreign Key to Interventions table
+        CONSTRAINT FK_Learner_Intervention FOREIGN KEY (LearnerId) REFERENCES [dbo].[Learners]([LearnerId]),
+        CONSTRAINT FK_Intervention_Learner FOREIGN KEY (InterventionId) REFERENCES [dbo].[Interventions]([InterventionId])
+    );
+END;
+
+
+--New test case 2025/01/16
+
+
+-- Step 4: Creating the Certifications table
+IF OBJECT_ID('[dbo].[Certifications]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Certifications]
+    (
+        [CertificationId] INT IDENTITY(1,1) PRIMARY KEY,
+        [LearnerId] INT NOT NULL, -- Foreign Key to Learners
+        [InterventionId] INT NOT NULL, -- Foreign Key to Interventions
+        [CertificateNumber] NVARCHAR(50) UNIQUE NOT NULL, -- Auto-allocated
+        [IssueDate] DATE NOT NULL DEFAULT GETDATE(),
+        [IsCompetent] BIT NOT NULL DEFAULT 0, -- 1 = Competent, 0 = Not Competent
+        [DeliveryNoteGenerated] BIT NOT NULL DEFAULT 0,
+        CONSTRAINT FK_Certifications_Learner FOREIGN KEY (LearnerId) REFERENCES [dbo].[Learners]([LearnerId]),
+        CONSTRAINT FK_Certifications_Intervention FOREIGN KEY (InterventionId) REFERENCES [dbo].[Interventions]([InterventionId])
+    );
+END;
+
+-- Step 5: Creating the BatchCertificates table
+IF OBJECT_ID('[dbo].[BatchCertificates]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[BatchCertificates]
+    (
+        [BatchId] INT IDENTITY(1,1) PRIMARY KEY,
+        [InterventionId] INT NOT NULL, -- Foreign Key to Interventions
+        [CertificateNumbers] NVARCHAR(MAX) NOT NULL, -- Comma-separated certificate numbers
+        [GeneratedDate] DATE NOT NULL DEFAULT GETDATE(),
+        [ElectronicSignature] BIT NOT NULL DEFAULT 0, -- 1 = Signature Included, 0 = Not Included
+        CONSTRAINT FK_BatchCertificates_Intervention FOREIGN KEY (InterventionId) REFERENCES [dbo].[Interventions]([InterventionId])
+    );
+END;
+
+-- Step 6: Creating the Reports table
+IF OBJECT_ID('[dbo].[Reports]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Reports]
+    (
+        [ReportId] INT IDENTITY(1,1) PRIMARY KEY,
+        [ReportType] NVARCHAR(255) NOT NULL, -- Assessment, Moderator, All Register, etc.
+        [GeneratedDate] DATE NOT NULL DEFAULT GETDATE(),
+        [Content] NVARCHAR(MAX) NOT NULL -- JSON or Text content of the report
+    );
+END;

@@ -51,5 +51,46 @@ namespace LMIS_Dev_Branch
         {
             this.Close();
         }
+
+        private void txtCourseName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsNumberInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsCredits_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUsNqfLevel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAccreditationYes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAccreditationNo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAccreditationBody_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+
+
+

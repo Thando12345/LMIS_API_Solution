@@ -47,7 +47,7 @@
             btnCancelUnitStandard = new Button();
             lblAccreditationToggle = new Label();
             btnAccreditationYes = new Button();
-            button1 = new Button();
+            btnAccreditationNo = new Button();
             lblAccreditationBody = new Label();
             txtAccreditationBody = new TextBox();
             lblAccreditationNumber = new Label();
@@ -94,6 +94,7 @@
             txtCourseName.Name = "txtCourseName";
             txtCourseName.Size = new Size(291, 30);
             txtCourseName.TabIndex = 2;
+            txtCourseName.TextChanged += txtCourseName_TextChanged;
             // 
             // dgvUnitStandards
             // 
@@ -103,6 +104,7 @@
             dgvUnitStandards.RowHeadersWidth = 62;
             dgvUnitStandards.Size = new Size(719, 570);
             dgvUnitStandards.TabIndex = 3;
+            dgvUnitStandards.CellContentClick += this.dgvUnitStandards_CellContentClick;
             // 
             // lblUsNumber
             // 
@@ -122,6 +124,7 @@
             txtUsNumberInput.Name = "txtUsNumberInput";
             txtUsNumberInput.Size = new Size(193, 34);
             txtUsNumberInput.TabIndex = 5;
+            txtUsNumberInput.TextChanged += txtUsNumberInput_TextChanged;
             // 
             // lblUsName
             // 
@@ -179,6 +182,7 @@
             txtUsCredits.Name = "txtUsCredits";
             txtUsCredits.Size = new Size(193, 34);
             txtUsCredits.TabIndex = 11;
+            txtUsCredits.TextChanged += txtUsCredits_TextChanged;
             // 
             // lblUsNqfLevel
             // 
@@ -198,6 +202,7 @@
             txtUsNqfLevel.Name = "txtUsNqfLevel";
             txtUsNqfLevel.Size = new Size(193, 34);
             txtUsNqfLevel.TabIndex = 13;
+            txtUsNqfLevel.TextChanged += txtUsNqfLevel_TextChanged;
             // 
             // btnAddUnitStandard
             // 
@@ -247,18 +252,20 @@
             btnAccreditationYes.TabIndex = 17;
             btnAccreditationYes.Text = "Yes";
             btnAccreditationYes.UseVisualStyleBackColor = false;
+            btnAccreditationYes.Click += btnAccreditationYes_Click;
             // 
-            // button1
+            // btnAccreditationNo
             // 
-            button1.BackColor = Color.LightGray;
-            button1.ForeColor = Color.White;
-            button1.ImageAlign = ContentAlignment.BottomRight;
-            button1.Location = new Point(463, 334);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 34);
-            button1.TabIndex = 18;
-            button1.Text = "No";
-            button1.UseVisualStyleBackColor = false;
+            btnAccreditationNo.BackColor = Color.LightGray;
+            btnAccreditationNo.ForeColor = Color.White;
+            btnAccreditationNo.ImageAlign = ContentAlignment.BottomRight;
+            btnAccreditationNo.Location = new Point(463, 334);
+            btnAccreditationNo.Name = "btnAccreditationNo";
+            btnAccreditationNo.Size = new Size(82, 34);
+            btnAccreditationNo.TabIndex = 18;
+            btnAccreditationNo.Text = "No";
+            btnAccreditationNo.UseVisualStyleBackColor = false;
+            btnAccreditationNo.Click += btnAccreditationNo_Click;
             // 
             // lblAccreditationBody
             // 
@@ -387,7 +394,7 @@
             Controls.Add(lblAccreditationNumber);
             Controls.Add(txtAccreditationBody);
             Controls.Add(lblAccreditationBody);
-            Controls.Add(button1);
+            Controls.Add(btnAccreditationNo);
             Controls.Add(btnAccreditationYes);
             Controls.Add(lblAccreditationToggle);
             Controls.Add(btnCancelUnitStandard);
@@ -435,7 +442,7 @@
         private Button btnCancelUnitStandard;
         private Label lblAccreditationToggle;
         private Button btnAccreditationYes;
-        private Button button1;
+        private Button btnAccreditationNo;
         private Label lblAccreditationBody;
         private TextBox txtAccreditationBody;
         private Label lblAccreditationNumber;
