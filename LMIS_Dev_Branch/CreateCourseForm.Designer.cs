@@ -378,11 +378,13 @@
             // 
             // flowLayoutPanelUnitStandards
             // 
+            flowLayoutPanelUnitStandards.AutoScroll = true;
             flowLayoutPanelUnitStandards.BackColor = Color.LightGray;
             flowLayoutPanelUnitStandards.Location = new Point(20, 200);
             flowLayoutPanelUnitStandards.Name = "flowLayoutPanelUnitStandards";
             flowLayoutPanelUnitStandards.Size = new Size(600, 300);
             flowLayoutPanelUnitStandards.TabIndex = 46;
+            flowLayoutPanelUnitStandards.Visible = false;
             flowLayoutPanelUnitStandards.Paint += flowLayoutPanelUnitStandards_Paint;
             // 
             // FrmCreateCourseForm
