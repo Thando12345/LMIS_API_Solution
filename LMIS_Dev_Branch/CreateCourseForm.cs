@@ -11,6 +11,9 @@ namespace LMIS_Dev_Branch
 
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
+
+            // Initially set visibility to false
+            flowLayoutPanelUnitStandards.Visible = false;
         }
 
         // Event: Form Load
@@ -47,8 +50,28 @@ namespace LMIS_Dev_Branch
         // Event: Add Unit Standard Button Click
         private void btnAddUnitStandard_Click(object sender, EventArgs e)
         {
+            // Log to confirm button click is being triggered
             MessageBox.Show("Add Unit Standard button clicked!", "Action Triggered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // Ensure the FlowLayoutPanel is set to visible
+            flowLayoutPanelUnitStandards.Visible = true;
+
+            // Log to confirm visibility change
+            if (flowLayoutPanelUnitStandards.Visible)
+            {
+                MessageBox.Show("FlowLayoutPanel is now visible!", "Action Triggered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Failed to make FlowLayoutPanel visible!", "Action Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            // Bring it to the front (in case it's hidden behind other controls)
+            flowLayoutPanelUnitStandards.BringToFront();
         }
+
+
+
 
         // Event: Save Course Button Click
         private void btnSaveCourse_Click(object sender, EventArgs e)

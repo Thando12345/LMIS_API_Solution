@@ -384,7 +384,6 @@
             flowLayoutPanelUnitStandards.Name = "flowLayoutPanelUnitStandards";
             flowLayoutPanelUnitStandards.Size = new Size(600, 300);
             flowLayoutPanelUnitStandards.TabIndex = 46;
-            flowLayoutPanelUnitStandards.Visible = false;
             flowLayoutPanelUnitStandards.Paint += flowLayoutPanelUnitStandards_Paint;
             // 
             // FrmCreateCourseForm
