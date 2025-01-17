@@ -99,5 +99,10 @@ namespace LMIS_Dev_Branch
         private void txtAccreditationBody_TextChanged(object sender, EventArgs e) { }
         private void txtAccreditationNumber_TextChanged(object sender, EventArgs e) { }
         private void lblAccreditationToggle_Click(object sender, EventArgs e) { }
+
+        private void flowLayoutPanelUnitStandards_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

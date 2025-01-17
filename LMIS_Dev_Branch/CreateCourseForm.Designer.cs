@@ -60,6 +60,7 @@
             toolTipCancelUnitStandard = new ToolTip(components);
             panel1 = new Panel();
             btnClose = new Button();
+            flowLayoutPanelUnitStandards = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -75,7 +76,6 @@
             lblTitle.Size = new Size(291, 46);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Create Course";
-            //templblTitle.Click += lblTitle_Click_1;
             // 
             // lblCourseName
             // 
@@ -285,7 +285,6 @@
             txtAccreditationBody.Name = "txtAccreditationBody";
             txtAccreditationBody.Size = new Size(193, 34);
             txtAccreditationBody.TabIndex = 20;
-            //temp txtAccreditationBody.TextChanged += txtAccreditationBody_TextChanged_1;
             // 
             // lblAccreditationNumber
             // 
@@ -355,10 +354,6 @@
             lblAdminApprovalNote.TabIndex = 26;
             lblAdminApprovalNote.Text = "NB: Admin must approve when the user creates a course.";
             // 
-            // tooltipAddUnitStandard
-            // 
-           //temp tooltipAddUnitStandard.Popup += tooltipAddUnitStandard_Popup;
-            // 
             // panel1
             // 
             panel1.BackColor = Color.Orange;
@@ -381,11 +376,21 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             // 
+            // flowLayoutPanelUnitStandards
+            // 
+            flowLayoutPanelUnitStandards.BackColor = Color.LightGray;
+            flowLayoutPanelUnitStandards.Location = new Point(20, 200);
+            flowLayoutPanelUnitStandards.Name = "flowLayoutPanelUnitStandards";
+            flowLayoutPanelUnitStandards.Size = new Size(600, 300);
+            flowLayoutPanelUnitStandards.TabIndex = 46;
+            flowLayoutPanelUnitStandards.Paint += flowLayoutPanelUnitStandards_Paint;
+            // 
             // FrmCreateCourseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(797, 835);
+            Controls.Add(flowLayoutPanelUnitStandards);
             Controls.Add(btnClose);
             Controls.Add(panel1);
             Controls.Add(lblAdminApprovalNote);
@@ -458,5 +463,6 @@
         private ToolTip toolTipCancelUnitStandard;
         private Panel panel1;
         private Button btnClose;
+        private FlowLayoutPanel flowLayoutPanelUnitStandards;
     }
 }
