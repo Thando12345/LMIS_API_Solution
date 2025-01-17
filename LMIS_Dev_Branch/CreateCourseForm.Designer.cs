@@ -75,7 +75,7 @@
             lblTitle.Size = new Size(291, 46);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Create Course";
-            lblTitle.Click += lblTitle_Click_1;
+            //templblTitle.Click += lblTitle_Click_1;
             // 
             // lblCourseName
             // 
@@ -285,7 +285,7 @@
             txtAccreditationBody.Name = "txtAccreditationBody";
             txtAccreditationBody.Size = new Size(193, 34);
             txtAccreditationBody.TabIndex = 20;
-            txtAccreditationBody.TextChanged += txtAccreditationBody_TextChanged_1;
+            //temp txtAccreditationBody.TextChanged += txtAccreditationBody_TextChanged_1;
             // 
             // lblAccreditationNumber
             // 
@@ -357,7 +357,7 @@
             // 
             // tooltipAddUnitStandard
             // 
-            tooltipAddUnitStandard.Popup += tooltipAddUnitStandard_Popup;
+           //temp tooltipAddUnitStandard.Popup += tooltipAddUnitStandard_Popup;
             // 
             // panel1
             // 
