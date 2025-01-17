@@ -104,7 +104,6 @@
             dgvUnitStandards.RowHeadersWidth = 62;
             dgvUnitStandards.Size = new Size(719, 570);
             dgvUnitStandards.TabIndex = 3;
-            dgvUnitStandards.CellContentClick += this.dgvUnitStandards_CellContentClick;
             // 
             // lblUsNumber
             // 
@@ -240,6 +239,7 @@
             lblAccreditationToggle.Size = new Size(287, 27);
             lblAccreditationToggle.TabIndex = 16;
             lblAccreditationToggle.Text = "Is the Course Accredited?";
+            lblAccreditationToggle.Click += lblAccreditationToggle_Click;
             // 
             // btnAccreditationYes
             // 
@@ -285,6 +285,7 @@
             txtAccreditationBody.Name = "txtAccreditationBody";
             txtAccreditationBody.Size = new Size(193, 34);
             txtAccreditationBody.TabIndex = 20;
+            txtAccreditationBody.TextChanged += txtAccreditationBody_TextChanged_1;
             // 
             // lblAccreditationNumber
             // 
@@ -304,6 +305,7 @@
             txtAccreditationNumber.Name = "txtAccreditationNumber";
             txtAccreditationNumber.Size = new Size(193, 34);
             txtAccreditationNumber.TabIndex = 22;
+            txtAccreditationNumber.TextChanged += txtAccreditationNumber_TextChanged;
             // 
             // btnSaveCourse
             // 
@@ -415,6 +417,7 @@
             Name = "FrmCreateCourseForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CreateCourseForm";
+            Load += FrmCreateCourseForm_Load;
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
