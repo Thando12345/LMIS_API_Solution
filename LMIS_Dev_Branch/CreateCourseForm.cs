@@ -143,8 +143,8 @@ namespace LMIS_Dev_Branch
                 // Open the connection
                 con.Open();
 
-                // SQL query to insert course (replace with actual SQL command)
-                string query = "INSERT INTO Courses (CourseName, NQFLevel, Credits, IsAccredited, AccreditationBody, AccreditationNumber) " +
+                // SQL query to insert course (corrected table name from Courses to Course)
+                string query = "INSERT INTO Course (Name, NQFLevel, Credits, IsAccredited, AccreditationBody, AccreditationNumber) " +
                                "VALUES (@CourseName, @NQFLevel, @Credits, @IsAccredited, @AccreditationBody, @AccreditationNumber)";
 
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -174,8 +174,8 @@ namespace LMIS_Dev_Branch
                 // Ensure the connection is closed
                 con.Close();
             }
-
         }
+
         private void ClearCourseFields()
         {
             txtCourseName.Clear();
