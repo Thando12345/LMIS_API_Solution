@@ -33,39 +33,12 @@ namespace LMIS_Dev_Branch
         private void FrmCreateCourseForm_Load(object sender, EventArgs e)
         {
             // Any additional initialization logic can be added here
-            BindUnitStandards();
+          
         }
 
 
         // Method to bind data to DataGridView (assuming you have one called dgvUnitStandards)
-        private void BindUnitStandards()
-        {
-            try
-            {
-                // Open the connection
-                con.Open();
-
-                // SQL query to fetch unit standards (you can modify the query as per your database schema)
-                string query = "SELECT * FROM UnitStandard";
-                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con);
-                DataTable dataTable = new DataTable();
-
-                // Fill the DataTable with the result of the query
-                dataAdapter.Fill(dataTable);
-
-                // Bind data to the DataGridView
-                dgvUnitStandards.DataSource = dataTable;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error binding data: " + ex.Message);
-            }
-            finally
-            {
-                // Ensure the connection is closed
-                con.Close();
-            }
-        }
+        
         // Logic to toggle accreditation fields visibility
         private void ToggleAccreditationFields(bool isVisible)
         {
