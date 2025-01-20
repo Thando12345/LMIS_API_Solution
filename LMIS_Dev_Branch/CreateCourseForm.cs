@@ -13,29 +13,15 @@ namespace LMIS_Dev_Branch
     public partial class FrmCreateCourseForm : Form
     {
         private SqlConnection con;
-        private string connectionString;
+       // private string connectionString;
 
         public FrmCreateCourseForm()
         {
             InitializeComponent();
-
-            // Load configuration from appsettings.json
-            var configuration = new ConfigurationBuilder()
-                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .Build();
-
-            // Retrieve the connection string from appsettings.json
-            connectionString = configuration.GetConnectionString("DefaultConnection");
-
-            if (string.IsNullOrEmpty(connectionString))
-            {
-                throw new Exception("Connection string 'DefaultConnection' not found in appsettings.json.");
-            }
+            string connectionString = "Data Source=DESKTOP-RULM89R\\SQLEXPRESS;Database=LMS_Db;Trusted_Connection=True;TrustServerCertificate=True";
 
             // Initialize SQL connection for custom queries
             con = new SqlConnection(connectionString);
-
 
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
