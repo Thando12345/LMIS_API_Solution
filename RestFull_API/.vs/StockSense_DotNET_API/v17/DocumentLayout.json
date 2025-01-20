@@ -66,7 +66,7 @@
               "RelativeDocumentMoniker": "..\\LMIS_Dev_Branch\\CreateCourseForm.cs",
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CreateCourseForm.cs",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\CreateCourseForm.cs",
-              "ViewState": "AQIAAJ0AAAAAAAAAAAA/wK4AAAAAAAAA",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAuwMkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T06:49:52.335Z",
               "EditorCaption": ""
@@ -81,7 +81,8 @@
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\Process_Handlers\\Database\\DBContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T11:20:40.064Z"
+              "WhenOpened": "2025-01-20T11:20:40.064Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,7 +93,8 @@
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\frmCourses.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T06:39:13.126Z"
+              "WhenOpened": "2025-01-20T06:39:13.126Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -115,7 +117,8 @@
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\RestFull_API\\LMS.sql",
               "RelativeToolTip": "LMS.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-01-20T11:14:19.093Z"
+              "WhenOpened": "2025-01-20T11:14:19.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -127,7 +130,8 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-20T11:15:06.963Z"
+              "WhenOpened": "2025-01-20T11:15:06.963Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -139,7 +143,8 @@
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\Models\\UnitStandard.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAwwB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T11:16:45.698Z"
+              "WhenOpened": "2025-01-20T11:16:45.698Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -151,7 +156,8 @@
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\Models\\Course.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAowCIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T11:17:12.672Z"
+              "WhenOpened": "2025-01-20T11:17:12.672Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -174,7 +180,8 @@
               "ToolTip": "C:\\Users\\CASH CRUSADERS NORTH\\OneDrive - Networx for Career Development\\Desktop\\My Workspace\\REPOS\\LMIS_API_Solution\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
               "RelativeToolTip": "..\\LMIS_Dev_Branch\\CourseDetailsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T12:23:42.19Z"
+              "WhenOpened": "2025-01-20T12:23:42.19Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
