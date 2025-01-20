@@ -1,13 +1,27 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Windows.Forms;
+using LMIS_Dev_Branch.Models;
 
 namespace LMIS_Dev_Branch
 {
+
+
     public partial class FrmCreateCourseForm : Form
     {
+        private DBContext _context;
+
         public FrmCreateCourseForm()
         {
             InitializeComponent();
+
+            // Initialize database context
+            var options = new DbContextOptionsBuilder<DBContext>()
+                          .UseSqlServer("DefaultConnection") // Use connection string
+            .Options;
+
+            _context = new DBContext(options);
+
 
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
@@ -22,16 +36,21 @@ namespace LMIS_Dev_Branch
         }
 
         // Logic to toggle accreditation fields visibility
-        private void ToggleAccreditationFields(bool isVisible)
+       private  void ToggleAccreditationFields(bool isVisible)
         {
             lblAccreditationBody.Visible = isVisible;
-            txtAccreditationBody.Visible = isVisible;
-            lblAccreditationNumber.Visible = isVisible;
-            txtAccreditationNumber.Visible = isVisible;
+         txtAccreditationBody.Visible = isVisible;
+       lblAccreditationNumber.Visible = isVisible;
+        txtAccreditationNumber.Visible = isVisible;
         }
 
-        // Event: Accreditation Yes Button Click
-        private void btnAccreditationYes_Click(object sender, EventArgs e)
+
+        //test case
+        
+
+    //end
+    // Event: Accreditation Yes Button Click
+    private void btnAccreditationYes_Click(object sender, EventArgs e)
         {
             // Set accreditation fields to visible
             ToggleAccreditationFields(true);
@@ -72,30 +91,63 @@ namespace LMIS_Dev_Branch
         {
             // Validate and save the course details
             string courseName = txtCourseName.Text.Trim();
-            bool isAccredited = lblAccreditationBody.Visible; // Check if accreditation fields are visible
+            int nqfLevel, credits;
+            bool isAccredited = lblAccreditationToggle.Visible; // Check if accreditation fields are visible
 
-            if (string.IsNullOrEmpty(courseName))
+            // Validate input
+            if (string.IsNullOrEmpty(courseName) ||
+                !int.TryParse(txtUsNqfLevel.Text, out nqfLevel) || // Validate NQF level
+                !int.TryParse(txtUsCredits.Text, out credits)) // Validate credits
             {
-                MessageBox.Show("Please enter the course name.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please provide valid course details.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (isAccredited)
+            // Optional accreditation fields
+            string accreditationBody = isAccredited ? txtAccreditationBody.Text.Trim() : null;
+            string accreditationNumber = isAccredited ? txtAccreditationNumber.Text.Trim() : null;
+
+            // Create a new Course object
+            var course = new Course
             {
-                string accreditationBody = txtAccreditationBody.Text.Trim();
-                string accreditationNumber = txtAccreditationNumber.Text.Trim();
+                Name = courseName,
+                NQFLevel = nqfLevel,
+                Credits = credits,
+                IsAccredited = isAccredited,
+                AccreditationBody = accreditationBody,
+                AccreditationNumber = accreditationNumber
+            };
 
-                if (string.IsNullOrEmpty(accreditationBody) || string.IsNullOrEmpty(accreditationNumber))
-                {
-                    MessageBox.Show("Please enter both Accreditation Body and Accreditation Number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
+            try
+            {
+                // Save the course to the database
+                _context.Courses.Add(course);
+                _context.SaveChanges(); // Commits the changes to the database
+
+                // Display confirmation message
+                MessageBox.Show("Course saved successfully!", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // Optionally, clear input fields after saving
+                ClearCourseFields();
             }
-
-            // Save logic goes here
-            MessageBox.Show("Course details saved successfully!", "Save Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            catch (Exception ex)
+            {
+                // Handle any errors during the save operation
+                MessageBox.Show("An error occurred while saving the course: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
+        private void ClearCourseFields()
+        {
+            txtCourseName.Clear();
+            txtUsNqfLevel.Clear();
+            txtUsCredits.Clear();
+            txtAccreditationBody.Clear();
+            txtAccreditationNumber.Clear();
+        }
+
+
+         
         // Event: Cancel Unit Standard Button Click
         private void btnCancelUnitStandard_Click(object sender, EventArgs e)
         {
@@ -108,6 +160,19 @@ namespace LMIS_Dev_Branch
             this.Close();
         }
 
+
+        //new test case
+        // Dispose database context
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _context.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        //end
         // Additional Events
         private void txtCourseName_TextChanged(object sender, EventArgs e) { }
         private void txtUsNumberInput_TextChanged(object sender, EventArgs e) { }
@@ -130,6 +195,15 @@ namespace LMIS_Dev_Branch
             // If the user clicks 'No', nothing happens, and the form remains open
         }
 
-       
+        private void dgvUnitStandards_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        //New Test Case 20-01-2025
+
+
+
+        //end test case
     }
 }

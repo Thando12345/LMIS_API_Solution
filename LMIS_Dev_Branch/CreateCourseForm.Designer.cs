@@ -103,6 +103,7 @@
             dgvUnitStandards.RowHeadersWidth = 62;
             dgvUnitStandards.Size = new Size(719, 570);
             dgvUnitStandards.TabIndex = 3;
+            dgvUnitStandards.CellContentClick += dgvUnitStandards_CellContentClick;
             // 
             // lblUsNumber
             // 
@@ -342,7 +343,6 @@
             btnNext.TabIndex = 25;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = false;
-//temp            btnNext.Click += btnNext_Click;
             // 
             // lblAdminApprovalNote
             // 

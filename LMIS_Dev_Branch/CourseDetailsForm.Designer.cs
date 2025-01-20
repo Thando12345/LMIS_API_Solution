@@ -36,7 +36,6 @@
             lblNQFLevel = new Button();
             lblAccreditationBody = new Button();
             lblAccreditationNumber = new Button();
-            button1 = new Button();
             lblCertificateInfo = new Button();
             btnClose = new Button();
             btnEdit = new Button();
@@ -48,11 +47,11 @@
             lblPopUpTitle.AutoSize = true;
             lblPopUpTitle.BackColor = Color.Blue;
             lblPopUpTitle.FlatStyle = FlatStyle.Popup;
-            lblPopUpTitle.Font = new Font("Arial", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPopUpTitle.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPopUpTitle.ImageAlign = ContentAlignment.TopLeft;
-            lblPopUpTitle.Location = new Point(187, 10);
+            lblPopUpTitle.Location = new Point(147, 9);
             lblPopUpTitle.Name = "lblPopUpTitle";
-            lblPopUpTitle.Size = new Size(211, 33);
+            lblPopUpTitle.Size = new Size(297, 46);
             lblPopUpTitle.TabIndex = 0;
             lblPopUpTitle.Text = "Course Details";
             // 
@@ -71,7 +70,7 @@
             // 
             lblCourseName.BackColor = Color.White;
             lblCourseName.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCourseName.Location = new Point(12, 73);
+            lblCourseName.Location = new Point(13, 110);
             lblCourseName.Name = "lblCourseName";
             lblCourseName.Size = new Size(400, 38);
             lblCourseName.TabIndex = 2;
@@ -83,7 +82,7 @@
             // 
             lblCourseType.BackColor = Color.White;
             lblCourseType.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCourseType.Location = new Point(12, 131);
+            lblCourseType.Location = new Point(13, 168);
             lblCourseType.Name = "lblCourseType";
             lblCourseType.Size = new Size(488, 38);
             lblCourseType.TabIndex = 3;
@@ -94,7 +93,7 @@
             // 
             lblCredits.BackColor = Color.White;
             lblCredits.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCredits.Location = new Point(12, 195);
+            lblCredits.Location = new Point(13, 232);
             lblCredits.Name = "lblCredits";
             lblCredits.Size = new Size(400, 38);
             lblCredits.TabIndex = 4;
@@ -105,7 +104,7 @@
             // 
             lblNQFLevel.BackColor = Color.White;
             lblNQFLevel.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblNQFLevel.Location = new Point(12, 259);
+            lblNQFLevel.Location = new Point(13, 296);
             lblNQFLevel.Name = "lblNQFLevel";
             lblNQFLevel.Size = new Size(400, 38);
             lblNQFLevel.TabIndex = 5;
@@ -116,7 +115,7 @@
             // 
             lblAccreditationBody.BackColor = Color.White;
             lblAccreditationBody.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAccreditationBody.Location = new Point(12, 318);
+            lblAccreditationBody.Location = new Point(13, 355);
             lblAccreditationBody.Name = "lblAccreditationBody";
             lblAccreditationBody.Size = new Size(400, 38);
             lblAccreditationBody.TabIndex = 6;
@@ -127,29 +126,18 @@
             // 
             lblAccreditationNumber.BackColor = Color.White;
             lblAccreditationNumber.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAccreditationNumber.Location = new Point(11, 383);
+            lblAccreditationNumber.Location = new Point(12, 420);
             lblAccreditationNumber.Name = "lblAccreditationNumber";
             lblAccreditationNumber.Size = new Size(410, 38);
             lblAccreditationNumber.TabIndex = 7;
             lblAccreditationNumber.Text = "Accreditation Number: [if accredited]";
             lblAccreditationNumber.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.White;
-            button1.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(12, 448);
-            button1.Name = "button1";
-            button1.Size = new Size(410, 38);
-            button1.TabIndex = 8;
-            button1.Text = "Accreditation Number: [if accredited]";
-            button1.UseVisualStyleBackColor = false;
-            // 
             // lblCertificateInfo
             // 
             lblCertificateInfo.BackColor = Color.White;
             lblCertificateInfo.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCertificateInfo.Location = new Point(12, 509);
+            lblCertificateInfo.Location = new Point(12, 486);
             lblCertificateInfo.Name = "lblCertificateInfo";
             lblCertificateInfo.Size = new Size(399, 38);
             lblCertificateInfo.TabIndex = 9;
@@ -162,7 +150,7 @@
             btnClose.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnClose.Location = new Point(462, 568);
             btnClose.Name = "btnClose";
-            btnClose.Size = new Size(100, 35);
+            btnClose.Size = new Size(100, 44);
             btnClose.TabIndex = 10;
             btnClose.Text = "Close";
             btnClose.UseVisualStyleBackColor = false;
@@ -175,7 +163,7 @@
             btnEdit.ForeColor = Color.White;
             btnEdit.Location = new Point(316, 568);
             btnEdit.Name = "btnEdit";
-            btnEdit.Size = new Size(140, 35);
+            btnEdit.Size = new Size(140, 44);
             btnEdit.TabIndex = 11;
             btnEdit.Text = "Edit Course";
             btnEdit.UseVisualStyleBackColor = false;
@@ -189,7 +177,6 @@
             Controls.Add(btnEdit);
             Controls.Add(btnClose);
             Controls.Add(lblCertificateInfo);
-            Controls.Add(button1);
             Controls.Add(lblAccreditationNumber);
             Controls.Add(lblAccreditationBody);
             Controls.Add(lblNQFLevel);
@@ -201,6 +188,7 @@
             MaximizeBox = false;
             Name = "CourseDetailsForm";
             ShowInTaskbar = false;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CourseDetailsForm";
             Load += CourseDetailsForm_Load;
             ResumeLayout(false);
@@ -217,7 +205,6 @@
         private Button lblNQFLevel;
         private Button lblAccreditationBody;
         private Button lblAccreditationNumber;
-        private Button button1;
         private Button lblCertificateInfo;
         private Button btnClose;
         private Button btnEdit;

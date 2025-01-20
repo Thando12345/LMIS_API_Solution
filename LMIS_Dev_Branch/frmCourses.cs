@@ -23,6 +23,11 @@ namespace LMIS_Dev_Branch
             InitializeDataGridView();
         }
 
+        //test case
+        
+
+        // end
+
         private void InitializeDataGridView()
         {
             // Set up columns for dgvCourses
@@ -98,12 +103,14 @@ namespace LMIS_Dev_Branch
 
         private void btnCreateAccreditedC_Click(object sender, EventArgs e)
         {
-
+            FrmCreateCourseForm createCourseForm = new FrmCreateCourseForm();
+            createCourseForm.Show();
         }
 
         private void btnCreateNonAccreditedCourse_Click(object sender, EventArgs e)
         {
-
+            FrmCreateCourseForm createCourseForm = new FrmCreateCourseForm();
+            createCourseForm.Show();
         }
 
         private void lblNonAccreditedPrograms_Click(object sender, EventArgs e)
