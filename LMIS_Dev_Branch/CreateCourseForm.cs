@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
 using System;
 using System.Windows.Forms;
 using LMIS_Dev_Branch.Models;
+using System.Data;
 
 namespace LMIS_Dev_Branch
 {
@@ -10,7 +12,8 @@ namespace LMIS_Dev_Branch
 
     public partial class FrmCreateCourseForm : Form
     {
-        private DBContext _context;
+        private SqlConnection con;
+        private string connectionString;
 
         public FrmCreateCourseForm()
         {
@@ -22,20 +25,17 @@ namespace LMIS_Dev_Branch
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .Build();
 
-            // Retrieve the connection string
-            string connectionString = configuration.GetConnectionString("DefaultConnection");
+            // Retrieve the connection string from appsettings.json
+            connectionString = configuration.GetConnectionString("DefaultConnection");
 
             if (string.IsNullOrEmpty(connectionString))
             {
                 throw new Exception("Connection string 'DefaultConnection' not found in appsettings.json.");
             }
 
-            // Initialize database context
-            var options = new DbContextOptionsBuilder<DBContext>()
-                .UseSqlServer(connectionString)
-                .Options;
+            // Initialize SQL connection for custom queries
+            con = new SqlConnection(connectionString);
 
-            _context = new DBContext(options);
 
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
@@ -47,8 +47,39 @@ namespace LMIS_Dev_Branch
         private void FrmCreateCourseForm_Load(object sender, EventArgs e)
         {
             // Any additional initialization logic can be added here
+            BindUnitStandards();
         }
 
+
+        // Method to bind data to DataGridView (assuming you have one called dgvUnitStandards)
+        private void BindUnitStandards()
+        {
+            try
+            {
+                // Open the connection
+                con.Open();
+
+                // SQL query to fetch unit standards (you can modify the query as per your database schema)
+                string query = "SELECT * FROM UnitStandards";
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con);
+                DataTable dataTable = new DataTable();
+
+                // Fill the DataTable with the result of the query
+                dataAdapter.Fill(dataTable);
+
+                // Bind data to the DataGridView
+                dgvUnitStandards.DataSource = dataTable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error binding data: " + ex.Message);
+            }
+            finally
+            {
+                // Ensure the connection is closed
+                con.Close();
+            }
+        }
         // Logic to toggle accreditation fields visibility
         private void ToggleAccreditationFields(bool isVisible)
         {
@@ -121,22 +152,25 @@ namespace LMIS_Dev_Branch
             string accreditationBody = isAccredited ? txtAccreditationBody.Text.Trim() : null;
             string accreditationNumber = isAccredited ? txtAccreditationNumber.Text.Trim() : null;
 
-            // Create a new Course object
-            var course = new Course
-            {
-                Name = courseName,
-                NQFLevel = nqfLevel,
-                Credits = credits,
-                IsAccredited = isAccredited,
-                AccreditationBody = accreditationBody,
-                AccreditationNumber = accreditationNumber
-            };
-
             try
             {
-                // Save the course to the database
-                _context.Courses.Add(course);
-                _context.SaveChanges(); // Commits the changes to the database
+                // Open the connection
+                con.Open();
+
+                // SQL query to insert course (replace with actual SQL command)
+                string query = "INSERT INTO Courses (CourseName, NQFLevel, Credits, IsAccredited, AccreditationBody, AccreditationNumber) " +
+                               "VALUES (@CourseName, @NQFLevel, @Credits, @IsAccredited, @AccreditationBody, @AccreditationNumber)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@CourseName", courseName);
+                cmd.Parameters.AddWithValue("@NQFLevel", nqfLevel);
+                cmd.Parameters.AddWithValue("@Credits", credits);
+                cmd.Parameters.AddWithValue("@IsAccredited", isAccredited);
+                cmd.Parameters.AddWithValue("@AccreditationBody", string.IsNullOrEmpty(accreditationBody) ? DBNull.Value : (object)accreditationBody);
+                cmd.Parameters.AddWithValue("@AccreditationNumber", string.IsNullOrEmpty(accreditationNumber) ? DBNull.Value : (object)accreditationNumber);
+
+                // Execute the query
+                cmd.ExecuteNonQuery();
 
                 // Display confirmation message
                 MessageBox.Show("Course saved successfully!", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -149,8 +183,13 @@ namespace LMIS_Dev_Branch
                 // Handle any errors during the save operation
                 MessageBox.Show("An error occurred while saving the course: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+            finally
+            {
+                // Ensure the connection is closed
+                con.Close();
+            }
 
+        }
         private void ClearCourseFields()
         {
             txtCourseName.Clear();
