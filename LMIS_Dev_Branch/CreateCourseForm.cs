@@ -167,7 +167,8 @@ namespace LMIS_Dev_Branch
         {
             if (disposing)
             {
-                _context.Dispose();
+                _context?.Dispose();
+                components?.Dispose();
             }
             base.Dispose(disposing);
         }

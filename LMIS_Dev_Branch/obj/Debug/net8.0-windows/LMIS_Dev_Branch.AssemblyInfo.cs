@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("StockSense_DotNET_API")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("LMIS_Dev_Branch")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e0e6eaa2cb33eeadfe4dd30971dd56e843d0a8c")]
-[assembly: System.Reflection.AssemblyProductAttribute("StockSense_DotNET_API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("StockSense_DotNET_API")]
+[assembly: System.Reflection.AssemblyProductAttribute("LMIS_Dev_Branch")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LMIS_Dev_Branch")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
