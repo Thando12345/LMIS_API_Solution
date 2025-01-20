@@ -45,14 +45,13 @@ IF OBJECT_ID('[dbo].[Course]', 'U') IS NULL
 BEGIN
     CREATE TABLE [dbo].[Course]
     (
-        [CourseId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
-        [Name] VARCHAR(100) NOT NULL, -- Course name (max 100 characters)
-        [Type] VARCHAR(50) NOT NULL, -- Course type (e.g., "Accredited", "Non-Accredited")
-        [Credits] INT NOT NULL, -- Course credits
-        [NQFLevel] INT NOT NULL, -- NQF Level
-        [IsAccredited] BIT NOT NULL, -- Is the course accredited
-        [AccreditationBody] VARCHAR(200), -- Accreditation body (max 200 characters)
-        [AccreditationNumber] VARCHAR(100) -- Accreditation number (max 100 characters)
+    [CourseId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
+    [Name] VARCHAR(100) NOT NULL, -- Course name (max 100 characters)
+    [Credits] INT NOT NULL, -- Course credits
+    [NQFLevel] INT NOT NULL, -- NQF Level
+    [IsAccredited] BIT NOT NULL, -- Is the course accredited
+    [AccreditationBody] VARCHAR(200), -- Accreditation body (max 200 characters)
+    [AccreditationNumber] VARCHAR(100) -- Accreditation number (max 100 characters)
     );
 END;
 

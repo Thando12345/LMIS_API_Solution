@@ -46,7 +46,7 @@ namespace LMIS_Dev_Branch
                 con.Open();
 
                 // SQL query to fetch unit standards (you can modify the query as per your database schema)
-                string query = "SELECT * FROM UnitStandards";
+                string query = "SELECT * FROM UnitStandard";
                 SqlDataAdapter dataAdapter = new SqlDataAdapter(query, con);
                 DataTable dataTable = new DataTable();
 
