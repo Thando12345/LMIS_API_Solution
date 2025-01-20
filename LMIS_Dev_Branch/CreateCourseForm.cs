@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Windows.Forms;
 using LMIS_Dev_Branch.Models;
@@ -15,13 +16,26 @@ namespace LMIS_Dev_Branch
         {
             InitializeComponent();
 
+            // Load configuration from appsettings.json
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .Build();
+
+            // Retrieve the connection string
+            string connectionString = configuration.GetConnectionString("DefaultConnection");
+
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                throw new Exception("Connection string 'DefaultConnection' not found in appsettings.json.");
+            }
+
             // Initialize database context
             var options = new DbContextOptionsBuilder<DBContext>()
-                          .UseSqlServer("DefaultConnection") // Use connection string
-            .Options;
+                .UseSqlServer(connectionString)
+                .Options;
 
             _context = new DBContext(options);
-
 
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
@@ -36,21 +50,21 @@ namespace LMIS_Dev_Branch
         }
 
         // Logic to toggle accreditation fields visibility
-       private  void ToggleAccreditationFields(bool isVisible)
+        private void ToggleAccreditationFields(bool isVisible)
         {
             lblAccreditationBody.Visible = isVisible;
-         txtAccreditationBody.Visible = isVisible;
-       lblAccreditationNumber.Visible = isVisible;
-        txtAccreditationNumber.Visible = isVisible;
+            txtAccreditationBody.Visible = isVisible;
+            lblAccreditationNumber.Visible = isVisible;
+            txtAccreditationNumber.Visible = isVisible;
         }
 
 
         //test case
-        
 
-    //end
-    // Event: Accreditation Yes Button Click
-    private void btnAccreditationYes_Click(object sender, EventArgs e)
+
+        //end
+        // Event: Accreditation Yes Button Click
+        private void btnAccreditationYes_Click(object sender, EventArgs e)
         {
             // Set accreditation fields to visible
             ToggleAccreditationFields(true);
@@ -147,7 +161,7 @@ namespace LMIS_Dev_Branch
         }
 
 
-         
+
         // Event: Cancel Unit Standard Button Click
         private void btnCancelUnitStandard_Click(object sender, EventArgs e)
         {
@@ -163,7 +177,7 @@ namespace LMIS_Dev_Branch
 
         //new test case
         // Dispose database context
-   
+
         //end
         // Additional Events
         private void txtCourseName_TextChanged(object sender, EventArgs e) { }
