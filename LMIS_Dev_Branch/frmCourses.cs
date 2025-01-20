@@ -164,5 +164,10 @@ namespace LMIS_Dev_Branch
         {
             this.Close();
         }
+
+        private void dgvCourses_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //
+        }
     }
 }

@@ -12,8 +12,7 @@ namespace LMIS_Dev_Branch
             // Initialize visibility of accreditation fields
             ToggleAccreditationFields(false);
 
-            // Initially set visibility to false
-            flowLayoutPanelUnitStandards.Visible = false;
+
         }
 
         // Event: Form Load
@@ -50,24 +49,19 @@ namespace LMIS_Dev_Branch
         // Event: Add Unit Standard Button Click
         private void btnAddUnitStandard_Click(object sender, EventArgs e)
         {
-            // Log to confirm button click is being triggered
-            MessageBox.Show("Add Unit Standard button clicked!", "Action Triggered", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            // Clear the input fields
+            txtUsNumberInput.Clear();
+            txtUsNameInput.Clear();
+            txtUsId.Clear();
+            txtUsCredits.Clear();
+            txtUsNqfLevel.Clear();
 
-            // Ensure the FlowLayoutPanel is set to visible
-            flowLayoutPanelUnitStandards.Visible = true;
-
-            // Log to confirm visibility change
-            if (flowLayoutPanelUnitStandards.Visible)
-            {
-                MessageBox.Show("FlowLayoutPanel is now visible!", "Action Triggered", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Failed to make FlowLayoutPanel visible!", "Action Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-            // Bring it to the front (in case it's hidden behind other controls)
-            flowLayoutPanelUnitStandards.BringToFront();
+            // Set focus on each field in sequence
+            txtUsNumberInput.Focus();
+            txtUsNameInput.Focus();
+            txtUsId.Focus();
+            txtUsCredits.Focus();
+            txtUsNqfLevel.Focus();
         }
 
 
@@ -123,9 +117,19 @@ namespace LMIS_Dev_Branch
         private void txtAccreditationNumber_TextChanged(object sender, EventArgs e) { }
         private void lblAccreditationToggle_Click(object sender, EventArgs e) { }
 
-        private void flowLayoutPanelUnitStandards_Paint(object sender, PaintEventArgs e)
+        private void btnPrevious_Click(object sender, EventArgs e)
         {
+            // Prompt the user with a confirmation question before closing the form
+            DialogResult result = MessageBox.Show("Are you sure you want to go to the previous step?", "Confirm Action", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                // Close the current form (this will close the current form and go back to the previous form if any)
+                this.Close();
+            }
+            // If the user clicks 'No', nothing happens, and the form remains open
         }
+
+       
     }
 }

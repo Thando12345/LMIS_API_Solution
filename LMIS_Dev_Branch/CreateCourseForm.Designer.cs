@@ -60,7 +60,6 @@
             toolTipCancelUnitStandard = new ToolTip(components);
             panel1 = new Panel();
             btnClose = new Button();
-            flowLayoutPanelUnitStandards = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)dgvUnitStandards).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -330,6 +329,7 @@
             btnPrevious.TabIndex = 24;
             btnPrevious.Text = "Previous";
             btnPrevious.UseVisualStyleBackColor = false;
+            btnPrevious.Click += btnPrevious_Click;
             // 
             // btnNext
             // 
@@ -342,6 +342,7 @@
             btnNext.TabIndex = 25;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = false;
+            btnNext.Click += btnNext_Click;
             // 
             // lblAdminApprovalNote
             // 
@@ -376,22 +377,11 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             // 
-            // flowLayoutPanelUnitStandards
-            // 
-            flowLayoutPanelUnitStandards.AutoScroll = true;
-            flowLayoutPanelUnitStandards.BackColor = Color.LightGray;
-            flowLayoutPanelUnitStandards.Location = new Point(20, 200);
-            flowLayoutPanelUnitStandards.Name = "flowLayoutPanelUnitStandards";
-            flowLayoutPanelUnitStandards.Size = new Size(600, 300);
-            flowLayoutPanelUnitStandards.TabIndex = 46;
-            flowLayoutPanelUnitStandards.Paint += flowLayoutPanelUnitStandards_Paint;
-            // 
             // FrmCreateCourseForm
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(797, 835);
-            Controls.Add(flowLayoutPanelUnitStandards);
             Controls.Add(btnClose);
             Controls.Add(panel1);
             Controls.Add(lblAdminApprovalNote);
@@ -464,6 +454,5 @@
         private ToolTip toolTipCancelUnitStandard;
         private Panel panel1;
         private Button btnClose;
-        private FlowLayoutPanel flowLayoutPanelUnitStandards;
     }
 }

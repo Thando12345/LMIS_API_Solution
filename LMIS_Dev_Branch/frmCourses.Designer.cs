@@ -138,6 +138,7 @@
             dgvCourses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCourses.Size = new Size(917, 180);
             dgvCourses.TabIndex = 8;
+            dgvCourses.CellContentClick += dgvCourses_CellContentClick;
             // 
             // CourseName
             // 
