@@ -68,6 +68,8 @@ BEGIN
         [CourseId] INT NOT NULL, -- Foreign key to Course table
         CONSTRAINT FK_UnitStandard_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
     );
+    -- Create an index for better join performance
+    CREATE NONCLUSTERED INDEX IX_UnitStandard_CourseId ON [dbo].[UnitStandard](CourseId);
 END;
 --New schema   14-01-2025
 
