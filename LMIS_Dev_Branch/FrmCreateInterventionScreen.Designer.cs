@@ -47,6 +47,8 @@
             toolTip1 = new ToolTip(components);
             btnSaveIntervention = new Button();
             btnCancelIntervention = new Button();
+            label1 = new Label();
+            txtCourseID = new TextBox();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,7 +86,7 @@
             // dateTimePicker1
             // 
             dateTimePicker1.CalendarFont = new Font("Arial Narrow", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(220, 207);
+            dateTimePicker1.Location = new Point(220, 276);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(342, 31);
             dateTimePicker1.TabIndex = 3;
@@ -102,7 +104,7 @@
             // 
             lblDates.AutoSize = true;
             lblDates.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblDates.Location = new Point(40, 207);
+            lblDates.Location = new Point(40, 276);
             lblDates.Name = "lblDates";
             lblDates.Size = new Size(52, 23);
             lblDates.TabIndex = 5;
@@ -112,7 +114,7 @@
             // 
             lblFunder.AutoSize = true;
             lblFunder.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFunder.Location = new Point(40, 282);
+            lblFunder.Location = new Point(40, 351);
             lblFunder.Name = "lblFunder";
             lblFunder.Size = new Size(71, 23);
             lblFunder.TabIndex = 6;
@@ -122,7 +124,7 @@
             // 
             cmbFunderDropdown.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbFunderDropdown.FormattingEnabled = true;
-            cmbFunderDropdown.Location = new Point(220, 272);
+            cmbFunderDropdown.Location = new Point(220, 341);
             cmbFunderDropdown.Name = "cmbFunderDropdown";
             cmbFunderDropdown.Size = new Size(342, 33);
             cmbFunderDropdown.TabIndex = 7;
@@ -131,7 +133,7 @@
             // 
             lblFacilitator.AutoSize = true;
             lblFacilitator.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblFacilitator.Location = new Point(40, 350);
+            lblFacilitator.Location = new Point(40, 419);
             lblFacilitator.Name = "lblFacilitator";
             lblFacilitator.Size = new Size(96, 23);
             lblFacilitator.TabIndex = 8;
@@ -141,7 +143,7 @@
             // 
             cmbFacilitatorDropdown.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbFacilitatorDropdown.FormattingEnabled = true;
-            cmbFacilitatorDropdown.Location = new Point(220, 346);
+            cmbFacilitatorDropdown.Location = new Point(220, 415);
             cmbFacilitatorDropdown.Name = "cmbFacilitatorDropdown";
             cmbFacilitatorDropdown.Size = new Size(342, 33);
             cmbFacilitatorDropdown.TabIndex = 9;
@@ -150,7 +152,7 @@
             // 
             lblAssessor.AutoSize = true;
             lblAssessor.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblAssessor.Location = new Point(40, 421);
+            lblAssessor.Location = new Point(40, 490);
             lblAssessor.Name = "lblAssessor";
             lblAssessor.Size = new Size(92, 23);
             lblAssessor.TabIndex = 10;
@@ -160,7 +162,7 @@
             // 
             cmbAssessorDropdown.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbAssessorDropdown.FormattingEnabled = true;
-            cmbAssessorDropdown.Location = new Point(220, 411);
+            cmbAssessorDropdown.Location = new Point(220, 480);
             cmbAssessorDropdown.Name = "cmbAssessorDropdown";
             cmbAssessorDropdown.Size = new Size(342, 33);
             cmbAssessorDropdown.TabIndex = 11;
@@ -169,7 +171,7 @@
             // 
             lblModerator.AutoSize = true;
             lblModerator.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblModerator.Location = new Point(40, 492);
+            lblModerator.Location = new Point(40, 561);
             lblModerator.Name = "lblModerator";
             lblModerator.Size = new Size(102, 23);
             lblModerator.TabIndex = 12;
@@ -180,7 +182,7 @@
             // 
             cmbModeratorDropdown.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbModeratorDropdown.FormattingEnabled = true;
-            cmbModeratorDropdown.Location = new Point(220, 488);
+            cmbModeratorDropdown.Location = new Point(220, 557);
             cmbModeratorDropdown.Name = "cmbModeratorDropdown";
             cmbModeratorDropdown.Size = new Size(342, 33);
             cmbModeratorDropdown.TabIndex = 13;
@@ -190,7 +192,7 @@
             btnLinkLearners.BackColor = Color.Blue;
             btnLinkLearners.Font = new Font("Arial", 20F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnLinkLearners.ForeColor = Color.White;
-            btnLinkLearners.Location = new Point(40, 544);
+            btnLinkLearners.Location = new Point(44, 626);
             btnLinkLearners.Name = "btnLinkLearners";
             btnLinkLearners.Size = new Size(50, 50);
             btnLinkLearners.TabIndex = 14;
@@ -207,7 +209,7 @@
             btnSaveIntervention.BackColor = Color.Green;
             btnSaveIntervention.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnSaveIntervention.ForeColor = Color.White;
-            btnSaveIntervention.Location = new Point(294, 550);
+            btnSaveIntervention.Location = new Point(298, 632);
             btnSaveIntervention.Name = "btnSaveIntervention";
             btnSaveIntervention.Size = new Size(150, 50);
             btnSaveIntervention.TabIndex = 15;
@@ -220,7 +222,7 @@
             btnCancelIntervention.BackColor = Color.Red;
             btnCancelIntervention.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCancelIntervention.ForeColor = Color.White;
-            btnCancelIntervention.Location = new Point(603, 550);
+            btnCancelIntervention.Location = new Point(607, 632);
             btnCancelIntervention.Name = "btnCancelIntervention";
             btnCancelIntervention.Size = new Size(150, 50);
             btnCancelIntervention.TabIndex = 16;
@@ -228,11 +230,32 @@
             btnCancelIntervention.UseVisualStyleBackColor = false;
             btnCancelIntervention.Click += btnCancelIntervention_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(40, 212);
+            label1.Name = "label1";
+            label1.Size = new Size(99, 23);
+            label1.TabIndex = 17;
+            label1.Text = "Course ID";
+            // 
+            // txtCourseID
+            // 
+            txtCourseID.Font = new Font("Arial", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtCourseID.Location = new Point(220, 208);
+            txtCourseID.Name = "txtCourseID";
+            txtCourseID.PlaceholderText = "Enter course ID";
+            txtCourseID.Size = new Size(342, 33);
+            txtCourseID.TabIndex = 18;
+            // 
             // FrmCreateInterventionScreen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 637);
+            ClientSize = new Size(800, 787);
+            Controls.Add(txtCourseID);
+            Controls.Add(label1);
             Controls.Add(btnCancelIntervention);
             Controls.Add(btnSaveIntervention);
             Controls.Add(btnLinkLearners);
@@ -278,5 +301,7 @@
         private ToolTip toolTip1;
         private Button btnSaveIntervention;
         private Button btnCancelIntervention;
+        private Label label1;
+        private TextBox txtCourseID;
     }
 }
