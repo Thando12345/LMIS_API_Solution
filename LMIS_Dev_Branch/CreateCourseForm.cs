@@ -74,84 +74,181 @@ namespace LMIS_Dev_Branch
         // Event: Add Unit Standard Button Click
         private void btnAddUnitStandard_Click(object sender, EventArgs e)
         {
-            // Validate that a course name is entered
-            string courseName = txtCourseName.Text.Trim();
-            if (string.IsNullOrEmpty(courseName))
-            {
-                MessageBox.Show("Please enter a course name before adding unit standards.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCourseName.Focus();
-                return;
-            }
-
-            // Validate Unit Standard Number input
-            string usNumber = txtUsNumberInput.Text.Trim();
-            if (string.IsNullOrEmpty(usNumber))
-            {
-                MessageBox.Show("Please enter a valid Unit Standard Number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtUsNumberInput.Focus();
-                return;
-            }
-
             try
             {
-                // Open the connection
-                con.Open();
+                // Validate inputs
+                if (!ValidateInputs(out string courseName, out string usNumber, out int credits, out int nqfLevel)) return;
 
-                // Insert the Unit Standard into the database
-                string query = "INSERT INTO UnitStandard (Name, Id, Credits, NQFLevel, CourseId) " +
-                               "VALUES (@Name, @Id, @Credits, @NQFLevel, @CourseId)";
+                string connectionString = "Data Source=DESKTOP-RULM89R\\SQLEXPRESS;Database=LMS_Db;Trusted_Connection=True;TrustServerCertificate=True";
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
 
-                SqlCommand cmd = new SqlCommand(query, con);
-                cmd.Parameters.AddWithValue("@Name", txtUsNameInput.Text.Trim());
-                cmd.Parameters.AddWithValue("@Id", usNumber);
-                cmd.Parameters.AddWithValue("@Credits", int.Parse(txtUsCredits.Text.Trim()));
-                cmd.Parameters.AddWithValue("@NQFLevel", int.Parse(txtUsNqfLevel.Text.Trim()));
-                cmd.Parameters.AddWithValue("@CourseId", GetCourseIdByName(courseName)); // Get the CourseId based on the course name
+                    // Ensure the UnitStandard table exists
+                    EnsureUnitStandardTableExists(con);
 
-                // Execute the query
-                cmd.ExecuteNonQuery();
+                    // Get CourseId
+                    int courseId = GetCourseIdByName(courseName);
+                    if (courseId == 0)
+                    {
+                        ShowValidationError("The specified course does not exist. Please select a valid course.", txtCourseName);
+                        return;
+                    }
 
-                // Display success message
-                MessageBox.Show("Unit Standard added successfully!", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Check for Duplicate Unit Standard
+                    if (IsDuplicateUnitStandard(con, usNumber, courseId))
+                    {
+                        ShowValidationError("A Unit Standard with this number already exists for the selected course.", txtUsNumberInput);
+                        return;
+                    }
 
-                // Clear the Unit Standard input fields
-                ClearUnitStandardFields();
+                    // Insert Unit Standard
+                    InsertUnitStandard(con, txtUsNameInput.Text.Trim(), usNumber, credits, nqfLevel, courseId);
+
+                    // Success Message
+                    MessageBox.Show("Unit Standard added successfully!", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Clear input fields
+                    ClearUnitStandardFields();
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("An error occurred while adding the Unit Standard: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally
+        }
+
+        private bool ValidateInputs(out string courseName, out string usNumber, out int credits, out int nqfLevel)
+        {
+            courseName = txtCourseName.Text.Trim();
+            if (string.IsNullOrEmpty(courseName))
             {
-                // Ensure the connection is closed
-                con.Close();
+                ShowValidationError("Please enter a course name before adding unit standards.", txtCourseName);
+                usNumber = null;
+                credits = 0;
+                nqfLevel = 0;
+                return false;
+            }
+
+            usNumber = txtUsNumberInput.Text.Trim();
+            if (string.IsNullOrEmpty(usNumber))
+            {
+                ShowValidationError("Please enter a valid Unit Standard Number.", txtUsNumberInput);
+                credits = 0;
+                nqfLevel = 0;
+                return false;
+            }
+
+            if (!int.TryParse(txtUsCredits.Text.Trim(), out credits) || credits <= 0)
+            {
+                ShowValidationError("Please enter a valid credit value.", txtUsCredits);
+                nqfLevel = 0;
+                return false;
+            }
+
+            if (!int.TryParse(txtUsNqfLevel.Text.Trim(), out nqfLevel) || nqfLevel < 1 || nqfLevel > 10)
+            {
+                ShowValidationError("Please enter a valid NQF level (1-10).", txtUsNqfLevel);
+                return false;
+            }
+
+            return true;
+        }
+
+        private void ShowValidationError(string message, Control control)
+        {
+            MessageBox.Show(message, "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            control.Focus();
+        }
+
+        private bool IsDuplicateUnitStandard(SqlConnection con, string usNumber, int courseId)
+        {
+            string query = "SELECT COUNT(*) FROM UnitStandard WHERE Id = @Id AND CourseId = @CourseId";
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                cmd.Parameters.AddWithValue("@Id", usNumber);
+                cmd.Parameters.AddWithValue("@CourseId", courseId);
+                return (int)cmd.ExecuteScalar() > 0;
+            }
+        }
+
+        private void EnsureUnitStandardTableExists(SqlConnection con)
+        {
+            string checkCourseTableQuery = @"
+    IF OBJECT_ID('[dbo].[Course]', 'U') IS NULL
+    BEGIN
+        CREATE TABLE [dbo].[Course]
+        (
+            [CourseId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
+            [Name] VARCHAR(100) NOT NULL, -- Course name (max 100 characters)
+            [Credits] INT NOT NULL, -- Course credits
+            [NQFLevel] INT NOT NULL, -- NQF Level
+            [IsAccredited] BIT NOT NULL, -- Is the course accredited
+            [AccreditationBody] VARCHAR(200), -- Accreditation body (max 200 characters)
+            [AccreditationNumber] VARCHAR(100) -- Accreditation number (max 100 characters)
+        );
+    END";
+
+            string checkUnitStandardTableQuery = @"
+    IF OBJECT_ID('[dbo].[UnitStandard]', 'U') IS NULL
+    BEGIN
+        CREATE TABLE [dbo].[UnitStandard]
+        (
+            [UnitStandardId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
+            [Name] VARCHAR(100) NOT NULL, -- Unit standard name (max 100 characters)
+            [Id] VARCHAR(50) NOT NULL, -- Unit standard ID or code (max 50 characters)
+            [Credits] INT NOT NULL, -- Credits for the unit standard
+            [NQFLevel] INT NOT NULL, -- NQF Level for the unit standard
+            [CourseId] INT NOT NULL, -- Foreign key to Course table
+            CONSTRAINT FK_UnitStandard_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
+        );
+        -- Create an index for better join performance
+        CREATE NONCLUSTERED INDEX IX_UnitStandard_CourseId ON [dbo].[UnitStandard](CourseId);
+    END";
+
+            // Execute both queries
+            using (SqlCommand cmd = new SqlCommand(checkCourseTableQuery, con))
+            {
+                cmd.ExecuteNonQuery();
+            }
+
+            using (SqlCommand cmd = new SqlCommand(checkUnitStandardTableQuery, con))
+            {
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+
+        private void InsertUnitStandard(SqlConnection con, string name, string id, int credits, int nqfLevel, int courseId)
+        {
+            string insertQuery = "INSERT INTO UnitStandard (Name, Id, Credits, NQFLevel, CourseId) VALUES (@Name, @Id, @Credits, @NQFLevel, @CourseId)";
+            using (SqlCommand insertCmd = new SqlCommand(insertQuery, con))
+            {
+                insertCmd.Parameters.AddWithValue("@Name", name);
+                insertCmd.Parameters.AddWithValue("@Id", id);
+                insertCmd.Parameters.AddWithValue("@Credits", credits);
+                insertCmd.Parameters.AddWithValue("@NQFLevel", nqfLevel);
+                insertCmd.Parameters.AddWithValue("@CourseId", courseId);
+                insertCmd.ExecuteNonQuery();
             }
         }
 
         private void ClearUnitStandardFields()
         {
-            txtUsNumberInput.Clear();
             txtUsNameInput.Clear();
-            txtUsId.Clear();
+            txtUsNumberInput.Clear();
             txtUsCredits.Clear();
             txtUsNqfLevel.Clear();
-            txtUsNumberInput.Focus(); // Set focus on the first input field
         }
+        // Method to retrieve CourseId by CourseName
         private int GetCourseIdByName(string courseName)
         {
-            string query = "SELECT CourseId FROM Course WHERE Name = @CourseName";
+            string query = "SELECT CourseId FROM Course WHERE Name = @Name";
             SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@CourseName", courseName);
+            cmd.Parameters.AddWithValue("@Name", courseName);
 
-            // Execute the query and return the CourseId
             object result = cmd.ExecuteScalar();
-            if (result != null && int.TryParse(result.ToString(), out int courseId))
-            {
-                return courseId;
-            }
-
-            // If the course is not found, throw an exception
-            throw new Exception("Course not found in the database. Please save the course first.");
+            return result != null ? Convert.ToInt32(result) : 0;
         }
 
 
@@ -219,7 +316,7 @@ namespace LMIS_Dev_Branch
 
         private void ClearCourseFields()
         {
-            txtCourseName.Clear();
+            //txtCourseName.Clear();
             txtUsNqfLevel.Clear();
             txtUsCredits.Clear();
             txtAccreditationBody.Clear();
