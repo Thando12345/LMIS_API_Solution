@@ -343,6 +343,7 @@
             btnNext.TabIndex = 25;
             btnNext.Text = "Next";
             btnNext.UseVisualStyleBackColor = false;
+            btnNext.Click += btnNext_Click;
             // 
             // lblAdminApprovalNote
             // 

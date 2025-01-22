@@ -82,13 +82,13 @@ namespace LMIS_Dev_Branch
                 string connectionString = "Data Source=DESKTOP-RULM89R\\SQLEXPRESS;Database=LMS_Db;Trusted_Connection=True;TrustServerCertificate=True";
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    con.Open();
+                    con.Open(); // Ensure the connection is open
 
                     // Ensure the UnitStandard table exists
                     EnsureUnitStandardTableExists(con);
 
                     // Get CourseId
-                    int courseId = GetCourseIdByName(courseName);
+                    int courseId = GetCourseIdByName(con, courseName);  // Pass con here as well
                     if (courseId == 0)
                     {
                         ShowValidationError("The specified course does not exist. Please select a valid course.", txtCourseName);
@@ -96,7 +96,7 @@ namespace LMIS_Dev_Branch
                     }
 
                     // Check for Duplicate Unit Standard
-                    if (IsDuplicateUnitStandard(con, usNumber, courseId))
+                    if (IsDuplicateUnitStandard(con, usNumber, courseId))  // Pass con here as well
                     {
                         ShowValidationError("A Unit Standard with this number already exists for the selected course.", txtUsNumberInput);
                         return;
@@ -175,36 +175,36 @@ namespace LMIS_Dev_Branch
         private void EnsureUnitStandardTableExists(SqlConnection con)
         {
             string checkCourseTableQuery = @"
-    IF OBJECT_ID('[dbo].[Course]', 'U') IS NULL
-    BEGIN
-        CREATE TABLE [dbo].[Course]
-        (
-            [CourseId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
-            [Name] VARCHAR(100) NOT NULL, -- Course name (max 100 characters)
-            [Credits] INT NOT NULL, -- Course credits
-            [NQFLevel] INT NOT NULL, -- NQF Level
-            [IsAccredited] BIT NOT NULL, -- Is the course accredited
-            [AccreditationBody] VARCHAR(200), -- Accreditation body (max 200 characters)
-            [AccreditationNumber] VARCHAR(100) -- Accreditation number (max 100 characters)
-        );
-    END";
+IF OBJECT_ID('[dbo].[Course]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[Course]
+    (
+        [CourseId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
+        [Name] VARCHAR(100) NOT NULL, -- Course name (max 100 characters)
+        [Credits] INT NOT NULL, -- Course credits
+        [NQFLevel] INT NOT NULL, -- NQF Level
+        [IsAccredited] BIT NOT NULL, -- Is the course accredited
+        [AccreditationBody] VARCHAR(200), -- Accreditation body (max 200 characters)
+        [AccreditationNumber] VARCHAR(100) -- Accreditation number (max 100 characters)
+    );
+END";
 
             string checkUnitStandardTableQuery = @"
-    IF OBJECT_ID('[dbo].[UnitStandard]', 'U') IS NULL
-    BEGIN
-        CREATE TABLE [dbo].[UnitStandard]
-        (
-            [UnitStandardId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
-            [Name] VARCHAR(100) NOT NULL, -- Unit standard name (max 100 characters)
-            [Id] VARCHAR(50) NOT NULL, -- Unit standard ID or code (max 50 characters)
-            [Credits] INT NOT NULL, -- Credits for the unit standard
-            [NQFLevel] INT NOT NULL, -- NQF Level for the unit standard
-            [CourseId] INT NOT NULL, -- Foreign key to Course table
-            CONSTRAINT FK_UnitStandard_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
-        );
-        -- Create an index for better join performance
-        CREATE NONCLUSTERED INDEX IX_UnitStandard_CourseId ON [dbo].[UnitStandard](CourseId);
-    END";
+IF OBJECT_ID('[dbo].[UnitStandard]', 'U') IS NULL
+BEGIN
+    CREATE TABLE [dbo].[UnitStandard]
+    (
+        [UnitStandardId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), -- Primary key with auto-incrementing ID
+        [Name] VARCHAR(100) NOT NULL, -- Unit standard name (max 100 characters)
+        [Id] VARCHAR(50) NOT NULL, -- Unit standard ID or code (max 50 characters)
+        [Credits] INT NOT NULL, -- Credits for the unit standard
+        [NQFLevel] INT NOT NULL, -- NQF Level for the unit standard
+        [CourseId] INT NOT NULL, -- Foreign key to Course table
+        CONSTRAINT FK_UnitStandard_Course FOREIGN KEY (CourseId) REFERENCES [dbo].[Course]([CourseId])
+    );
+    -- Create an index for better join performance
+    CREATE NONCLUSTERED INDEX IX_UnitStandard_CourseId ON [dbo].[UnitStandard](CourseId);
+END";
 
             // Execute both queries
             using (SqlCommand cmd = new SqlCommand(checkCourseTableQuery, con))
@@ -217,7 +217,6 @@ namespace LMIS_Dev_Branch
                 cmd.ExecuteNonQuery();
             }
         }
-
 
         private void InsertUnitStandard(SqlConnection con, string name, string id, int credits, int nqfLevel, int courseId)
         {
@@ -240,16 +239,30 @@ namespace LMIS_Dev_Branch
             txtUsCredits.Clear();
             txtUsNqfLevel.Clear();
         }
-        // Method to retrieve CourseId by CourseName
-        private int GetCourseIdByName(string courseName)
-        {
-            string query = "SELECT CourseId FROM Course WHERE Name = @Name";
-            SqlCommand cmd = new SqlCommand(query, con);
-            cmd.Parameters.AddWithValue("@Name", courseName);
 
-            object result = cmd.ExecuteScalar();
-            return result != null ? Convert.ToInt32(result) : 0;
+        // Method to retrieve CourseId by CourseName
+        private int GetCourseIdByName(SqlConnection con, string courseName)
+        {
+            int courseId = 0;
+            string query = "SELECT CourseId FROM Course WHERE Name = @Name";
+
+            using (SqlCommand cmd = new SqlCommand(query, con))
+            {
+                // Open the connection if it's not open
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+
+                cmd.Parameters.AddWithValue("@Name", courseName);
+
+                object result = cmd.ExecuteScalar();
+                courseId = result != null ? Convert.ToInt32(result) : 0;
+            }
+
+            return courseId;
         }
+
 
 
         // Event: Save Course Button Click
@@ -353,6 +366,7 @@ namespace LMIS_Dev_Branch
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
+
             // Prompt the user with a confirmation question before closing the form
             DialogResult result = MessageBox.Show("Are you sure you want to go to the previous step?", "Confirm Action", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
@@ -368,6 +382,19 @@ namespace LMIS_Dev_Branch
         {
 
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure you want to go to the next step?", "Confirm Action", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                frmPractitionersViewScreen frmPractitionersViewScreen = new frmPractitionersViewScreen();
+                frmPractitionersViewScreen.ShowDialog();
+            }
+            // If the user clicks 'No', nothing happens, and the form remains open
+        }
+    }
 
         //New Test Case 21-01-2025
 

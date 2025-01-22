@@ -1,1 +1,1 @@
-﻿SELECT * FROM Course;
+﻿SELECT * FROM UnitStandard;
