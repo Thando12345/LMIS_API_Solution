@@ -178,7 +178,8 @@ namespace LMIS_Dev_Branch
             string accreditationBody = isAccredited ? txtAccreditationBody.Text.Trim() : null;
             string accreditationNumber = isAccredited ? txtAccreditationNumber.Text.Trim() : null;
 
-            string connectionString = "your_connection_string_here"; // Replace with your connection string
+            // string connectionString = "DefaultConnection"; // Replace with your connection string
+            string connectionString = "Data Source=DESKTOP-RULM89R\\SQLEXPRESS;Database=LMS_Db;Trusted_Connection=True;TrustServerCertificate=True";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
