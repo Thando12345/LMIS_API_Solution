@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPractitionerCreateEditScreen));
             lblName = new Label();
             txtPractitionerName = new TextBox();
             lblSurname = new Label();
@@ -37,14 +38,14 @@
             label1 = new Label();
             panel1 = new Panel();
             dgvPractitionerRole = new DataGridView();
+            Role_Name = new DataGridViewTextBoxColumn();
+            Selected = new DataGridViewTextBoxColumn();
+            Actions = new DataGridViewTextBoxColumn();
             btnEdit = new Button();
             btnDelete = new Button();
             btnAddRole = new Button();
             btnSavePractitioner = new Button();
             btnCancelPractitioner = new Button();
-            Role_Name = new DataGridViewTextBoxColumn();
-            Selected = new DataGridViewTextBoxColumn();
-            Actions = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvPractitionerRole).BeginInit();
             SuspendLayout();
@@ -141,6 +142,27 @@
             dgvPractitionerRole.TabIndex = 8;
             dgvPractitionerRole.CellContentClick += dgvPractitionerRole_CellContentClick;
             // 
+            // Role_Name
+            // 
+            Role_Name.HeaderText = "Role Name";
+            Role_Name.MinimumWidth = 8;
+            Role_Name.Name = "Role_Name";
+            Role_Name.Width = 450;
+            // 
+            // Selected
+            // 
+            Selected.HeaderText = "Selected";
+            Selected.MinimumWidth = 8;
+            Selected.Name = "Selected";
+            Selected.Width = 450;
+            // 
+            // Actions
+            // 
+            Actions.HeaderText = "Actions";
+            Actions.MinimumWidth = 10;
+            Actions.Name = "Actions";
+            Actions.Width = 450;
+            // 
             // btnEdit
             // 
             btnEdit.BackColor = Color.Blue;
@@ -206,31 +228,11 @@
             btnCancelPractitioner.UseVisualStyleBackColor = false;
             btnCancelPractitioner.Click += btnCancelPractitioner_Click;
             // 
-            // Role_Name
-            // 
-            Role_Name.HeaderText = "Role Name";
-            Role_Name.MinimumWidth = 8;
-            Role_Name.Name = "Role_Name";
-            Role_Name.Width = 450;
-            // 
-            // Selected
-            // 
-            Selected.HeaderText = "Selected";
-            Selected.MinimumWidth = 8;
-            Selected.Name = "Selected";
-            Selected.Width = 450;
-            // 
-            // Actions
-            // 
-            Actions.HeaderText = "Actions";
-            Actions.MinimumWidth = 10;
-            Actions.Name = "Actions";
-            Actions.Width = 450;
-            // 
             // frmPractitionerCreateEditScreen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1501, 737);
             Controls.Add(btnCancelPractitioner);
             Controls.Add(btnSavePractitioner);

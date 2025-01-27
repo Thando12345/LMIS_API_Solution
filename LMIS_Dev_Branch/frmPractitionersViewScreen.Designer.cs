@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPractitionersViewScreen));
             panel1 = new Panel();
             lblSearchPractitioner = new Label();
             textBox1 = new TextBox();
@@ -183,6 +184,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1472, 599);
             Controls.Add(btnDelete);
             Controls.Add(btnClose);

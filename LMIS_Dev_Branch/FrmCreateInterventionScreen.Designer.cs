@@ -253,6 +253,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.six;
             ClientSize = new Size(800, 787);
             Controls.Add(txtCourseID);
             Controls.Add(label1);

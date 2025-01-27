@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBatchCertificatesScreen));
             dgvLearnerDetails = new DataGridView();
+            LearnerName = new DataGridViewTextBoxColumn();
+            LearnerSurname = new DataGridViewTextBoxColumn();
+            LearnerID = new DataGridViewTextBoxColumn();
+            LearnerCourse = new DataGridViewTextBoxColumn();
+            LearnerCheckbox = new DataGridViewTextBoxColumn();
             panel1 = new Panel();
             lblBatchCertificates = new Label();
             btnBatchGenerate = new Button();
             chkboxAutoAllocate = new CheckBox();
             chkboxElectronicSignature = new CheckBox();
             btnClose = new Button();
-            LearnerName = new DataGridViewTextBoxColumn();
-            LearnerSurname = new DataGridViewTextBoxColumn();
-            LearnerID = new DataGridViewTextBoxColumn();
-            LearnerCourse = new DataGridViewTextBoxColumn();
-            LearnerCheckbox = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvLearnerDetails).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -53,6 +54,41 @@
             dgvLearnerDetails.RowHeadersWidth = 62;
             dgvLearnerDetails.Size = new Size(1326, 256);
             dgvLearnerDetails.TabIndex = 14;
+            // 
+            // LearnerName
+            // 
+            LearnerName.HeaderText = "Learner Name";
+            LearnerName.MinimumWidth = 8;
+            LearnerName.Name = "LearnerName";
+            LearnerName.Width = 250;
+            // 
+            // LearnerSurname
+            // 
+            LearnerSurname.HeaderText = "Learner Surname";
+            LearnerSurname.MinimumWidth = 8;
+            LearnerSurname.Name = "LearnerSurname";
+            LearnerSurname.Width = 250;
+            // 
+            // LearnerID
+            // 
+            LearnerID.HeaderText = "ID";
+            LearnerID.MinimumWidth = 8;
+            LearnerID.Name = "LearnerID";
+            LearnerID.Width = 250;
+            // 
+            // LearnerCourse
+            // 
+            LearnerCourse.HeaderText = "Course Name";
+            LearnerCourse.MinimumWidth = 8;
+            LearnerCourse.Name = "LearnerCourse";
+            LearnerCourse.Width = 250;
+            // 
+            // LearnerCheckbox
+            // 
+            LearnerCheckbox.HeaderText = "Checkbox ";
+            LearnerCheckbox.MinimumWidth = 8;
+            LearnerCheckbox.Name = "LearnerCheckbox";
+            LearnerCheckbox.Width = 250;
             // 
             // panel1
             // 
@@ -128,45 +164,11 @@
             btnClose.UseVisualStyleBackColor = false;
             btnClose.Click += btnClose_Click;
             // 
-            // LearnerName
-            // 
-            LearnerName.HeaderText = "Learner Name";
-            LearnerName.MinimumWidth = 8;
-            LearnerName.Name = "LearnerName";
-            LearnerName.Width = 250;
-            // 
-            // LearnerSurname
-            // 
-            LearnerSurname.HeaderText = "Learner Surname";
-            LearnerSurname.MinimumWidth = 8;
-            LearnerSurname.Name = "LearnerSurname";
-            LearnerSurname.Width = 250;
-            // 
-            // LearnerID
-            // 
-            LearnerID.HeaderText = "ID";
-            LearnerID.MinimumWidth = 8;
-            LearnerID.Name = "LearnerID";
-            LearnerID.Width = 250;
-            // 
-            // LearnerCourse
-            // 
-            LearnerCourse.HeaderText = "Course Name";
-            LearnerCourse.MinimumWidth = 8;
-            LearnerCourse.Name = "LearnerCourse";
-            LearnerCourse.Width = 250;
-            // 
-            // LearnerCheckbox
-            // 
-            LearnerCheckbox.HeaderText = "Checkbox ";
-            LearnerCheckbox.MinimumWidth = 8;
-            LearnerCheckbox.Name = "LearnerCheckbox";
-            LearnerCheckbox.Width = 250;
-            // 
             // FrmBatchCertificatesScreen
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1462, 660);
             Controls.Add(btnClose);
             Controls.Add(chkboxElectronicSignature);

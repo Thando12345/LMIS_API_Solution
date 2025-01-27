@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCertificationScreen));
             panel1 = new Panel();
             lblCertification = new Label();
             lblSearch = new Label();
@@ -190,6 +191,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1599, 642);
             Controls.Add(btnClose);
             Controls.Add(btnGenerateCertificate);

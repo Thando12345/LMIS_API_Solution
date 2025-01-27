@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInterventionsScreen));
             label1 = new Label();
             txtInterventionSearch = new TextBox();
             btnSearch = new Button();
@@ -206,6 +207,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1166, 609);
             Controls.Add(btnClose);
             Controls.Add(panel1);

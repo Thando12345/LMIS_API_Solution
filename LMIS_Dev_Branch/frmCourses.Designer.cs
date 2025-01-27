@@ -116,7 +116,7 @@
             // 
             btnCreateAccreditedC.BackColor = Color.Blue;
             btnCreateAccreditedC.ForeColor = Color.White;
-            btnCreateAccreditedC.Location = new Point(50, 360);
+            btnCreateAccreditedC.Location = new Point(37, 373);
             btnCreateAccreditedC.Name = "btnCreateAccreditedC";
             btnCreateAccreditedC.Size = new Size(240, 42);
             btnCreateAccreditedC.TabIndex = 7;
@@ -131,7 +131,7 @@
             dgvCourses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dgvCourses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvCourses.Columns.AddRange(new DataGridViewColumn[] { CourseName, CourseType, Credits, NQFLevel, IsAccredited });
-            dgvCourses.Location = new Point(50, 420);
+            dgvCourses.Location = new Point(36, 440);
             dgvCourses.Name = "dgvCourses";
             dgvCourses.ReadOnly = true;
             dgvCourses.RowHeadersWidth = 62;
@@ -179,7 +179,7 @@
             // 
             btnCreateCourse.BackColor = Color.Blue;
             btnCreateCourse.ForeColor = Color.White;
-            btnCreateCourse.Location = new Point(619, 360);
+            btnCreateCourse.Location = new Point(606, 373);
             btnCreateCourse.Name = "btnCreateCourse";
             btnCreateCourse.Size = new Size(198, 42);
             btnCreateCourse.TabIndex = 9;
@@ -191,7 +191,7 @@
             // 
             btnCreateNonAccreditedCourse.BackColor = Color.Blue;
             btnCreateNonAccreditedCourse.ForeColor = Color.White;
-            btnCreateNonAccreditedCourse.Location = new Point(312, 360);
+            btnCreateNonAccreditedCourse.Location = new Point(299, 373);
             btnCreateNonAccreditedCourse.Name = "btnCreateNonAccreditedCourse";
             btnCreateNonAccreditedCourse.Size = new Size(271, 42);
             btnCreateNonAccreditedCourse.TabIndex = 10;
@@ -211,7 +211,7 @@
             btnClose.BackColor = Color.Red;
             btnClose.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnClose.ForeColor = Color.White;
-            btnClose.Location = new Point(856, 615);
+            btnClose.Location = new Point(842, 644);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(111, 48);
             btnClose.TabIndex = 45;
@@ -224,7 +224,8 @@
             AutoScaleDimensions = new SizeF(14F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightGray;
-            ClientSize = new Size(993, 675);
+            BackgroundImage = Properties.Resources.back_me;
+            ClientSize = new Size(993, 704);
             Controls.Add(btnClose);
             Controls.Add(btnCreateNonAccreditedCourse);
             Controls.Add(btnCreateCourse);
