@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CourseDetailsForm));
             lblPopUpTitle = new Label();
             btnCloseX = new Button();
             lblCourseName = new Button();
@@ -48,8 +49,9 @@
             lblPopUpTitle.BackColor = Color.Blue;
             lblPopUpTitle.FlatStyle = FlatStyle.Popup;
             lblPopUpTitle.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPopUpTitle.ForeColor = Color.White;
             lblPopUpTitle.ImageAlign = ContentAlignment.TopLeft;
-            lblPopUpTitle.Location = new Point(147, 9);
+            lblPopUpTitle.Location = new Point(207, 9);
             lblPopUpTitle.Name = "lblPopUpTitle";
             lblPopUpTitle.Size = new Size(297, 46);
             lblPopUpTitle.TabIndex = 0;
@@ -61,7 +63,7 @@
             btnCloseX.Font = new Font("Arial", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnCloseX.Location = new Point(567, 10);
             btnCloseX.Name = "btnCloseX";
-            btnCloseX.Size = new Size(28, 33);
+            btnCloseX.Size = new Size(51, 45);
             btnCloseX.TabIndex = 1;
             btnCloseX.Text = "X";
             btnCloseX.UseVisualStyleBackColor = false;
@@ -173,7 +175,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(598, 667);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            ClientSize = new Size(719, 667);
             Controls.Add(btnEdit);
             Controls.Add(btnClose);
             Controls.Add(lblCertificateInfo);

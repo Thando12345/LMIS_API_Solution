@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LMIS_Dev_Branch
@@ -41,11 +34,13 @@ namespace LMIS_Dev_Branch
                 lblAccreditationNumber.Text = $"Accreditation Number: {AccreditationNumber}";
                 lblCertificateInfo.Text = "Certificate Issued: Certificate of Competence";
 
+                // Make accreditation details visible if the course is accredited
                 lblAccreditationBody.Visible = true;
                 lblAccreditationNumber.Visible = true;
             }
             else
             {
+                // Hide accreditation details and display completion certificate for non-accredited courses
                 lblAccreditationBody.Visible = false;
                 lblAccreditationNumber.Visible = false;
                 lblCertificateInfo.Text = "Certificate Issued: Certificate of Completion";
@@ -54,19 +49,19 @@ namespace LMIS_Dev_Branch
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            // Close the details form
+            // Close the course details form
             this.Close();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            // Optional: Show message or action for editing course details
+            // Placeholder for editing course details (if you plan to implement editing functionality)
             MessageBox.Show("Edit functionality is not available yet.", "Edit", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void lblCourseName_Click(object sender, EventArgs e)
         {
-
+            // Placeholder for clicking course name (if you want to add additional functionality)
         }
     }
 }

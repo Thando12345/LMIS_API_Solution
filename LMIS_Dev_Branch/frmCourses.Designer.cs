@@ -70,7 +70,7 @@
             btnNavigation.TabIndex = 2;
             btnNavigation.Text = "Navigate";
             btnNavigation.UseVisualStyleBackColor = false;
-            btnNavigation.Click += btnNavigation_Click;
+//TEMP            btnNavigation.Click += btnNavigation_Click;
             // 
             // cmbSortingOptions
             // 
